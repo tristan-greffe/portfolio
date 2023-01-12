@@ -4,24 +4,43 @@ import React from 'react'
 import './portfolio.css'
 
 // Import image
-import MyCryptoPortfolio from '../../assets/portfolio1.jpg'
+import MyCryptoPortfolio from '../../assets/mycryptoportfolio.jpg'
+
+// Import icons
+import { DiRuby, DiReact } from 'react-icons/di'
 
 const Portfolio = () => {
   return (
     <section id='portfolio'>
-      <h5>Quelque</h5>
-      <h2>Mon Travail</h2>
+      <h5>Projet en tant que freelance</h5>
+      <h2>MyCryptoPortfolio</h2>
       <div className='container portfolio__container'>
-        <article className='portfolio__item'>
-          <div className='portfolio__item-image'>
-            <img src={MyCryptoPortfolio} alt='My Crypto Portfolio' />
+        <div className='portfolio__content'>
+          <div className='portfolio__cards'>
+            <article className='portfolio__card'>
+              <DiRuby className='portfolio__icon'/>
+              <h5>Backend</h5>
+              <small>RUBY ON RAILS</small>
+            </article>
+            <article className='portfolio__card'>
+              <DiReact className='portfolio__icon'/>
+              <h5>Frontend</h5>
+              <small>HTML & CSS & REACTJS</small>
+            </article>
           </div>
-          <h3>MyCryptoPortfolio</h3>
+          <h3 className='text-light'>PROJET EN DEVELOPEMENT</h3>
+          <p className='text-light'>MyCryptoPortfolio est un logiciel permettant à ses utilisateurs de visualiser l'ensemble de leurs portefeuilles cryptographiques et de leur fournir un ensemble de statistiques.</p>
+          <p>En tant que développeur j'ai pu apprendre à gérer l'interconnexion du code et ainsi voire l'importance du clean code.</p>
           <div className='portfolio__item-cta'>
-            <a href='https://github.com' className='btn'>Github</a>
+            <a href='https://github.com/entertotheneworld/my-crypto-portfolio' target='_blank' rel='noreferrer' className='btn'>Github</a>
             <a href='https://www.my-crypto-portfolio.com' className='btn btn-primary' target='_blank' rel='noreferrer'>Live demo</a>
           </div>
-        </article>
+        </div>
+        <div className='portfolio__me'>
+          <div className='portfolio__me-image'>
+            <img src={MyCryptoPortfolio} alt='portfolio My Crypto Portfolio' />
+          </div>
+        </div>
       </div>
     </section>
   )
