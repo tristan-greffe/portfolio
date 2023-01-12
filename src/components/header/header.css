@@ -69,23 +69,10 @@ header {
 /* ============ MEDIA QUERIES (SMALL DEVICES) ============ */
 @media screen and (max-width: 600px) {
   header {
-    height: 60vh;
+    height: 100vh;
   }
 
-  .scroll__down {
+  .header__socials, .scroll__down {
     display: none;
-  }
-
-  .header__socials {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -25rem;
-  }
-
-  .header__socials::after {
-    display: none
   }
 }
