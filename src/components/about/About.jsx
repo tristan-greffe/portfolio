@@ -7,7 +7,7 @@ import './about.css'
 import ME from '../../assets/me-about.jpg'
 
 // Import icons
-import { FaAward, FaUserGraduate } from 'react-icons/fa'
+import { FaUserGraduate } from 'react-icons/fa'
 import { GiSkills } from 'react-icons/gi'
 
 const About = () => {
@@ -26,21 +26,17 @@ const About = () => {
             <article className='about__card'>
               <FaUserGraduate className='about__icon'/>
               <h5>Formations</h5>
-              <small>3+ years working</small>
-            </article>
-            <article className='about__card'>
-              <FaAward className='about__icon'/>
-              <h5>Expériences</h5>
-              <small>3+ years working</small>
+              <small>Bootcamp THP</small>
             </article>
             <article className='about__card'>
               <GiSkills className='about__icon'/>
               <h5>Skills</h5>
-              <small>3+ years working</small>
+              <small>10+ hard skills</small>
             </article>
           </div>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quasi sit non. Dolorem impedit vitae doloribus qui dicta maxime, dignissimos repudiandae optio reprehenderit ea maiores. Perferendis rem magnam aspernatur quibusdam.</p>
-          <a href='#contact' className='btn btn-primary'>Contactez moi</a>
+          <p>Trouver des solutions aux problèmes posés a toujours fait partie de ma vie, que ce soit en tant que responsable en restauration ou en tant que dévelopeur. C'est le moteur de mon épanouissement. Quelle sensation géniale que de ressentir la montée d'adrénaline, de joie et de fierté à l'aboutissement d'un projet.</p>
+          <p>Si mon profil attire votre curiosité, n'hésitez pas à me contacter.</p>
+          <a href='#contact' className='btn btn-primary'>Contactez-moi</a>
         </div>
       </div>
     </section>
