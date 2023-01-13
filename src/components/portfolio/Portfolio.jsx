@@ -29,8 +29,8 @@ const Portfolio = () => {
             </article>
           </div>
           <h3 className='text-light'>PROJET EN DEVELOPEMENT</h3>
-          <p className='text-light'>MyCryptoPortfolio est un logiciel permettant à ses utilisateurs de visualiser l'ensemble de leurs portefeuilles cryptographiques et de leur fournir un ensemble de statistiques.</p>
-          <p>En tant que développeur j'ai pu apprendre à gérer l'interconnexion du code et ainsi voire l'importance du clean code.</p>
+          <p className='text-light'>MyCryptoPortfolio est une application qui aide ses utilisateurs à surveiller l'ensemble de leurs investissements en crypto-monnaies en leur offrant une variété de statistiques.</p>
+          <p>En tant que développeur, j'ai appris à gérer les interactions entre les différents morceaux de code, ce qui m'a permis de réaliser l'importance d'avoir un code propre.</p>
           <div className='portfolio__item-cta'>
             <a href='https://github.com/entertotheneworld/my-crypto-portfolio' target='_blank' rel='noreferrer' className='btn'>Github</a>
             <a href='https://www.my-crypto-portfolio.com' className='btn btn-primary' target='_blank' rel='noreferrer'>Live demo</a>
