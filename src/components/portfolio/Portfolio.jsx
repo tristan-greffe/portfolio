@@ -28,10 +28,8 @@ const Portfolio = () => {
               <small>HTML & CSS & REACTJS</small>
             </article>
           </div>
-          <h3 className='text-light'>PROJET EN COURS DEVELOPPEMENT</h3>
+          <h3 className='text-light'>PROJET EN COURS DE DEVELOPPEMENT</h3>
           <p className='text-light'>MyCryptoPortfolio est une application qui aide ses utilisateurs à surveiller l'ensemble de leurs investissements en crypto-monnaies en leur offrant une variété de statistiques.</p>
-          <p>En tant que développeur, j'ai appris à gérer l'interconnexion entre les différentes méthodes, ce qui m'a permis de réaliser l'importance d'avoir un code propre.</p>
-          <p>J'ai pu voir l'importance d'avoir </p>
           <div className='portfolio__item-cta'>
             <a href='https://github.com/entertotheneworld/my-crypto-portfolio' target='_blank' rel='noreferrer' className='btn'>Github</a>
             <a href='https://www.my-crypto-portfolio.com' className='btn btn-primary' target='_blank' rel='noreferrer'>Live demo</a>
