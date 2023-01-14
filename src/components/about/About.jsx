@@ -34,8 +34,8 @@ const About = () => {
               <small>10+ hard skills</small>
             </article>
           </div>
-          <p>Résoudre des problèmes a toujours fait partie de ma vie, que ce soit en tant que responsable en restauration ou en tant que développeur. C'est ce qui me permet de m'épanouir. Il n'y a rien de mieux que de ressentir l'adrénaline, la joie et la fierté à la fin d'un projet réussi.</p>
-          <p>Si mon profil vous intéresse, n'hésitez pas à me contacter.</p>
+          <p>Résoudre des problèmes a toujours fait partie de ma vie, que ce soit en tant que responsable en restauration ou en tant que développeur. C'est ce qui me permet de m'épanouir. Il n'y a rien de mieux pour moi que de ressentir l'adrénaline, la joie et la fierté à la fin d'un projet abouti.</p>
+          <p>N'hésitez pas à prendre un premier contact.</p>
           <a href='#contact' className='btn btn-primary'>Contactez-moi</a>
         </div>
       </div>
