@@ -25,7 +25,7 @@ const Portfolio = () => {
             <article className='portfolio__card'>
               <DiReact className='portfolio__icon'/>
               <h5>Frontend</h5>
-              <small>HTML & CSS & REACTJS</small>
+              <small>REACTJS</small>
             </article>
           </div>
           <h3 className='text-light'>PROJET EN COURS DE DEVELOPPEMENT</h3>
