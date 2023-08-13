@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/tristan-greffe/portfolio/static/css/main.f57eb5b6.css",
-    "main.js": "/tristan-greffe/portfolio/static/js/main.4a69eb66.js",
-    "static/media/me-about.jpg": "/tristan-greffe/portfolio/static/media/me-about.a103d4e1f9780ed670b1.jpg",
-    "static/media/cv.pdf": "/tristan-greffe/portfolio/static/media/cv.6a1f8939b2dd9c568d46.pdf",
-    "static/media/me.png": "/tristan-greffe/portfolio/static/media/me.75eee1fc059ddcd19161.png",
-    "static/media/mycryptoportfolio.jpg": "/tristan-greffe/portfolio/static/media/mycryptoportfolio.a3cf223389f3432a99fb.jpg",
-    "index.html": "/tristan-greffe/portfolio/index.html",
-    "main.f57eb5b6.css.map": "/tristan-greffe/portfolio/static/css/main.f57eb5b6.css.map",
-    "main.4a69eb66.js.map": "/tristan-greffe/portfolio/static/js/main.4a69eb66.js.map"
+    "main.css": "/portfolio/static/css/main.f57eb5b6.css",
+    "main.js": "/portfolio/static/js/main.5283742d.js",
+    "static/media/me-about.jpg": "/portfolio/static/media/me-about.a103d4e1f9780ed670b1.jpg",
+    "static/media/cv.pdf": "/portfolio/static/media/cv.6a1f8939b2dd9c568d46.pdf",
+    "static/media/me.png": "/portfolio/static/media/me.75eee1fc059ddcd19161.png",
+    "static/media/mycryptoportfolio.jpg": "/portfolio/static/media/mycryptoportfolio.a3cf223389f3432a99fb.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.f57eb5b6.css.map": "/portfolio/static/css/main.f57eb5b6.css.map",
+    "main.5283742d.js.map": "/portfolio/static/js/main.5283742d.js.map"
   },
   "entrypoints": [
     "static/css/main.f57eb5b6.css",
-    "static/js/main.4a69eb66.js"
+    "static/js/main.5283742d.js"
   ]
 }
