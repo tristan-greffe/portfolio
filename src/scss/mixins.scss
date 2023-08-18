@@ -1,3 +1,6 @@
 @mixin desktop-screen {
   @media (min-width: 640px) { @content; }
 }
+@mixin tablet-screen {
+  @media (min-width: 440px) { @content; }
+}
