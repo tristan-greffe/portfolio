@@ -11,9 +11,6 @@
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  @include desktop-screen {
-    height: 60vh;
- }
 }
 
 .hero__container {
