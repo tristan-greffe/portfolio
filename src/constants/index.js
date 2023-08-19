@@ -1,4 +1,5 @@
-import { frontend, backend, creator, web, kalisio } from '../assets'
+import { frontend, backend, creator, web, kalisio, css, docker, git, html, javascript,
+  mongodb, nodejs, reactjs, redux, tailwind, vuejs, feathersjs } from '../assets'
 
 export const navLinks = [
   { id: 'about', title: 'About' },
@@ -25,4 +26,19 @@ export const experiences = [
       'Incorporate PWA and webpush notifications into the Kalisio ecosystem'
     ]
   }
+]
+
+export const technologies = [
+  { name: 'HTML 5', icon: html },
+  { name: 'CSS 3', icon: css },
+  { name: 'JavaScript', icon: javascript },
+  { name: 'Vue JS', icon: vuejs },
+  { name: 'React JS', icon: reactjs },
+  { name: 'Redux Toolkit', icon: redux },
+  { name: 'Tailwind CSS', icon: tailwind },
+  { name: 'Feathers JS', icon: feathersjs },
+  { name: 'Node JS', icon: nodejs },
+  { name: 'MongoDB', icon: mongodb },
+  { name: 'git', icon: git },
+  { name: 'docker', icon: docker }
 ]
