@@ -30,7 +30,7 @@
 ## About the Project
 
 <div align="center">
-  <img src="./readme_assets/portfolio.png" height="auto" width="90%"/>
+  <img src="./readme_assets/portfolio-project.png" height="auto" width="90%"/>
 </div>
 
 ### Folder Structure
@@ -41,15 +41,16 @@ Here is the folder structure of Portfolio.
 |- src/
   |-- assets/
   |-- components/
+  |-- constants/
+  |-- scss/
   |-- App.jsx
-  |-- index.css
   |-- index.js
 |- package.json
 ```
 
 ### Tech Stack
 
-[![My Skills](https://skillicons.dev/icons?i=js,react,threejs)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js,react,scss)](https://skillicons.dev)
 
 ## Getting Started
 
