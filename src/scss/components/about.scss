@@ -1,0 +1,51 @@
+.skill__wrapper {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+}
+
+.skill__card {
+  width: 100%;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+  @include tablet-screen {
+    width: 250px;
+  }
+}
+
+.skill__card-gradient {
+  width: 100%;
+  border-radius: 20px;
+  padding: 1px;
+  background: "#00cea8";
+  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  opacity: 1;
+  transform: none;
+  box-shadow: 0 0 #0000, 0 0 #0000, 0px 35px 120px -15px #211e35;
+}
+
+.skill__card-content {
+  display: flex;
+  min-height: 280px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 20px;
+  background-color: $black-100;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  img {
+    height: 4rem;
+    width: 4rem;
+    object-fit: contain;
+  }
+  h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    color: $white;
+  }
+}

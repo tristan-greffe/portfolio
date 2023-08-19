@@ -1,0 +1,99 @@
+.bg-hero {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../../assets/herobg.png);
+}
+
+#hero {
+  width: 100%;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.hero__head {
+  position: absolute;
+  inset: 0px;
+  top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  max-width: 80rem;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  > div:first-child {
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    div:first-child {
+      height: 1.25rem;
+      width: 1.25rem;
+      border-radius: 9999px;
+      background-color: $purple;
+    }
+    div:nth-child(2) {
+      height: 10rem;
+      width: 0.25rem;
+      background: -webkit-linear-gradient( -90deg, #804dee 0%, rgba(60, 51, 80, 0) 100% );
+      @include desktop-screen {
+        height: 20rem;
+      }
+    }
+  }
+  h1 {
+    margin-top: 2rem;
+    font-weight: 900;
+    color: $white;
+    font-size: 40px;
+    @include desktop-screen {
+      font-size: 60px;
+    }
+    span {
+      color: $purple;
+    }
+  }
+  p {
+    margin-top: 2rem;
+    font-size: 16px;
+    font-weight: 500;
+    color: $white-100;
+  }
+}
+
+.hero__foot {
+  position: absolute;
+  bottom: 8rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  @include desktop-screen {
+    bottom: 4rem;
+  }
+  a > div {
+    height: 64px;
+    width: 35px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 1.5rem;
+    border-width: 4px;
+    border-color: $white-200;
+    padding: 0.5rem;
+    > div {
+      margin-bottom: 0.25rem;
+      height: 0.75rem;
+      width: 0.75rem;
+      border-radius: 9999px;
+      background-color: $white-200;
+      transform: translateY(1.25551px) translateZ(0px);
+    }
+  }
+}

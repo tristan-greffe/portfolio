@@ -1,0 +1,127 @@
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  z-index: 20;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  @include desktop-screen {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.nav__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  > a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: $white;
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+    p {
+      display: flex;
+      span {
+        display: none;
+        @include desktop-screen {
+          display: block;
+        }
+      }
+    }
+  }
+  > ul {
+    list-style-type: none;
+    flex-direction: row;
+    gap: 2.5rem;
+    display: none;
+    @include desktop-screen {
+      display: flex;
+    }
+    li {
+      font-size: 18px;
+      font-weight: 500;
+      cursor: pointer;
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1 1 0%;
+    @include desktop-screen {
+      display: none;
+    }
+    > img {
+      height: 28px;
+      width: 28px;
+      object-fit: contain;
+    }
+    > div {
+      position: absolute;
+      right: 0px;
+      top: 5rem;
+      z-index: 10;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      min-width: 140px;
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+      background: linear-gradient( to right, #434343, #000000 );
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        gap: 1rem;
+        list-style-type: none;
+      }
+      li {
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 500;
+        color: $white-200;
+      }
+    }
+  }
+}
+
+.bg-primary {
+  background-color: $primary;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.text-secondary {
+  color: $white-200;
+}
+
+.text-white {
+  color: $white;
+}
+
+.hidden {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}

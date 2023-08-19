@@ -1,11 +1,12 @@
 {
   "name": "portfolio",
   "description": "Developer Portfolio Website - built with React",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "homepage": "https://tristan-greffe.github.io/portfolio/",
   "keywords": [
     "React",
-    "Portfolio"
+    "Portfolio",
+    "PWA"
   ],
   "license": "MIT",
   "repository": {
@@ -25,6 +26,7 @@
     "deploy": "npm run build && gh-pages -d build"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.11.4",
@@ -32,11 +34,15 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "emailjs-com": "^3.2.0",
+    "framer-motion": "^10.16.0",
     "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-scripts": "5.0.1",
+    "react-tilt": "^1.0.2",
+    "react-vertical-timeline-component": "^3.6.0",
+    "sass": "^1.66.0",
     "web-vitals": "^2.1.4"
   },
   "eslintConfig": {

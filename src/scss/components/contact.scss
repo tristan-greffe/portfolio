@@ -1,0 +1,40 @@
+form {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  label {
+    display: flex;
+    flex-direction: column;
+    span {
+      margin-bottom: 1rem;
+      font-weight: 500;
+      color: $white;
+    }
+    input, textarea {
+      color: $white;
+      border-radius: 0.5rem;
+      border-style: none;
+      background-color: $black-100;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      font-weight: 500;
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+    }
+  }
+  button {
+    width: fit-content;
+    border-radius: 0.75rem;
+    background-color: $black-100;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-weight: 700;
+    color: $white;
+    border: none;
+  }
+}

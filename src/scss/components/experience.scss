@@ -1,0 +1,43 @@
+.experience__wrapper {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-icon {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  img {
+    height: 80%;
+    width: 80%;
+    object-fit: contain;
+  }
+}
+
+.timeline-card__header {
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: $white;
+  }
+  p {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: $white-200;
+  }
+}
+
+.timeline-card__content {
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  list-style-type: disc;
+  li {
+    padding-left: 0.25rem;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: $white-100;
+  }
+}

@@ -1,25 +1,26 @@
 import React from 'react'
-
-// Imports componenets
-import Header from './components/header/Header'
-import Nav from './components/nav/Nav'
-import About from './components/about/About'
-import Skill from './components/skill/Skill'
-import Portfolio from './components/portfolio/Portfolio'
-import Contact from './components/contact/Contact'
-import Footer from './components/footer/Footer'
+import { BrowserRouter } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import About from './components/About'
+import Experience from './components/Experience'
+import Tech from './components/Tech'
+import Works from './components/Works'
+import Contact from './components/Contact'
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <Nav />
+    <BrowserRouter>
+      <div className="bg-hero">
+        <Navbar />
+        <Hero />
+      </div>
       <About />
-      <Skill />
-      <Portfolio />
+      <Experience />
+      <Tech />
+      <Works />
       <Contact />
-      <Footer />
-    </div>
+    </BrowserRouter>
   )
 }
 
