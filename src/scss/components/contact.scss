@@ -1,0 +1,87 @@
+.contact {
+  position: relative;
+  z-index: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  @include desktop-screen {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.contact-header {
+  opacity: 1;
+  transform: none; 
+}
+
+.contact-header__subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgb(170 166 195 / 1);
+  @include desktop-screen {
+    font-size: 18px;
+  }
+}
+
+.contact-header__title {
+  font-weight: 900;
+  font-size: 30px;
+  color: rgb(255 255 255 / 1);
+  @include desktop-screen {
+    font-size: 50px;
+  }
+}
+
+.contact-form {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact-form label{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form span{
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: rgb(255 255 255 / 1);
+}
+
+.contact-form input, .contact-form textarea {
+  color: rgb(255 255 255 / 1);
+  border-radius: 0.5rem;
+  border-style: none;
+  background-color: rgb(21 16 48 / 1);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 500;
+  
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.contact-form button {
+  width: fit-content;
+  border-radius: 0.75rem;
+  background-color: rgb(21 16 48 / 1);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-weight: 700;
+  color: rgb(255 255 255 / 1);
+  border: none;
+}
