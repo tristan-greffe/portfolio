@@ -35,7 +35,7 @@ const Work = () => {
     <section id="work" className="work">
       <div className="work-header">
         <p className="work-header__subtitle">What I have done so far</p>
-        <h2 className="work-header__title">Resume.</h2>
+        <h2 className="work-header__title">Work Experience.</h2>
       </div>
 
       <div className="work-experiences">
