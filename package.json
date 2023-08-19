@@ -5,7 +5,8 @@
   "homepage": "https://tristan-greffe.github.io/portfolio/",
   "keywords": [
     "React",
-    "Portfolio"
+    "Portfolio",
+    "PWA"
   ],
   "license": "MIT",
   "repository": {
