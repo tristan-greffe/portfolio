@@ -1,5 +1,5 @@
 import { frontend, backend, creator, web, kalisio, css, docker, git, html, javascript,
-  mongodb, nodejs, reactjs, redux, tailwind, vuejs, feathersjs } from '../assets'
+  mongodb, nodejs, reactjs, redux, tailwind, vuejs, feathersjs, feathersQuasarBoilerplate } from '../assets'
 
 export const navLinks = [
   { id: 'about', title: 'About' },
@@ -41,4 +41,18 @@ export const technologies = [
   { name: 'MongoDB', icon: mongodb },
   { name: 'git', icon: git },
   { name: 'docker', icon: docker }
+]
+
+export const projects = [
+  {
+    name: 'Feathers Quasar Boilerplate',
+    description: 'Powerful fusion of Feathers.js and Quasar. It provides a solid foundation for developing full-featured web applications with real-time functionality, modular architecture and a responsive user interface.',
+    tags: [
+      { name: 'react', color: 'blue-text-gradient' },
+      { name: 'feathers', color: 'green-text-gradient' },
+      { name: 'mongodb', color: 'pink-text-gradient' },
+    ],
+    image: feathersQuasarBoilerplate,
+    source_code_link: 'https://github.com/tristan-greffe/feathers-quasar-boilerplate'
+  }
 ]

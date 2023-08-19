@@ -29,3 +29,21 @@
 .flex {
   display: flex;
 }
+
+.blue-text-gradient {
+  background: linear-gradient( to top, #2f80ed, #56ccf2 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.green-text-gradient {
+  background: linear-gradient( to top, #11998e, #38ef7d );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pink-text-gradient {
+  background: linear-gradient( to top, #ec008c, #fc6767 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

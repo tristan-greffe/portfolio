@@ -17,6 +17,8 @@ import redux from './tech/redux.png'
 import tailwind from './tech/tailwind.png'
 import vuejs from './tech/vuejs.png'
 import feathersjs from './tech/feathersjs.png'
+import github from './github.png'
+import feathersQuasarBoilerplate from './feathers-quasar-boilerplate.png'
 
 export {
   menu,
@@ -37,5 +39,7 @@ export {
   redux,
   tailwind,
   vuejs,
-  feathersjs
+  feathersjs,
+  github,
+  feathersQuasarBoilerplate
 }

@@ -1,0 +1,129 @@
+.work {
+  position: relative;
+  z-index: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  @include desktop-screen {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+.work-header {
+  opacity: 1;
+  transform: none; 
+}
+
+.work-header__subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgb(170 166 195 / 1);
+  @include desktop-screen {
+    font-size: 18px;
+  }
+}
+
+.work-header__title {
+  font-weight: 900;
+  font-size: 30px;
+  color: rgb(255 255 255 / 1);
+  @include desktop-screen {
+    font-size: 50px;
+  }
+}
+
+.work-content {
+  margin-top: 1rem;
+  max-width: 48rem;
+  font-size: 17px;
+  line-height: 30px;
+  color: rgb(170 166 195 / 1);
+  opacity: 1;
+  transform: none;
+}
+
+.work-container {
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.75rem;
+}
+
+.project {
+  width: 100%;
+  border-radius: 1rem;
+  background-color: rgb(21 16 48 / 1);
+  padding: 1.25rem;
+  @include desktop-screen {
+    width: 300px;
+  }
+}
+
+.project__head {
+  position: relative;
+  height: 230px;
+  width: 100%;
+}
+
+.project__head__image-project {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+.project__head__badge {
+  position: absolute;
+  margin: 0.75rem;
+  inset: 0px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.project__head__badge-container {
+  display: flex;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background: linear-gradient( to right, #434343, #000000 );
+}
+
+.project__head__badge-github {
+  object-fit: contain;
+  width: 50%;
+  height: 50%;
+}
+
+.project__content {
+  margin-top: 1.25rem;
+}
+
+.project__content-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(255 255 255 / 1);
+}
+
+.project__content-subtitle {
+  margin-top: 0.5rem;
+  font-size: 14px;
+  color: rgb(170 166 195 / 1);
+}
+
+.project__feet {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
