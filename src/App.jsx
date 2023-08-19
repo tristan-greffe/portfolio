@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
-import Work from './components/Work'
+import Experience from './components/Experience'
 import Tech from './components/Tech'
 
 const App = () => {
@@ -15,7 +15,7 @@ const App = () => {
           <Hero />
         </div>
         <About />
-        <Work />
+        <Experience />
         <Tech />
       </div>
     </BrowserRouter>

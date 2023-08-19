@@ -1,4 +1,4 @@
-.work {
+.experience {
   position: relative;
   z-index: 0;
   margin-left: auto;
@@ -16,12 +16,12 @@
   }
 }
 
-.work-header {
+.experience-header {
   opacity: 1;
   transform: none; 
 }
 
-.work-header__subtitle {
+.experience-header__subtitle {
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -31,7 +31,7 @@
   }
 }
 
-.work-header__title {
+.experience-header__title {
   font-weight: 900;
   font-size: 30px;
   color: rgb(255 255 255 / 1);
@@ -40,7 +40,7 @@
   }
 }
 
-.work-experiences {
+.experience-container {
   margin-top: 5rem;
   display: flex;
   flex-direction: column;

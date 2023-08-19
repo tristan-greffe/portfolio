@@ -32,13 +32,13 @@ const TimelineCard = ({ experience }) => {
 
 const Work = () => {
   return (
-    <section id="work" className="work">
-      <div className="work-header">
-        <p className="work-header__subtitle">What I have done so far</p>
-        <h2 className="work-header__title">Work Experience.</h2>
+    <section id="experience" className="experience">
+      <div className="experience-header">
+        <p className="experience-header__subtitle">What I have done so far</p>
+        <h2 className="experience-header__title">Work Experience.</h2>
       </div>
 
-      <div className="work-experiences">
+      <div className="experience-container">
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <TimelineCard key={index} experience={experience} />
