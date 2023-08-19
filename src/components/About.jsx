@@ -20,7 +20,7 @@ const About = () => {
         <p className="about-header__subtitle">Introduction</p>
         <h2 className="about-header__title">Overview.</h2>
       </div>
-      <p className="about-content">I'm a web developer with experience in JavaScript, and expertise in frameworks like React, Node.js & Feathers.js.</p>
+      <p className="about-content"></p>
       <div className="about-skills">
         {skills.map((skill, index) => (
           <SkillCard key={skill.title} index={index} {...skill} />

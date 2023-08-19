@@ -10,7 +10,7 @@ const Hero = () => {
         </div>
         <div>
           <h1 className="hero__title">Hi, I'm <span style={{color: "rgb(145 94 255 / 1)"}}>Tristan</span></h1>
-          <p className="hero__subtitle">I develop JavaScript web applications</p>
+          <p className="hero__subtitle">I'm a web developer with experience in JavaScript, and expertise<br/> in frameworks like React, Node.js & Feathers.js.</p>
         </div>
       </div>
       <div className="hero__motion">
