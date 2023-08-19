@@ -3,11 +3,11 @@ import { Tilt } from 'react-tilt'
 import { skills } from '../constants'
 
 const SkillCard = ({ title, icon }) => (
-  <Tilt className="skill">
-    <div className="skill__gradient">
-      <div className="skill__container">
-        <img src={icon} alt={title} className="skill__img" />
-        <h3 className="skill__title">{title}</h3>
+  <Tilt className="skill__card">
+    <div className="skill__card-gradient">
+      <div className="skill__card-content">
+        <img src={icon} alt={title} />
+        <h3>{title}</h3>
       </div>
     </div>
   </Tilt>
@@ -15,13 +15,12 @@ const SkillCard = ({ title, icon }) => (
 
 const About = () => {
   return (
-    <section id="about" className="about">
-      <div className="about-header">
-        <p className="about-header__subtitle">Introduction</p>
-        <h2 className="about-header__title">Overview.</h2>
+    <section id="about">
+      <div className="section-header">
+        <p>Introduction</p>
+        <h2>Overview.</h2>
       </div>
-      <p className="about-content"></p>
-      <div className="about-skills">
+      <div className="skill__wrapper">
         {skills.map((skill, index) => (
           <SkillCard key={skill.title} index={index} {...skill} />
         ))}

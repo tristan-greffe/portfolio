@@ -14,7 +14,6 @@ import mongodb from './tech/mongodb.png'
 import nodejs from './tech/nodejs.png'
 import reactjs from './tech/reactjs.png'
 import redux from './tech/redux.png'
-import tailwind from './tech/tailwind.png'
 import vuejs from './tech/vuejs.png'
 import feathersjs from './tech/feathersjs.png'
 import github from './github.png'
@@ -37,7 +36,6 @@ export {
   nodejs,
   reactjs,
   redux,
-  tailwind,
   vuejs,
   feathersjs,
   github,

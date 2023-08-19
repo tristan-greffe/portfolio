@@ -2,10 +2,10 @@ import { technologies } from '../constants'
 
 const Tech = () => {
   return (
-    <section className="tech" id="tech">
-      <div className="tech-container">
+    <section id="tech">
+      <div>
         {technologies.map((technology) => (
-          <img src={technology.icon} alt={technology.name} key={technology.name} className="tech-icon" />
+          <img src={technology.icon} alt={technology.name} key={technology.name} />
         ))}
       </div>
     </section>

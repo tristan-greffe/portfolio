@@ -1,5 +1,5 @@
 import { frontend, backend, creator, web, kalisio, css, docker, git, html, javascript,
-  mongodb, nodejs, reactjs, redux, tailwind, vuejs, feathersjs, feathersQuasarBoilerplate } from '../assets'
+  mongodb, nodejs, reactjs, redux, vuejs, feathersjs, feathersQuasarBoilerplate } from '../assets'
 
 export const navLinks = [
   { id: 'about', title: 'About' },
@@ -19,7 +19,7 @@ export const experiences = [
     title: 'JavaScript Developer',
     company_name: 'Kalisio',
     icon: kalisio,
-    iconBg: '#FFF',
+    iconBg: '#fff',
     date: 'March 2023 - Present',
     points: [
       'Get acquainted with open source web applications within the Kalisio ecosystem, utilizing the QuasarJS and FeathersJS frameworks.',
@@ -35,7 +35,6 @@ export const technologies = [
   { name: 'Vue JS', icon: vuejs },
   { name: 'React JS', icon: reactjs },
   { name: 'Redux Toolkit', icon: redux },
-  { name: 'Tailwind CSS', icon: tailwind },
   { name: 'Feathers JS', icon: feathersjs },
   { name: 'Node JS', icon: nodejs },
   { name: 'MongoDB', icon: mongodb },

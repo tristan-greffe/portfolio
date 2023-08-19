@@ -4,20 +4,18 @@ import { projects } from '../constants'
 
 const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
   return (
-    <Tilt options={{ max: 45, scale: 1, speed: 450 }} className="project">
-      <div className="project__head">
-        <img src={image} alt={name} className="project__head__image-project"/>
-        <div className="project__head__badge">
-          <div onClick={() => window.open(source_code_link, "_blank")} className="project__head__badge-container">
-            <img src={github} alt="github" className="project__head__badge-github" />
-          </div>
+    <Tilt options={{ max: 45, scale: 1, speed: 450 }} className="project-card">
+      <div className="project-card__head">
+        <img src={image} alt={name} />
+        <div onClick={() => window.open(source_code_link, "_blank")} className="project-card__head-badge">
+          <img src={github} alt="github" />
         </div>
       </div>
-      <div className="project__content">
-        <h3 className="project__content-title">{name}</h3>
-        <p className="project__content-subtitle">{description}</p>
+      <div className="project-card__content">
+        <h3>{name}</h3>
+        <p>{description}</p>
       </div>
-      <div className="project__feet">
+      <div className="project-card__foot">
         {tags.map((tag) => (
           <p key={tag.name} className={`${tag.color}`} style={{ fontSize: '14px' }}>#{tag.name}</p>
         ))}
@@ -28,14 +26,13 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
 
 const Works = () => {
   return (
-    <section className="work" id="work">
-      <div className="work-header">
-        <p className="work-header__subtitle">My work</p>
-        <h2 className="work-header__title">Projects.</h2>
+    <section id="work">
+      <div className="section-header">
+        <p>My work</p>
+        <h2>Projects.</h2>
       </div>
-      <p className="work-content">Following projects showcases my skills and experience through real-world examples of my work.</p>
-
-      <div className="work-container">
+      <p className="section-description">Following projects showcases my skills and experience through real-world examples of my work.</p>
+      <div className="projects__wrappers">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} {...project} />
         ))}

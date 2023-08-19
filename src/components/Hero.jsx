@@ -2,35 +2,32 @@ import { motion } from 'framer-motion'
 
 const Hero = () => {
   return (
-    <section className="hero">
-      <div className="hero__container">
-        <div className="hero__element">
-          <div className="hero__element-1" />
-          <div className="hero__element-2" />
+    <div id="hero">
+      <div className="hero__head">
+        <div>
+          <div />
+          <div />
         </div>
         <div>
-          <h1 className="hero__title">Hi, I'm <span style={{color: "rgb(145 94 255 / 1)"}}>Tristan</span></h1>
-          <p className="hero__subtitle">I'm a web developer with experience in JavaScript, and expertise<br/> in frameworks like React, Node.js & Feathers.js.</p>
+          <h1>Hi, I'm <span>Tristan</span></h1>
+          <p>I'm a web developer with experience in JavaScript, and expertise<br/> in frameworks like React, Node.js & Feathers.js.</p>
         </div>
       </div>
-      <div className="hero__motion">
+      <div className="hero__foot">
         <a href="#about">
-          <div className="hero__motion-container">
+          <div>
             <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
+              animate={{ y: [0, 24, 0] }}
               transition={{
                 duration: 1.5,
                 repeat: Infinity,
                 repeatType: "loop",
               }}
-              className="hero__motion-animation"
             />
           </div>
         </a>
       </div>
-    </section>
+    </div>
   )
 }
 

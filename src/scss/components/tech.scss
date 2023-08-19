@@ -1,4 +1,4 @@
-.tech {
+#tech {
   position: relative;
   z-index: 0;
   margin-left: auto;
@@ -14,17 +14,15 @@
     padding-top: 4rem;
     padding-bottom: 4rem;
   }
-}
-
-.tech-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2.5rem;
-}
-
-.tech-icon {
-  height: 5rem;
-  width: 5rem;
+  > div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+  img {
+    height: 4rem;
+    width: 4rem;
+  }
 }

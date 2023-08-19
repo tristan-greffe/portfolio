@@ -1,7 +1,6 @@
 import { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 
-
 const Contact = () => {
   const formRef = useRef()
   const [form, setForm] = useState({ name: '', email: '', message: '' })
@@ -38,12 +37,12 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact" className="contact">
-      <div className="contact-header">
-        <p className="contact-header__subtitle">Get in touch</p>
-        <h2 className="contact-header__title">Contact.</h2>
+    <section id="contact">
+      <div className="section-header">
+        <p>Get in touch</p>
+        <h2>Contact.</h2>
       </div>
-      <form ref={formRef} onSubmit={handleSubmit} className="contact-form">
+      <form ref={formRef} onSubmit={handleSubmit}>
         <label>
           <span>Your Name</span>
           <input

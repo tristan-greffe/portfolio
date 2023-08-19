@@ -45,41 +45,27 @@ const Navbar = () => {
   }, [])
 
   return (
-    <nav className={`nav ${ scrolled ? "bg-primary" : "bg-transparent" }`}>
-      <div className="nav-container">
-        <Link
-          to="/"
-          className="nav-logo"
-          onClick={() => { window.scrollTo(0, 0) }}
-        >
+    <nav className={`${ scrolled ? "bg-primary" : "bg-transparent" }`}>
+      <div className="nav__wrapper">
+        <Link to="/" onClick={() => { window.scrollTo(0, 0) }}>
           <p className='flex'>Tristan Greffe &nbsp;<span className="nav-logo__title">|&nbsp; Portfolio</span></p>
         </Link>
-        <ul className="nav-desktop">
+        <ul>
           {navLinks.map((nav) => (
-            <li
-              key={nav.id}
-              className={`${ active === nav.id ? "text-white" : "text-secondary" } nav-desktop__link`}
-            >
+            <li key={nav.id} className={`${ active === nav.id ? "text-white" : "text-secondary" }`}>
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
           ))}
         </ul>
-        <div className="nav-mobile">
-          <img
-            src={toggle ? close : menu}
-            alt="menu"
-            className="nav-mobile__menu"
-            onClick={() => setToggle(!toggle)}
-          />
-          <div className={`${ !toggle ? "hidden" : "flex" } nav-mobile__content`}>
-            <ul className="nav-mobile__content-list">
+        <div>
+          <img src={toggle ? close : menu} alt="menu" onClick={() => setToggle(!toggle)} />
+          <div className={`${ !toggle ? "hidden" : "flex" }`}>
+            <ul>
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`nav-mobile__content-link ${ active === nav.id ? "text-white" : "text-secondary" }`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                  }}
+                  className={`${ active === nav.id ? "text-white" : "text-secondary" }`}
+                  onClick={() => { setToggle(!toggle) }}
                 >
                   <a href={`#${nav.id}`}>{nav.title}</a>
                 </li>

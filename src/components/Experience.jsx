@@ -3,7 +3,6 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css'
 import { experiences } from '../constants'
 
-
 const TimelineCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
@@ -12,18 +11,18 @@ const TimelineCard = ({ experience }) => {
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
-        <div className="timeline-icon__container">
-          <img src={experience.icon} alt={experience.company_name} className="timeline-icon" />
+        <div className="timeline-icon">
+          <img src={experience.icon} alt={experience.company_name} />
         </div>
       }
     >
-      <div>
-        <h3 className="timeline-title">{experience.title}</h3>
-        <p className="timeline-company">{experience.company_name}</p>
+      <div className="timeline-card__header">
+        <h3>{experience.title}</h3>
+        <p>{experience.company_name}</p>
       </div>
-      <ul className="timeline-experience">
+      <ul className="timeline-card__content">
         {experience.points.map((point, index) => (
-          <li key={`experience-point-${index}`} className="timeline-experience__point">{point}</li>
+          <li key={`experience-point-${index}`}>{point}</li>
         ))}
       </ul>
     </VerticalTimelineElement>
@@ -32,13 +31,12 @@ const TimelineCard = ({ experience }) => {
 
 const Work = () => {
   return (
-    <section id="experience" className="experience">
-      <div className="experience-header">
-        <p className="experience-header__subtitle">What I have done so far</p>
-        <h2 className="experience-header__title">Work Experience.</h2>
+    <section id="experience">
+      <div className="section-header">
+        <p>What I have done so far</p>
+        <h2>Work Experience.</h2>
       </div>
-
-      <div className="experience-container">
+      <div className="experience__wrapper">
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <TimelineCard key={index} experience={experience} />

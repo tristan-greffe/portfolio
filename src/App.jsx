@@ -11,17 +11,15 @@ import Contact from './components/Contact'
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary">
-        <div className="bg-hero">
-          <Navbar />
-          <Hero />
-        </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        <Contact />
+      <div className="bg-hero">
+        <Navbar />
+        <Hero />
       </div>
+      <About />
+      <Experience />
+      <Tech />
+      <Works />
+      <Contact />
     </BrowserRouter>
   )
 }
