@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4cd1485a.css",
-    "main.js": "/portfolio/static/js/main.17e752ae.js",
+    "main.css": "/portfolio/static/css/main.d0dfbfa4.css",
+    "main.js": "/portfolio/static/js/main.196bb6a1.js",
     "static/media/herobg.png": "/portfolio/static/media/herobg.6231f3cbbed8bb288c17.png",
     "static/media/feathers-quasar-boilerplate.png": "/portfolio/static/media/feathers-quasar-boilerplate.bff5d7140d7ad270e938.png",
     "static/media/web.png": "/portfolio/static/media/web.046ba5ebd2200205b080.png",
-    "service-worker.js": "/portfolio/service-worker.js",
     "static/media/backend.png": "/portfolio/static/media/backend.8be67e980d71b7fbee1f.png",
     "static/media/feathersjs.png": "/portfolio/static/media/feathersjs.4ba9e2d7822cc232c0de.png",
     "static/media/frontend.png": "/portfolio/static/media/frontend.392aef945313395b748f.png",
@@ -14,11 +13,11 @@
     "static/media/close.svg": "/portfolio/static/media/close.fcf2b8f9543bc2678398945cdc7c5184.svg",
     "static/media/menu.svg": "/portfolio/static/media/menu.c9f8901d4aaffb231e567165dcaf25ff.svg",
     "index.html": "/portfolio/index.html",
-    "main.4cd1485a.css.map": "/portfolio/static/css/main.4cd1485a.css.map",
-    "main.17e752ae.js.map": "/portfolio/static/js/main.17e752ae.js.map"
+    "main.d0dfbfa4.css.map": "/portfolio/static/css/main.d0dfbfa4.css.map",
+    "main.196bb6a1.js.map": "/portfolio/static/js/main.196bb6a1.js.map"
   },
   "entrypoints": [
-    "static/css/main.4cd1485a.css",
-    "static/js/main.17e752ae.js"
+    "static/css/main.d0dfbfa4.css",
+    "static/js/main.196bb6a1.js"
   ]
 }
