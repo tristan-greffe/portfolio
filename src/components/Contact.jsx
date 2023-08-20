@@ -1,5 +1,7 @@
 import { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
+import { ToastContainer, toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 const Contact = () => {
   const formRef = useRef()
@@ -11,29 +13,36 @@ const Contact = () => {
     setForm({ ...form, [name]: value })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     setLoading(true)
-    
-    emailjs
-      .send(
-        'service_bh1ctsr',
-        'template_cfqotnu',
-        { name: form.name, email: form.email, message: form.message },
-        'AH5MnZz2MQzRzTaZk'
-      )
-      .then(
-        () => {
-          setLoading(false)
-          alert('Thank you. I will get back to you as soon as possible.')
-          setForm({ name: '', email: '', message: '' })
-        },
-        (error) => {
-          setLoading(false)
-          console.log(error)
-          alert('Something went wrong.')
-        }
-      )
+    try {
+      await emailjs.send('service_bh1ctsr', 'template_cfqotnu', { name: form.name, email: form.email, message: form.message }, 'AH5MnZz2MQzRzTaZk')
+      setLoading(false)
+      toast.success('Thank you. I will get back to you as soon as possible.', {
+        position: "bottom-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      })
+      setForm({ name: '', email: '', message: '' })
+    } catch (error) {
+      setLoading(false)
+      toast.error('Something went wrong.', {
+        position: "bottom-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      })
+    }
   }
 
   return (
@@ -75,6 +84,18 @@ const Contact = () => {
         </label>
         <button type="submit">{loading ? "Sending..." : "Send"}</button>
       </form>
+      <ToastContainer
+        position="bottom-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </section>
   )
 }
