@@ -47,7 +47,7 @@ export const projects = [
     name: 'Feathers Quasar Boilerplate',
     description: 'Powerful fusion of Feathers.js and Quasar. It provides a solid foundation for developing full-featured web applications with real-time functionality & full authentication.',
     tags: [
-      { name: 'react', color: 'blue-text-gradient' },
+      { name: 'quasar', color: 'blue-text-gradient' },
       { name: 'feathers', color: 'green-text-gradient' },
       { name: 'mongodb', color: 'pink-text-gradient' },
     ],
