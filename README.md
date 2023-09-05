@@ -3,7 +3,7 @@
 
   ![Project Banner](./readme_assets/readme_banner.png)
 
-  <p>My personal portfolio created with React.js</p>
+  <p>My awesome personal portfolio created with React.js</p>
 
   <p>
     <a href="https://github.com/tristan-greffe/portfolio">
