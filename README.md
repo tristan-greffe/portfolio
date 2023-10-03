@@ -18,7 +18,7 @@
   </p>
 
  <h4>
-    <a href="https://tristan-greffe.github.io/portfolio/">View Demo</a>
+    <a href="https://portfolio.tristan-greffe.xyz/">View Demo</a>
     <span> · </span>
     <a href="https://github.com/tristan-greffe/portfolio/issues/">Report Bug</a>
     <span> · </span>
