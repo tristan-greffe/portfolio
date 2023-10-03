@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.d0dfbfa4.css",
-    "main.js": "/portfolio/static/js/main.7bece953.js",
+    "main.js": "/portfolio/static/js/main.e2d442bb.js",
     "static/media/herobg.png": "/portfolio/static/media/herobg.6231f3cbbed8bb288c17.png",
     "static/media/feathers-quasar-boilerplate.png": "/portfolio/static/media/feathers-quasar-boilerplate.bff5d7140d7ad270e938.png",
     "static/media/web.png": "/portfolio/static/media/web.046ba5ebd2200205b080.png",
@@ -14,10 +14,10 @@
     "static/media/menu.svg": "/portfolio/static/media/menu.c9f8901d4aaffb231e567165dcaf25ff.svg",
     "index.html": "/portfolio/index.html",
     "main.d0dfbfa4.css.map": "/portfolio/static/css/main.d0dfbfa4.css.map",
-    "main.7bece953.js.map": "/portfolio/static/js/main.7bece953.js.map"
+    "main.e2d442bb.js.map": "/portfolio/static/js/main.e2d442bb.js.map"
   },
   "entrypoints": [
     "static/css/main.d0dfbfa4.css",
-    "static/js/main.7bece953.js"
+    "static/js/main.e2d442bb.js"
   ]
 }
