@@ -22,8 +22,9 @@ export const experiences = [
     iconBg: '#fff',
     date: 'March 2023 - Present',
     points: [
-      'Get acquainted with open source web applications within the Kalisio ecosystem, utilizing the QuasarJS and FeathersJS frameworks.',
-      'Incorporate PWA and webpush notifications into the Kalisio ecosystem'
+      'Explore the Kalisio ecosystem using the QuasarJS and FeathersJS frameworks.',
+      'Convert Kalisio web applications into Progressive Web Apps (PWA).',
+      'Create a library called "feathers-webpush" to facilitate the integration of the Web Push protocol and the sending of notifications in FeathersJS applications.'
     ]
   }
 ]
