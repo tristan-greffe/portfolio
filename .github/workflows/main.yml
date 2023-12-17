@@ -13,7 +13,7 @@ jobs:
       - uses:  actions/setup-node@v3
         with:
           node-version: '18.x'
-      - name: Install dependencies ⚙️
+      - name: Install dependencies 📚
         run: yarn
       - name: Build 🔧
         run: yarn build
