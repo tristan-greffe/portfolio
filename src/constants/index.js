@@ -24,7 +24,7 @@ export const experiences = [
     points: [
       'Explore the Kalisio ecosystem using the QuasarJS and FeathersJS frameworks.',
       'Convert Kalisio web applications into Progressive Web Apps (PWA).',
-      'Create a library called "feathers-webpush" to facilitate the integration of the Web Push protocol and the sending of notifications in FeathersJS applications.',
+      'Create a library called "feathers-webpush" to facilitate the integration of the Web Push protocol in FeathersJS applications.',
       'Update tests using Puppeteer',
       'Improve account verification by transitioning from long to short tokens',
       'Migrate continuous integration (CI) from Travis CI to GitHub Actions'
