@@ -21,4 +21,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: build
+          token: ${{ secrets.TOKEN_GITHUB }}
 
