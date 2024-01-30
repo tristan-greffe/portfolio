@@ -18,6 +18,7 @@ import vuejs from './tech/vuejs.png'
 import feathersjs from './tech/feathersjs.png'
 import github from './github.png'
 import feathersQuasarBoilerplate from './feathers-quasar-boilerplate.png'
+import passwise from './passwise.png'
 
 export {
   menu,
@@ -39,5 +40,6 @@ export {
   vuejs,
   feathersjs,
   github,
-  feathersQuasarBoilerplate
+  feathersQuasarBoilerplate,
+  passwise
 }

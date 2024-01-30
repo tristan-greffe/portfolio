@@ -1,4 +1,4 @@
-import { frontend, backend, creator, web, kalisio, css, docker, git, html, javascript,
+import { frontend, backend, creator, web, kalisio, docker, git, javascript, passwise,
   mongodb, nodejs, reactjs, redux, vuejs, feathersjs, feathersQuasarBoilerplate } from '../assets'
 
 export const navLinks = [
@@ -27,14 +27,14 @@ export const experiences = [
       'Create a library called "feathers-webpush" to facilitate the integration of the Web Push protocol in FeathersJS applications.',
       'Update tests using Puppeteer',
       'Improve account verification by transitioning from long to short tokens',
-      'Migrate continuous integration (CI) from Travis CI to GitHub Actions'
+      // 'Migrate continuous integration (CI) from Travis CI to GitHub Actions'
     ]
   }
 ]
 
 export const technologies = [
-  { name: 'HTML 5', icon: html },
-  { name: 'CSS 3', icon: css },
+  // { name: 'HTML 5', icon: html },
+  // { name: 'CSS 3', icon: css },
   { name: 'JavaScript', icon: javascript },
   { name: 'Vue JS', icon: vuejs },
   { name: 'React JS', icon: reactjs },
@@ -57,5 +57,16 @@ export const projects = [
     ],
     image: feathersQuasarBoilerplate,
     source_code_link: 'https://github.com/tristan-greffe/feathers-quasar-boilerplate'
+  },
+  {
+    name: 'Passwise',
+    description: 'An open-source password manager, designed as a progressive web application (PWA).',
+    tags: [
+      { name: 'react', color: 'blue-text-gradient' },
+      { name: 'feathers', color: 'green-text-gradient' },
+      { name: 'mongodb', color: 'pink-text-gradient' },
+    ],
+    image: passwise,
+    source_code_link: 'https://github.com/tristan-greffe/passwise'
   }
 ]
