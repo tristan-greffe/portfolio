@@ -50,7 +50,7 @@ Here is the folder structure of Portfolio.
 
 ### Tech Stack
 
-[![My Skills](https://skillicons.dev/icons?i=js,react,scss)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js,react,scss,yarn)](https://skillicons.dev)
 
 ## Getting Started
 
