@@ -1,5 +1,5 @@
-import { frontend, backend, creator, web, kalisio, docker, git, javascript, passwise,
-  mongodb, nodejs, reactjs, redux, vuejs, feathersjs, feathersQuasarBoilerplate } from '../assets'
+import { frontend, backend, creator, web, kalisio, docker, git, javascript, passwise, k8s, helm,
+  mongodb, nodejs, reactjs, redux, vuejs, python, feathersjs, feathersQuasarBoilerplate } from '../assets'
 
 export const navLinks = [
   { id: 'about', title: 'About' },
@@ -11,7 +11,7 @@ export const skills = [
   { title: 'Web Developer', icon: web },
   { title: 'Backend Developer', icon: backend },
   { title: 'Frontend Developer', icon: frontend },
-  { title: 'Content Creator', icon: creator }
+  { title: 'DevOps Engineer', icon: creator }
 ]
 
 export const experiences = [
@@ -20,14 +20,24 @@ export const experiences = [
     company_name: 'Kalisio',
     icon: kalisio,
     iconBg: '#fff',
-    date: 'March 2023 - Present',
+    date: 'March 2023 - December 2023',
     points: [
       'Explore the Kalisio ecosystem using the QuasarJS and FeathersJS frameworks.',
-      'Convert Kalisio web applications into Progressive Web Apps (PWA).',
-      'Create a library called "feathers-webpush" to facilitate the integration of the Web Push protocol in FeathersJS applications.',
-      'Update tests using Puppeteer',
-      'Improve account verification by transitioning from long to short tokens',
-      // 'Migrate continuous integration (CI) from Travis CI to GitHub Actions'
+      'Conversion of Kalisio Web Applications into Progressive Web Apps (PWA)',
+      'Development of "feathers-webpush" library to facilitate the integration of the Web Push protocol in FeathersJS applications.',
+      'Implemented comprehensive updates to E2E testing protocols leveraging Puppeteer',
+      'Optimization of Account Verification Process by transitioning from long to short tokens'
+    ]
+  },
+  {
+    title: 'DevOps Engineer',
+    company_name: 'Kalisio',
+    icon: kalisio,
+    iconBg: '#fff',
+    date: 'January 2024 - Present',
+    points: [
+      'Migrated Continuous Integration (CI) from Travis CI to GitHub Actions',
+      'E2E test automation: Configured a cronjob, on the staging cluster, to execute E2E tests.'
     ]
   }
 ]
@@ -41,9 +51,12 @@ export const technologies = [
   { name: 'Redux Toolkit', icon: redux },
   { name: 'Feathers JS', icon: feathersjs },
   { name: 'Node JS', icon: nodejs },
+  { name: 'Python', icon: python },
   { name: 'MongoDB', icon: mongodb },
-  { name: 'git', icon: git },
-  { name: 'docker', icon: docker }
+  { name: 'Git', icon: git },
+  { name: 'Docker', icon: docker },
+  { name: 'Kubernetes', icon: k8s },
+  { name: 'Helm', icon: helm }
 ]
 
 export const projects = [

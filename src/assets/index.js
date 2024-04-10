@@ -16,6 +16,9 @@ import reactjs from './tech/reactjs.png'
 import redux from './tech/redux.png'
 import vuejs from './tech/vuejs.png'
 import feathersjs from './tech/feathersjs.png'
+import python from './tech/python.png'
+import k8s from './tech/k8s.png'
+import helm from './tech/helm.png'
 import github from './github.png'
 import feathersQuasarBoilerplate from './feathers-quasar-boilerplate.png'
 import passwise from './passwise.png'
@@ -39,6 +42,9 @@ export {
   redux,
   vuejs,
   feathersjs,
+  python,
+  k8s,
+  helm,
   github,
   feathersQuasarBoilerplate,
   passwise
