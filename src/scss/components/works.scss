@@ -84,3 +84,27 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.purple-text-gradient {
+  background: linear-gradient( to top, #9b51e0, #bb6bd9 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.yellow-text-gradient {
+  background: linear-gradient( to top, #f2994a, #f2c94c );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.red-text-gradient {
+  background: linear-gradient( to top, #eb5757, #ff6f61 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.orange-text-gradient {
+  background: linear-gradient( to top, #f5af19, #f12711 );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
