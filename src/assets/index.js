@@ -22,6 +22,7 @@ import helm from './tech/helm.png'
 import github from './github.png'
 import feathersQuasarBoilerplate from './feathers-quasar-boilerplate.png'
 import passwise from './passwise.png'
+import worldWideWeb from './world-wide-web.svg'
 
 export {
   menu,
@@ -47,5 +48,6 @@ export {
   helm,
   github,
   feathersQuasarBoilerplate,
-  passwise
+  passwise,
+  worldWideWeb
 }
