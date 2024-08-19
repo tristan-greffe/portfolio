@@ -10,7 +10,7 @@ const Hero = () => {
         </div>
         <div>
           <h1>Hi, I'm <span>Tristan</span></h1>
-          <p>I'm a web developer with experience in JavaScript, and expertise<br/> in frameworks like React, Node.js & Feathers.js.</p>
+          <p>I'm a web developer with JavaScript experience and DevOps skills.</p>
         </div>
       </div>
       <div className="hero__foot">
