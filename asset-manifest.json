@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6194a342.css",
-    "main.js": "/static/js/main.8f820035.js",
+    "main.css": "/static/css/main.6ef3bafa.css",
+    "main.js": "/static/js/main.f73ae2a5.js",
     "static/media/herobg.png": "/static/media/herobg.6231f3cbbed8bb288c17.png",
     "static/media/feathers-quasar-boilerplate.png": "/static/media/feathers-quasar-boilerplate.bff5d7140d7ad270e938.png",
     "static/media/passwise.png": "/static/media/passwise.f9f1f46eb01cbfea764b.png",
@@ -14,14 +14,15 @@
     "static/media/helm.png": "/static/media/helm.ad871e2522cf193e0ca7.png",
     "static/media/python.png": "/static/media/python.c3b0c68f958785d93cad.png",
     "static/media/vuejs.png": "/static/media/vuejs.1e1987dc089e5e14545f.png",
+    "static/media/world-wide-web.svg": "/static/media/world-wide-web.3f00cabdab540de325ae0a9107f54efc.svg",
     "static/media/close.svg": "/static/media/close.fcf2b8f9543bc2678398945cdc7c5184.svg",
     "static/media/menu.svg": "/static/media/menu.c9f8901d4aaffb231e567165dcaf25ff.svg",
     "index.html": "/index.html",
-    "main.6194a342.css.map": "/static/css/main.6194a342.css.map",
-    "main.8f820035.js.map": "/static/js/main.8f820035.js.map"
+    "main.6ef3bafa.css.map": "/static/css/main.6ef3bafa.css.map",
+    "main.f73ae2a5.js.map": "/static/js/main.f73ae2a5.js.map"
   },
   "entrypoints": [
-    "static/css/main.6194a342.css",
-    "static/js/main.8f820035.js"
+    "static/css/main.6ef3bafa.css",
+    "static/js/main.f73ae2a5.js"
   ]
 }
