@@ -20,8 +20,11 @@ import python from './tech/python.png'
 import k8s from './tech/k8s.png'
 import helm from './tech/helm.png'
 import github from './github.png'
+import artillery from './tech/artillery.png'
+import terraform from './tech/terraform.png'
 import feathersQuasarBoilerplate from './feathers-quasar-boilerplate.png'
 import passwise from './passwise.png'
+import teleray from './teleray.png'
 import worldWideWeb from './world-wide-web.svg'
 
 export {
@@ -47,7 +50,10 @@ export {
   k8s,
   helm,
   github,
+  artillery,
+  terraform,
   feathersQuasarBoilerplate,
   passwise,
+  teleray,
   worldWideWeb
 }

@@ -1,5 +1,5 @@
-import { frontend, backend, creator, web, kalisio, docker, git, javascript, passwise, k8s, helm,
-  mongodb, nodejs, reactjs, redux, vuejs, feathersjs, feathersQuasarBoilerplate } from '../assets'
+import { frontend, backend, creator, web, kalisio, docker, git, javascript, passwise, k8s, helm, teleray, github, worldWideWeb,
+  mongodb, nodejs, reactjs, redux, vuejs, feathersjs, feathersQuasarBoilerplate, artillery, terraform } from '../assets'
 
 export const navLinks = [
   { id: 'about', title: 'About' },
@@ -38,7 +38,7 @@ export const experiences = [
     points: [
       'Migrated Continuous Integration (CI) from Travis CI to GitHub Actions',
       'E2E test automation: Configured a cronjob, on the staging cluster, to execute E2E tests.',
-      'Design and development of the TELERAY application (national radioactivity monitoring and alert network) for IRSN: business specification, data ingestion, deployment, load testing, development, and E2E testing.'
+      'Design and development of the TELERAY application (national radioactivity monitoring and alert network) for IRSN: business specification, data ingestion, deployment, load testing, development, and testing.'
     ]
   }
 ]
@@ -57,22 +57,24 @@ export const technologies = [
   { name: 'Git', icon: git },
   { name: 'Docker', icon: docker },
   { name: 'Kubernetes', icon: k8s },
-  { name: 'Helm', icon: helm }
+  { name: 'Helm', icon: helm },
+  { name: 'Artillery.io', icon: artillery },
+  { name: 'Terraform', icon: terraform }
 ]
 
 export const projects = [
-  // {
-  //   name: 'Teleray',
-  //   description: 'National radioactivity monitoring and alert network.',
-  //   tags: [
-  //     { name: 'quasar', color: 'blue-text-gradient' },
-  //     { name: 'feathers', color: 'green-text-gradient' },
-  //     { name: 'mongodb', color: 'pink-text-gradient' },
-  //     { name: 'kubernetes', color: 'yellow-text-gradient' }
-  //   ],
-  //   image: feathersQuasarBoilerplate,
-  //   source_code_link: 'https://teleray.irsn.fr/'
-  // },
+  {
+    name: 'IRSN - Teleray',
+    description: 'National radioactivity monitoring and alert network.',
+    tags: [
+      { name: 'quasar', color: 'blue-text-gradient' },
+      { name: 'feathers', color: 'green-text-gradient' },
+      { name: 'mongodb', color: 'pink-text-gradient' },
+      { name: 'kubernetes', color: 'yellow-text-gradient' }
+    ],
+    image: teleray,
+    source_code_link: { link: 'https://teleray.irsn.fr/', icon: worldWideWeb }
+  },
   {
     name: 'Feathers Quasar Boilerplate',
     description: 'Powerful fusion of Feathers.js and Quasar. It provides a solid foundation for developing full-featured web applications with real-time functionality & full authentication.',
@@ -82,7 +84,7 @@ export const projects = [
       { name: 'mongodb', color: 'pink-text-gradient' }
     ],
     image: feathersQuasarBoilerplate,
-    source_code_link: 'https://github.com/tristan-greffe/feathers-quasar-boilerplate'
+    source_code_link: { link: 'https://github.com/tristan-greffe/feathers-quasar-boilerplate', icon: github }
   },
   {
     name: 'Passwise',
@@ -93,6 +95,6 @@ export const projects = [
       { name: 'mongodb', color: 'pink-text-gradient' }
     ],
     image: passwise,
-    source_code_link: 'https://github.com/tristan-greffe/passwise'
+    source_code_link: { link: 'https://github.com/tristan-greffe/passwise', icon: github }
   }
 ]
