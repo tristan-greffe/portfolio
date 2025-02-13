@@ -7,7 +7,7 @@ const ProjectCard = ({ name, description, tags, image, source_code_link }) => {
       <div className="project-card__head">
         <img src={image} alt={name} />
         <div onClick={() => window.open(source_code_link.link, "_blank")} className="project-card__head-badge">
-          <img src={source_code_link.icon} />
+          <img src={source_code_link.icon} alt="project-icon" />
         </div>
       </div>
       <div className="project-card__content">
