@@ -177,7 +177,7 @@ export const competences = [
       },
       {
         title: { fr: 'IA', en: 'AI' },
-        description: { fr: 'RAG, MCP, agents de code, Python', en: 'RAG, MCP, coding agents, Python' },
+        description: { fr: 'RAG, MCP, agents de code, Python, CNN', en: 'RAG, MCP, coding agents, Python, CNN' },
         level: 2
       },
       {
@@ -278,7 +278,7 @@ export const projects = [
     },
     description: {
       fr: 'Dans le cadre de la TMA CARTO SIRSE remportée par Kalisio en 2024, TELERAY est l\'application publique de l\'ASNR diffusant en temps-réel les mesures du réseau national de surveillance de la radioactivité - plus de 400 balises en métropole et outre-mer, mesurant le débit de dose gamma toutes les 10 minutes (nSv/h), centralisé dans la base Sparte de l\'ASNR.\n\nL\'application offre au grand public une carte interactive avec la dernière mesure de chaque balise, un historique sur un mois et un système de favoris. Elle intègre également un accès restreint pour les partenaires (données non publiques) et les administrateurs ASNR (gestion des balises et des droits d\'accès).',
-      en: 'As part of the TMA CARTO SIRSE contract won by Kalisio in 2024, TELERAY is the ASNR\'s public application broadcasting real-time measurements from the national radioactivity monitoring network — more than 400 sensors across mainland France and overseas, measuring gamma dose rate every 10 minutes (nSv/h), centralized in the ASNR\'s Sparte database.\n\nThe application offers the general public an interactive map with each sensor\'s latest measurement, a one-month history and a favorites system. It also includes restricted access for partners (non-public data) and ASNR administrators (sensor and access rights management).'
+      en: 'As part of the TMA CARTO SIRSE contract won by Kalisio in 2024, TELERAY is the ASNR\'s public application broadcasting real-time measurements from the national radioactivity monitoring network - more than 400 sensors across mainland France and overseas, measuring gamma dose rate every 10 minutes (nSv/h), centralized in the ASNR\'s Sparte database.\n\nThe application offers the general public an interactive map with each sensor\'s latest measurement, a one-month history and a favorites system. It also includes restricted access for partners (non-public data) and ASNR administrators (sensor and access rights management).'
     },
     technologies: [
       { name: 'Quasar', url: 'https://quasar.dev/' },
