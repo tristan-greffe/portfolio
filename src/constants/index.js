@@ -38,7 +38,7 @@ export const experiences = [
     points: [
       'Migrated Continuous Integration (CI) from Travis CI to GitHub Actions',
       'E2E test automation: Configured a cronjob, on the staging cluster, to execute E2E tests.',
-      'Design and development of the TELERAY application (national radioactivity monitoring and alert network) for IRSN: business specification, data ingestion, deployment, load testing, development, and testing.'
+      'Design and development of the TELERAY application (national radioactivity monitoring and alert network) for ASNR: business specification, data ingestion, deployment, load testing, development, and testing.'
     ]
   },
   {
@@ -47,7 +47,12 @@ export const experiences = [
     icon: kalisio,
     iconBg: '#fff',
     date: 'January 2025 - December 2025',
-    points: []
+    points: [
+      'Migrated code quality analysis from Code Climate to SonarQube, improving maintainability and CI/CD integration.',
+      'Enhanced the TELERAY application: implemented access control based on user profiles and developed a public API for data exposure geospatial data using OGC API Features standards via the KFS service (https://github.com/kalisio/kfs)',
+      'Integrated advanced PDF generation with pdfme / PDFLib and Kapture service (https://github.com/kalisio/kapture) for map printing',
+      'Development & deployment of the kalisio Print (https://github.com/kalisio/print)',
+    ]
   },
   {
     title: 'JavaScript Developer',
