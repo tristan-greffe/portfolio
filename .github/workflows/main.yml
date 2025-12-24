@@ -1,12 +1,19 @@
-name: Build & Deploy
-
+name: ci
 on:
   push:
-    branches:
-      - master
+  workflow_dispatch:
+    inputs:
+      build:
+        description: "Build"
+        default: false
+        required: false
+        type: boolean
+
 
 jobs:
   build:
+    name: Build
+    if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.build_docs || github.event_name == 'push' && contains(github.event.head_commit.message, 'build') }}
     runs-on: ubuntu-latest
     permissions:
       id-token: write
@@ -15,14 +22,15 @@ jobs:
       - uses: actions/checkout@v4
       - uses:  actions/setup-node@v3
         with:
-          node-version: '18.x'
-      - name: Install dependencies 📚
+          node-version: '22.x'
+      - name: Install dependencies
         run: yarn
-      - name: Build 🔧
+      - name: Build
         run: yarn build
-      - name: Deploy to GitHub Pages 🚀
+      - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
+          branch: gh-pages
           folder: build
           token: ${{ secrets.TOKEN_GITHUB }}
 
