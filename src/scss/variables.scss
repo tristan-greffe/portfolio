@@ -1,6 +1,27 @@
-$primary: rgb(5 8 22 / 1);
-$white: rgb(255 255 255 / 1);
-$white-100: rgb(243 243 243 / 1);
-$white-200: rgb(170 166 195 / 1);
-$black-100: rgb(21 16 48 / 1);
-$purple: rgb(145 94 255 / 1);
+// Dark mode (default)
+:root {
+  --bg-primary: #0d1117;
+  --bg-secondary: #161b22;
+  --bg-card: #1c2128;
+  --text-primary: #e6edf3;
+  --text-secondary: #cdd9e5;
+  --text-muted: #8b949e;
+  --border: rgba(255, 255, 255, 0.08);
+  --shadow: rgba(0, 0, 0, 0.4);
+  --accent: #6366f1;
+  --accent-muted: rgba(99, 102, 241, 0.15);
+}
+
+// Light mode
+[data-theme="light"] {
+  --bg-primary: #f0f0eb;
+  --bg-secondary: #e8e8e2;
+  --bg-card: #ffffff;
+  --text-primary: #1a2e2e;
+  --text-secondary: #374151;
+  --text-muted: #6b7280;
+  --border: rgba(0, 0, 0, 0.08);
+  --shadow: rgba(0, 0, 0, 0.08);
+  --accent: #6366f1;
+  --accent-muted: rgba(99, 102, 241, 0.1);
+}

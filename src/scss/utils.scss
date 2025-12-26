@@ -23,7 +23,7 @@ section {
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: $white-200;
+    color: var(--accent);
     @include desktop-screen {
       font-size: 18px;
     }
@@ -31,7 +31,7 @@ section {
   h2 {
     font-weight: 900;
     font-size: 30px;
-    color: $white;
+    color: var(--text-primary);
     @include desktop-screen {
       font-size: 50px;
     }
@@ -43,7 +43,7 @@ section {
   max-width: 48rem;
   font-size: 17px;
   line-height: 30px;
-  color: $white-200;
+  color: var(--text-muted);
   opacity: 1;
   transform: none;
 }

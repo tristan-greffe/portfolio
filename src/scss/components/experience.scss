@@ -21,12 +21,12 @@
   h3 {
     font-size: 24px;
     font-weight: 700;
-    color: $white;
+    color: var(--text-primary);
   }
   p {
     line-height: 1.6;
     font-size: 1rem;
-    color: $white-200;
+    color: var(--text-muted);
   }
 }
 
@@ -38,6 +38,6 @@
     padding-left: 0.25rem;
     font-size: 14px;
     letter-spacing: 0.05em;
-    color: $white-100;
+    color: var(--text-secondary);
   }
 }

@@ -9,13 +9,13 @@ form {
     span {
       margin-bottom: 1rem;
       font-weight: 500;
-      color: $white;
+      color: var(--text-primary);
     }
     input, textarea {
-      color: $white;
+      color: var(--text-primary);
       border-radius: 0.5rem;
       border-style: none;
-      background-color: $black-100;
+      background-color: var(--bg-card);
       padding-left: 1.5rem;
       padding-right: 1.5rem;
       padding-top: 1rem;
@@ -28,13 +28,13 @@ form {
   button {
     width: fit-content;
     border-radius: 0.75rem;
-    background-color: $black-100;
+    background-color: var(--bg-card);
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     font-weight: 700;
-    color: $white;
+    color: var(--text-primary);
     border: none;
   }
 }
