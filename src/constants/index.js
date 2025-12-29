@@ -2,9 +2,12 @@ import { frontend, backend, creator, web, kalisio, docker, git, javascript, pass
   mongodb, nodejs, reactjs, redux, vuejs, feathersjs, feathersQuasarBoilerplate, artillery, terraform } from '../assets'
 
 export const navLinks = [
-  { id: 'about', title: 'About' },
-  { id: 'work', title: 'Work' },
-  { id: 'contact', title: 'Contact' }
+  { path: '/', title: 'Accueil' },
+  { path: '/experience', title: 'Expériences' },
+  { path: '/education', title: 'Formation' },
+  { path: '/portfolio', title: 'Portfolio' },
+  { path: '/skills', title: 'Compétences' },
+  { path: '/contact', title: 'Contact' },
 ]
 
 export const skills = [
