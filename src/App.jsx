@@ -6,6 +6,7 @@ import Experience from './components/Experience'
 import Tech from './components/Tech'
 import Works from './components/Works'
 import Contact from './components/Contact'
+import AccentPicker from './components/AccentPicker'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Tech />
       <Works />
       <Contact />
+      <AccentPicker />
     </HashRouter>
   )
 }
