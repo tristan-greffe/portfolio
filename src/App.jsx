@@ -1,26 +1,25 @@
-import { HashRouter } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import About from './components/About'
-import Experience from './components/Experience'
-import Tech from './components/Tech'
-import Works from './components/Works'
-import Contact from './components/Contact'
-import AccentPicker from './components/AccentPicker'
+import { HashRouter, Routes, Route } from 'react-router-dom'
+import Layout from './components/Layout'
+import Home from './pages/Home'
+import Experience from './pages/Experience'
+import Education from './pages/Education'
+import Portfolio from './pages/Portfolio'
+import Skills from './pages/Skills'
+import Contact from './pages/Contact'
 
 const App = () => {
   return (
     <HashRouter>
-      <div className="bg-hero">
-        <Navbar />
-        <Hero />
-      </div>
-      <About />
-      <Experience />
-      <Tech />
-      <Works />
-      <Contact />
-      <AccentPicker />
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/contact" element={<Contact />} />
+        </Route>
+      </Routes>
     </HashRouter>
   )
 }
