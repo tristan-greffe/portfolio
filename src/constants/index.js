@@ -34,13 +34,29 @@ export const experiences = [
     company_name: 'Kalisio',
     icon: kalisio,
     iconBg: '#fff',
-    date: 'January 2024 - Present',
+    date: 'January 2024 - December 2025',
     points: [
       'Migrated Continuous Integration (CI) from Travis CI to GitHub Actions',
       'E2E test automation: Configured a cronjob, on the staging cluster, to execute E2E tests.',
       'Design and development of the TELERAY application (national radioactivity monitoring and alert network) for IRSN: business specification, data ingestion, deployment, load testing, development, and testing.'
     ]
-  }
+  },
+  {
+    title: 'JavaScript Developer',
+    company_name: 'Kalisio',
+    icon: kalisio,
+    iconBg: '#fff',
+    date: 'January 2025 - December 2025',
+    points: []
+  },
+  {
+    title: 'JavaScript Developer',
+    company_name: 'Kalisio',
+    icon: kalisio,
+    iconBg: '#fff',
+    date: 'January 2026 - December 2026',
+    points: []
+  },
 ]
 
 export const technologies = [
