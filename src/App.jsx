@@ -1,5 +1,4 @@
-import React from 'react'
-import { BrowserRouter } from 'react-router-dom'
+import { HashRouter } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
@@ -10,7 +9,7 @@ import Contact from './components/Contact'
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="bg-hero">
         <Navbar />
         <Hero />
@@ -20,7 +19,7 @@ const App = () => {
       <Tech />
       <Works />
       <Contact />
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
