@@ -1,3 +1,7 @@
+main {
+  padding-top: 80px;
+}
+
 section {
   position: relative;
   z-index: 0;
@@ -13,6 +17,43 @@ section {
     padding-right: 4rem;
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.6rem;
+  border-radius: 2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  transition: opacity 0.2s, transform 0.2s, border-color 0.2s, color 0.2s, background 0.2s;
+
+  &--primary {
+    background: var(--accent);
+    color: #fff;
+
+    &:hover {
+      opacity: 0.85;
+      transform: translateY(-2px);
+    }
+  }
+
+  &--outline {
+    background: transparent;
+    color: var(--text-primary);
+    border: 1.5px solid var(--border);
+
+    &:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: var(--accent-muted);
+    }
   }
 }
 

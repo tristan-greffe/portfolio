@@ -1,15 +1,7 @@
 import Hero from '../components/Hero'
-import About from '../components/About'
 
 const Home = () => {
-  return (
-    <>
-      <div className="bg-hero">
-        <Hero />
-      </div>
-      <About />
-    </>
-  )
+  return <Hero />
 }
 
 export default Home
