@@ -1,7 +1,13 @@
 import Hero from '../components/Hero'
+import TechBanner from '../components/TechBanner'
 
 const Home = () => {
-  return <Hero />
+  return (
+    <>
+      <Hero />
+      <TechBanner />
+    </>
+  )
 }
 
 export default Home
