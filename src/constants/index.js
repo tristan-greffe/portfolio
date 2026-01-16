@@ -67,6 +67,42 @@ export const experiences = [
   },
 ]
 
+export const skillCategories = [
+  {
+    title: 'Frontend',
+    skills: [
+      { name: 'JavaScript', icon: javascript },
+      { name: 'Vue JS', icon: vuejs },
+      { name: 'React JS', icon: reactjs },
+      { name: 'Redux Toolkit', icon: redux },
+    ]
+  },
+  {
+    title: 'Backend',
+    skills: [
+      { name: 'Feathers JS', icon: feathersjs },
+      { name: 'Node JS', icon: nodejs },
+      { name: 'MongoDB', icon: mongodb },
+    ]
+  },
+  {
+    title: 'DevOps',
+    skills: [
+      { name: 'Docker', icon: docker },
+      { name: 'Kubernetes', icon: k8s },
+      { name: 'Helm', icon: helm },
+      { name: 'Terraform', icon: terraform },
+    ]
+  },
+  {
+    title: 'Outils',
+    skills: [
+      { name: 'Git', icon: git },
+      { name: 'Artillery.io', icon: artillery },
+    ]
+  }
+]
+
 export const technologies = [
   // { name: 'HTML 5', icon: html },
   // { name: 'CSS 3', icon: css },
