@@ -1,5 +1,6 @@
 import { frontend, backend, creator, web, kalisio, docker, git, javascript, passwise, k8s, helm, teleray, github, worldWideWeb,
-  mongodb, nodejs, reactjs, redux, vuejs, feathersjs, feathersQuasarBoilerplate, artillery, terraform } from '../assets'
+  mongodb, nodejs, reactjs, redux, vuejs, feathersjs, feathersQuasarBoilerplate, artillery, terraform,
+  pierrePaulRiquet, theHackingProject, threeWAcademy, liora } from '../assets'
 
 export const navLinks = [
   { path: '/', title: 'Accueil' },
@@ -65,6 +66,49 @@ export const experiences = [
     date: 'January 2026 - December 2026',
     points: []
   },
+]
+
+export const education = [
+  {
+    degree: 'Baccalauréat STI2D',
+    school: 'Lycée Pierre Paul Riquet',
+    location: 'St Orens de Gameville (31), France',
+    date: '2016',
+    icon: pierrePaulRiquet,
+    description: null
+  },
+  {
+    degree: 'Classe Préparatoire aux Grandes Écoles — TSI',
+    school: 'Lycée Pierre Paul Riquet',
+    location: 'St Orens de Gameville (31), France',
+    date: 'Septembre 2016 — Juin 2018',
+    icon: pierrePaulRiquet,
+    description: 'Filière Technologie et Sciences Industrielles (TSI)'
+  },
+  {
+    degree: 'Bootcamp Développeur Web Full Stack',
+    school: 'The Hacking Project',
+    location: 'Bordeaux (33), France',
+    date: 'Avril 2022 — Août 2022',
+    icon: theHackingProject,
+    description: null
+  },
+  {
+    degree: 'Titre RNCP Niveau 5 — Développeur Web Full Stack',
+    school: '3W Academy',
+    location: 'Toulouse (31), France',
+    date: 'Septembre 2022 — Décembre 2023',
+    icon: threeWAcademy,
+    description: 'Formation en alternance'
+  },
+  {
+    degree: 'Master 1 — Administration Cloud',
+    school: 'Liora',
+    location: 'Toulouse (31), France',
+    date: 'Janvier 2024 — Juin 2025',
+    icon: liora,
+    description: null
+  }
 ]
 
 export const skillCategories = [

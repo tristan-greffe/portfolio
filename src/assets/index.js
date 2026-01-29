@@ -26,6 +26,10 @@ import feathersQuasarBoilerplate from './feathers-quasar-boilerplate.png'
 import passwise from './passwise.png'
 import teleray from './teleray.png'
 import worldWideWeb from './world-wide-web.svg'
+import pierrePaulRiquet from './pierre-paul-riquet.svg'
+import theHackingProject from './the-hacking-project.jpg'
+import threeWAcademy from './3w-academy.jpeg'
+import liora from './liora.jpg'
 
 export {
   menu,
@@ -55,5 +59,9 @@ export {
   feathersQuasarBoilerplate,
   passwise,
   teleray,
-  worldWideWeb
+  worldWideWeb,
+  pierrePaulRiquet,
+  theHackingProject,
+  threeWAcademy,
+  liora
 }
