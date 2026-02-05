@@ -1,40 +1,95 @@
-form {
-  margin-top: 3rem;
+.contact-layout {
+  margin-top: 3.5rem;
+  display: grid;
+  gap: 3rem;
+
+  @include desktop-screen {
+    grid-template-columns: 1fr 1.6fr;
+    align-items: start;
+  }
+}
+
+.contact-info__text {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+}
+
+.contact-info__links {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
+}
+
+.contact-info__link {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--accent);
+  }
+
+  svg {
+    flex-shrink: 0;
+    color: var(--accent);
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.contact-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+
   label {
-    display: flex;
-    flex-direction: column;
-    span {
-      margin-bottom: 1rem;
-      font-weight: 500;
-      color: var(--text-primary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+  }
+
+  input,
+  textarea {
+    padding: 0.75rem 1rem;
+    border-radius: 0.625rem;
+    border: 1.5px solid var(--border);
+    background: var(--bg-card);
+    color: var(--text-primary);
+    font-size: 0.9rem;
+    font-family: inherit;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+    resize: none;
+    width: 100%;
+
+    &::placeholder {
+      color: var(--text-muted);
     }
-    input, textarea {
-      color: var(--text-primary);
-      border-radius: 0.5rem;
-      border-style: none;
-      background-color: var(--bg-card);
-      padding-left: 1.5rem;
-      padding-right: 1.5rem;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      font-weight: 500;
-      outline: 2px solid transparent;
-      outline-offset: 2px;
+
+    &:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-muted);
     }
   }
-  button {
-    width: fit-content;
-    border-radius: 0.75rem;
-    background-color: var(--bg-card);
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-    font-weight: 700;
-    color: var(--text-primary);
-    border: none;
+}
+
+.contact-form .btn {
+  align-self: flex-start;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
   }
 }
