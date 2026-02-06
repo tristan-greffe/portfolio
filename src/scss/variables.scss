@@ -1,5 +1,19 @@
-// Dark mode (default)
+// Light mode (default)
 :root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f3f4f6;
+  --bg-card: #ffffff;
+  --text-primary: #111827;
+  --text-secondary: #374151;
+  --text-muted: #6b7280;
+  --border: rgba(0, 0, 0, 0.08);
+  --shadow: rgba(0, 0, 0, 0.08);
+  --accent: #059669;
+  --accent-muted: rgba(5, 150, 105, 0.1);
+}
+
+// Dark mode
+[data-theme="dark"] {
   --bg-primary: #0d1117;
   --bg-secondary: #161b22;
   --bg-card: #1c2128;
@@ -8,20 +22,6 @@
   --text-muted: #8b949e;
   --border: rgba(255, 255, 255, 0.08);
   --shadow: rgba(0, 0, 0, 0.4);
-  --accent: #6366f1;
-  --accent-muted: rgba(99, 102, 241, 0.15);
-}
-
-// Light mode
-[data-theme="light"] {
-  --bg-primary: #f0f0eb;
-  --bg-secondary: #e8e8e2;
-  --bg-card: #ffffff;
-  --text-primary: #1a2e2e;
-  --text-secondary: #374151;
-  --text-muted: #6b7280;
-  --border: rgba(0, 0, 0, 0.08);
-  --shadow: rgba(0, 0, 0, 0.08);
-  --accent: #6366f1;
-  --accent-muted: rgba(99, 102, 241, 0.1);
+  --accent: #059669;
+  --accent-muted: rgba(5, 150, 105, 0.15);
 }
