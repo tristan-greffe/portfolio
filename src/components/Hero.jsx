@@ -42,7 +42,7 @@ const Hero = () => {
           animate="visible"
           custom={2}
         >
-          Développeur <span>JavaScript</span> &amp; <span>DevOps</span>
+          Développeur <span>web</span> et ingénieur <span>DevOps</span>
         </motion.p>
 
         <motion.p
