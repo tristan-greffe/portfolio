@@ -1,12 +1,13 @@
 .hero {
+  min-height: calc(100vh - 210px);
   display: flex;
   align-items: center;
-  padding: 3rem 1.5rem 2.5rem;
+  padding: 2rem 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
 
   @include desktop-screen {
-    padding: 3.5rem 4rem 2.5rem;
+    padding: 2rem 4rem;
   }
 }
 
