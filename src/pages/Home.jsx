@@ -2,6 +2,7 @@ import Hero from '../components/Hero'
 import TechBanner from '../components/TechBanner'
 import StorySection from '../components/StorySection'
 import HighlightCards from '../components/HighlightCards'
+import FeatureList from '../components/FeatureList'
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <TechBanner />
       <StorySection />
       <HighlightCards />
+      <FeatureList />
     </>
   )
 }
