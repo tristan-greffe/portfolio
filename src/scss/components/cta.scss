@@ -1,0 +1,48 @@
+.home-cta {
+  padding: 1rem 1.5rem 4rem;
+
+  @include desktop-screen {
+    padding: 1rem 4rem 5rem;
+  }
+}
+
+.home-cta__card {
+  background: #064e3b;
+  border-radius: 1.5rem;
+  padding: 3.5rem 2rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.02em;
+
+    @include desktop-screen {
+      font-size: 2.25rem;
+    }
+  }
+
+  p {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.65);
+    margin-bottom: 2rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+  }
+}
+
+.home-cta__btn {
+  background: #fff !important;
+  color: #064e3b !important;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.9) !important;
+    opacity: 1 !important;
+  }
+}
