@@ -15,6 +15,31 @@
   max-width: 680px;
 }
 
+.hero__ai-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.875rem;
+  border-radius: 2rem;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  font-size: 0.775rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-decoration: none;
+  margin-bottom: 1.25rem;
+  transition: border-color 0.2s, color 0.2s;
+
+  span {
+    color: var(--accent);
+  }
+
+  &:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+}
+
 .hero__greeting {
   font-size: 0.95rem;
   color: var(--text-muted);

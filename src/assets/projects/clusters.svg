@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="600" height="340">
+  <rect width="600" height="340" fill="#f0fdf4"/>
+  <rect x="20" y="20" width="560" height="300" rx="16" fill="#dcfce7" opacity="0.5"/>
+  <!-- Central node -->
+  <circle cx="300" cy="170" r="40" fill="#064e3b"/>
+  <text x="300" y="165" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#6ee7b7">K8S</text>
+  <text x="300" y="179" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#6ee7b7">cluster</text>
+  <!-- Orbiting nodes -->
+  <circle cx="300" cy="70" r="28" fill="#047857"/>
+  <text x="300" y="74" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#fff">Docker</text>
+  <circle cx="420" cy="120" r="28" fill="#059669"/>
+  <text x="420" y="124" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#fff">Helm</text>
+  <circle cx="420" cy="220" r="28" fill="#059669"/>
+  <text x="420" y="224" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#fff">CI/CD</text>
+  <circle cx="300" cy="270" r="28" fill="#047857"/>
+  <text x="300" y="274" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#fff">Terraform</text>
+  <circle cx="180" cy="220" r="28" fill="#059669"/>
+  <text x="180" y="224" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#fff">Kargo</text>
+  <circle cx="180" cy="120" r="28" fill="#059669"/>
+  <text x="180" y="124" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#fff">Cert-Mgr</text>
+  <!-- Connections -->
+  <line x1="300" y1="130" x2="300" y2="98" stroke="#064e3b" stroke-width="2" opacity="0.4"/>
+  <line x1="336" y1="148" x2="394" y2="122" stroke="#064e3b" stroke-width="2" opacity="0.4"/>
+  <line x1="336" y1="192" x2="394" y2="218" stroke="#064e3b" stroke-width="2" opacity="0.4"/>
+  <line x1="300" y1="210" x2="300" y2="242" stroke="#064e3b" stroke-width="2" opacity="0.4"/>
+  <line x1="264" y1="192" x2="206" y2="218" stroke="#064e3b" stroke-width="2" opacity="0.4"/>
+  <line x1="264" y1="148" x2="206" y2="122" stroke="#064e3b" stroke-width="2" opacity="0.4"/>
+  <!-- Label -->
+  <text x="300" y="318" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#064e3b">Kubernetes · Helm · Docker · Terraform</text>
+</svg>

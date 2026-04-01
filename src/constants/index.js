@@ -1,9 +1,9 @@
 import { frontend, backend, creator, web, kalisio, docker, git, javascript, passwise, k8s, helm, teleray, github, worldWideWeb,
   mongodb, nodejs, reactjs, redux, vuejs, feathersjs, feathersQuasarBoilerplate, artillery, terraform,
-  pierrePaulRiquet, theHackingProject, threeWAcademy, liora } from '../assets'
+  pierrePaulRiquet, theHackingProject, threeWAcademy, liora,
+  machineLearning, clusters, nodeXml2json } from '../assets'
 
 export const navLinks = [
-  { path: '/', title: 'Accueil' },
   { path: '/experience', title: 'Expériences' },
   { path: '/education', title: 'Formation' },
   { path: '/portfolio', title: 'Portfolio' },
@@ -200,5 +200,40 @@ export const projects = [
     ],
     image: passwise,
     source_code_link: { link: 'https://github.com/tristan-greffe/passwise', icon: github }
+  },
+  {
+    name: 'Machine Learning',
+    description: 'Ressource éducative sur les fondamentaux du machine learning : deep learning, RAG (Retrieval-Augmented Generation) et fine-tuning de modèles IA.',
+    tags: [
+      { name: 'python', color: 'blue-text-gradient' },
+      { name: 'deep-learning', color: 'green-text-gradient' },
+      { name: 'RAG', color: 'pink-text-gradient' },
+      { name: 'fine-tuning', color: 'yellow-text-gradient' }
+    ],
+    image: machineLearning,
+    source_code_link: { link: 'https://github.com/tristan-greffe/machine-learning', icon: github }
+  },
+  {
+    name: 'Clusters',
+    description: 'Guide d\'infrastructure DevOps couvrant Kubernetes, Helm, Docker et l\'orchestration de containers en production.',
+    tags: [
+      { name: 'kubernetes', color: 'blue-text-gradient' },
+      { name: 'helm', color: 'green-text-gradient' },
+      { name: 'docker', color: 'pink-text-gradient' },
+      { name: 'terraform', color: 'yellow-text-gradient' }
+    ],
+    image: clusters,
+    source_code_link: { link: 'https://github.com/tristan-greffe/clusters', icon: github }
+  },
+  {
+    name: 'node-xml2json',
+    description: 'Bibliothèque Node.js de conversion bidirectionnelle XML ↔ JSON, légère et performante.',
+    tags: [
+      { name: 'nodejs', color: 'blue-text-gradient' },
+      { name: 'xml', color: 'green-text-gradient' },
+      { name: 'json', color: 'pink-text-gradient' }
+    ],
+    image: nodeXml2json,
+    source_code_link: { link: 'https://github.com/tristan-greffe/node-xml2json', icon: github }
   }
 ]
