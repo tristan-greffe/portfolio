@@ -15,25 +15,12 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="hero__content">
-        <motion.a
-          href="https://claude.ai/code"
-          target="_blank"
-          rel="noreferrer"
-          className="hero__ai-badge"
-          variants={fadeUp}
-          initial="hidden"
-          animate="visible"
-          custom={0}
-        >
-          <span>✦</span> Développé avec Claude Code
-        </motion.a>
-
         <motion.p
           className="hero__greeting"
           variants={fadeUp}
           initial="hidden"
           animate="visible"
-          custom={1}
+          custom={0}
         >
           Bonjour, je suis
         </motion.p>
@@ -43,7 +30,7 @@ const Hero = () => {
           variants={fadeUp}
           initial="hidden"
           animate="visible"
-          custom={2}
+          custom={1}
         >
           Tristan <span>Greffe</span>
         </motion.h1>
@@ -53,7 +40,7 @@ const Hero = () => {
           variants={fadeUp}
           initial="hidden"
           animate="visible"
-          custom={3}
+          custom={2}
         >
           Développeur <span>web</span> et ingénieur <span>DevOps</span>
         </motion.p>
@@ -63,7 +50,7 @@ const Hero = () => {
           variants={fadeUp}
           initial="hidden"
           animate="visible"
-          custom={4}
+          custom={3}
         >
           Je conçois et déploie des applications web modernes, du frontend interactif
           jusqu'à l'infrastructure cloud.
@@ -74,7 +61,7 @@ const Hero = () => {
           variants={fadeUp}
           initial="hidden"
           animate="visible"
-          custom={5}
+          custom={4}
         >
           <Link to="/portfolio" className="btn btn--primary">
             Voir mes projets <FiArrowRight size={16} />

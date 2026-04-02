@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import {
   FiUsers, FiSearch, FiZap, FiCheckSquare,
-  FiRefreshCw, FiCode, FiShield, FiBarChart2, FiMessageSquare
+  FiRefreshCw, FiCode, FiShield, FiBarChart2, FiMessageSquare, FiCpu
 } from 'react-icons/fi'
 
 const items = [
@@ -14,6 +14,7 @@ const items = [
   { Icon: FiShield,       label: 'Qualité et couverture de tests' },
   { Icon: FiBarChart2,    label: 'Analyse et vision technique' },
   { Icon: FiMessageSquare, label: 'Communication cross-équipes' },
+  { Icon: FiCpu,          label: 'Développement assisté par l\'IA (Claude Code)', highlight: true },
 ]
 
 const container = {
@@ -54,7 +55,11 @@ const FeatureList = () => {
           {items.map((item) => {
             const { Icon } = item
             return (
-              <motion.div key={item.label} className="feature-list__item" variants={itemVariant}>
+              <motion.div
+                key={item.label}
+                className={`feature-list__item${item.highlight ? ' feature-list__item--highlight' : ''}`}
+                variants={itemVariant}
+              >
                 <div className="feature-list__item-icon">
                   <Icon size={18} />
                 </div>

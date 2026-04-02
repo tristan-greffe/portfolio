@@ -1,4 +1,4 @@
-import { frontend, backend, creator, web, kalisio, docker, git, javascript, passwise, k8s, helm, teleray, github, worldWideWeb,
+import { kalisio, docker, git, javascript, passwise, k8s, helm, teleray, github, worldWideWeb,
   mongodb, nodejs, reactjs, redux, vuejs, feathersjs, feathersQuasarBoilerplate, artillery, terraform,
   pierrePaulRiquet, theHackingProject, threeWAcademy, liora,
   machineLearning, clusters, nodeXml2json } from '../assets'
@@ -9,13 +9,6 @@ export const navLinks = [
   { path: '/portfolio', title: 'Portfolio' },
   { path: '/skills', title: 'Compétences' },
   { path: '/contact', title: 'Contact' },
-]
-
-export const skills = [
-  { title: 'Web Developer', icon: web },
-  { title: 'Backend Developer', icon: backend },
-  { title: 'Frontend Developer', icon: frontend },
-  { title: 'DevOps Engineer', icon: creator }
 ]
 
 export const experiences = [

@@ -1,9 +1,3 @@
-import menu from './menu.svg'
-import close from './close.svg'
-import frontend from './frontend.png'
-import backend from './backend.png'
-import creator from './creator.png'
-import web from './web.png'
 import kalisio from './kalisio.png'
 import github from './github.png'
 import worldWideWeb from './world-wide-web.svg'
@@ -41,12 +35,6 @@ import clusters from './projects/clusters.svg'
 import nodeXml2json from './projects/node-xml2json.svg'
 
 export {
-  menu,
-  close,
-  web,
-  frontend,
-  creator,
-  backend,
   kalisio,
   github,
   worldWideWeb,

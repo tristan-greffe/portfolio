@@ -85,6 +85,21 @@
   }
 }
 
+.feature-list__item--highlight {
+  border-color: var(--accent);
+  background: var(--accent-muted);
+
+  span {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .feature-list__item-icon {
+    background: var(--accent);
+    color: #fff;
+  }
+}
+
 .feature-list__item-icon {
   width: 2.25rem;
   height: 2.25rem;
