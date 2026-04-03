@@ -11,8 +11,28 @@
   }
 }
 
+.hero__layout {
+  display: grid;
+  width: 100%;
+  gap: 3rem;
+  align-items: center;
+
+  @include desktop-screen {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .hero__content {
-  max-width: 680px;
+  max-width: 580px;
+}
+
+.hero__visual-col {
+  display: none;
+
+  @include desktop-screen {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .hero__greeting {
@@ -32,7 +52,7 @@
   letter-spacing: -0.03em;
 
   @include desktop-screen {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
 
   span {
@@ -47,7 +67,7 @@
   margin-bottom: 1.5rem;
 
   @include desktop-screen {
-    font-size: 1.4rem;
+    font-size: 1.35rem;
   }
 
   span {
@@ -59,16 +79,96 @@
   font-size: 1rem;
   line-height: 1.75;
   color: var(--text-muted);
-  max-width: 520px;
+  max-width: 480px;
   margin-bottom: 2.5rem;
-
-  @include desktop-screen {
-    font-size: 1.05rem;
-  }
 }
 
 .hero__actions {
   display: flex;
   flex-wrap: wrap;
   gap: 0.875rem;
+}
+
+// Hero visual (right column)
+.hero-visual {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 320px;
+  padding: 2rem;
+}
+
+.hero-visual__dots {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, var(--border) 1.5px, transparent 1.5px);
+  background-size: 22px 22px;
+  border-radius: 1.5rem;
+  pointer-events: none;
+}
+
+.hero-visual__step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-visual__card {
+  width: 100%;
+  border-radius: 1rem;
+  padding: 1.1rem 1.25rem;
+  border: 1px solid rgba(5, 150, 105, 0.2);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+.hero-visual__card-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #065f46;
+  margin-bottom: 0.75rem;
+}
+
+.hero-visual__card-icons {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+
+  img {
+    width: 2rem;
+    height: 2rem;
+    object-fit: contain;
+    border-radius: 0.375rem;
+    padding: 0.25rem;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(5, 150, 105, 0.15);
+  }
+}
+
+.hero-visual__connector {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.25rem 0;
+  gap: 0.25rem;
+
+  span {
+    width: 2px;
+    height: 1.25rem;
+    background: linear-gradient(to bottom, #059669, #6ee7b7);
+    border-radius: 2px;
+  }
+}
+
+.hero-visual__arrow-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #059669;
 }
