@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser'
 import { toast, ToastContainer } from 'react-toastify'
 import { FiMail, FiSend, FiGithub, FiLinkedin } from 'react-icons/fi'
 import 'react-toastify/dist/ReactToastify.css'
+import PageHero from '../components/PageHero'
 
 const SOCIAL_LINKS = [
   {
@@ -53,93 +54,65 @@ const Contact = () => {
   }
 
   return (
-    <section id="contact">
-      <motion.div
-        className="section-header"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-      >
-        <p>Une question, un projet ?</p>
-        <h2>Contact.</h2>
-      </motion.div>
+    <>
+      <PageHero
+        badge="Travaillons ensemble"
+        title="Prenons"
+        highlight="contact"
+        description="Un projet, une question ou simplement envie d'échanger ? Je suis disponible."
+      />
+      <section id="contact">
+        <div className="contact-layout">
+          <motion.div
+            className="contact-info"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <p className="contact-info__text">
+              Je suis disponible pour des opportunités freelance, des collaborations
+              ou simplement pour échanger autour d'un projet.
+            </p>
+            <div className="contact-info__links">
+              {SOCIAL_LINKS.map((s) => (
+                <a key={s.label} href={s.href} target="_blank" rel="noreferrer" className="contact-info__link">
+                  <s.icon size={18} />
+                  <span>{s.label}</span>
+                </a>
+              ))}
+            </div>
+          </motion.div>
 
-      <div className="contact-layout">
-        <motion.div
-          className="contact-info"
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <p className="contact-info__text">
-            Je suis disponible pour des opportunités freelance, des collaborations
-            ou simplement pour échanger autour d'un projet.
-          </p>
-          <div className="contact-info__links">
-            {SOCIAL_LINKS.map((s) => (
-              <a key={s.label} href={s.href} target="_blank" rel="noreferrer" className="contact-info__link">
-                <s.icon size={18} />
-                <span>{s.label}</span>
-              </a>
-            ))}
-          </div>
-        </motion.div>
-
-        <motion.form
-          ref={formRef}
-          className="contact-form"
-          onSubmit={handleSubmit}
-          initial={{ opacity: 0, x: 30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
-        >
-          <div className="contact-form__field">
-            <label htmlFor="cf-name">Nom</label>
-            <input
-              id="cf-name"
-              type="text"
-              name="name"
-              value={form.name}
-              onChange={handleChange}
-              placeholder="Votre nom"
-              required
-            />
-          </div>
-          <div className="contact-form__field">
-            <label htmlFor="cf-email">Email</label>
-            <input
-              id="cf-email"
-              type="email"
-              name="email"
-              value={form.email}
-              onChange={handleChange}
-              placeholder="votre@email.com"
-              required
-            />
-          </div>
-          <div className="contact-form__field">
-            <label htmlFor="cf-message">Message</label>
-            <textarea
-              id="cf-message"
-              name="message"
-              rows={6}
-              value={form.message}
-              onChange={handleChange}
-              placeholder="Votre message..."
-              required
-            />
-          </div>
-          <button type="submit" className="btn btn--primary" disabled={loading}>
-            {loading ? 'Envoi en cours…' : <><FiSend size={15} /> Envoyer</>}
-          </button>
-        </motion.form>
-      </div>
-
+          <motion.form
+            ref={formRef}
+            className="contact-form"
+            onSubmit={handleSubmit}
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+          >
+            <div className="contact-form__field">
+              <label htmlFor="cf-name">Nom</label>
+              <input id="cf-name" type="text" name="name" value={form.name} onChange={handleChange} placeholder="Votre nom" required />
+            </div>
+            <div className="contact-form__field">
+              <label htmlFor="cf-email">Email</label>
+              <input id="cf-email" type="email" name="email" value={form.email} onChange={handleChange} placeholder="votre@email.com" required />
+            </div>
+            <div className="contact-form__field">
+              <label htmlFor="cf-message">Message</label>
+              <textarea id="cf-message" name="message" rows={6} value={form.message} onChange={handleChange} placeholder="Votre message..." required />
+            </div>
+            <button type="submit" className="btn btn--primary" disabled={loading}>
+              {loading ? 'Envoi en cours…' : <><FiSend size={15} /> Envoyer</>}
+            </button>
+          </motion.form>
+        </div>
+      </section>
       <ToastContainer position="bottom-center" theme="colored" autoClose={5000} />
-    </section>
+    </>
   )
 }
 

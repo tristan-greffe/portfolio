@@ -1,0 +1,53 @@
+.page-hero {
+  padding: 3rem 1.5rem 2rem;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @include desktop-screen {
+    padding: 4rem 4rem 2.5rem;
+  }
+}
+
+.page-hero__inner {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.page-hero__badge {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  border-radius: 2rem;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+  margin-bottom: 1.5rem;
+}
+
+.page-hero h1 {
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: var(--text-primary);
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 1rem;
+
+  @include desktop-screen {
+    font-size: 3.25rem;
+  }
+
+  span {
+    color: var(--accent);
+  }
+}
+
+.page-hero__desc {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+  max-width: 520px;
+  margin: 0 auto;
+}

@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { FiArrowRight } from 'react-icons/fi'
 import { projects } from '../constants'
+import PageHero from '../components/PageHero'
 
 const ProjectCard = ({ project, index }) => (
   <motion.div
@@ -33,24 +34,21 @@ const ProjectCard = ({ project, index }) => (
 
 const Portfolio = () => {
   return (
-    <section id="portfolio">
-      <motion.div
-        className="section-header"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-      >
-        <p>Ce que j'ai réalisé</p>
-        <h2>Projets.</h2>
-      </motion.div>
-
-      <div className="pf-grid">
-        {projects.map((project, index) => (
-          <ProjectCard key={index} project={project} index={index} />
-        ))}
-      </div>
-    </section>
+    <>
+      <PageHero
+        badge="Mes réalisations"
+        title="Projets"
+        highlight="open source"
+        description="Applications web, outils DevOps, ressources éducatives — des projets concrets reflétant mon évolution."
+      />
+      <section id="portfolio">
+        <div className="pf-grid">
+          {projects.map((project, index) => (
+            <ProjectCard key={index} project={project} index={index} />
+          ))}
+        </div>
+      </section>
+    </>
   )
 }
 

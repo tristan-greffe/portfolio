@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { education } from '../constants'
+import PageHero from '../components/PageHero'
 
 const EducationCard = ({ item, index }) => (
   <motion.div
@@ -31,24 +32,21 @@ const EducationCard = ({ item, index }) => (
 
 const Education = () => {
   return (
-    <section id="education">
-      <motion.div
-        className="section-header"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-      >
-        <p>Mon parcours académique</p>
-        <h2>Formation.</h2>
-      </motion.div>
-
-      <div className="edu-timeline">
-        {education.map((item, index) => (
-          <EducationCard key={index} item={item} index={index} />
-        ))}
-      </div>
-    </section>
+    <>
+      <PageHero
+        badge="Ma formation"
+        title="Parcours"
+        highlight="académique"
+        description="De la classe prépa aux bootcamps jusqu'au master, un parcours pluridisciplinaire entre développement web et cloud."
+      />
+      <section id="education">
+        <div className="edu-timeline">
+          {education.map((item, index) => (
+            <EducationCard key={index} item={item} index={index} />
+          ))}
+        </div>
+      </section>
+    </>
   )
 }
 

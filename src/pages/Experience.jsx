@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { experiences } from '../constants'
+import PageHero from '../components/PageHero'
 
 const ExperienceCard = ({ experience, index }) => (
   <motion.div
@@ -35,24 +36,21 @@ const ExperienceCard = ({ experience, index }) => (
 
 const Experience = () => {
   return (
-    <section id="experience">
-      <motion.div
-        className="section-header"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-      >
-        <p>Mon parcours professionnel</p>
-        <h2>Expériences.</h2>
-      </motion.div>
-
-      <div className="exp-timeline">
-        {experiences.map((exp, index) => (
-          <ExperienceCard key={index} experience={exp} index={index} />
-        ))}
-      </div>
-    </section>
+    <>
+      <PageHero
+        badge="Mon parcours professionnel"
+        title="Expériences"
+        highlight="& missions"
+        description="Développeur JavaScript et ingénieur DevOps depuis 2023, j'ai évolué sur des projets web complexes au sein de Kalisio."
+      />
+      <section id="experience">
+        <div className="exp-timeline">
+          {experiences.map((exp, index) => (
+            <ExperienceCard key={index} experience={exp} index={index} />
+          ))}
+        </div>
+      </section>
+    </>
   )
 }
 
