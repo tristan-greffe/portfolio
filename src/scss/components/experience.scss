@@ -1,77 +1,49 @@
 .exp-timeline {
-  margin-top: 3.5rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
-  position: relative;
-
-  @include desktop-screen {
-    padding-left: 2.5rem;
-
-    &::before {
-      content: '';
-      position: absolute;
-      left: 0.3rem;
-      top: 0.75rem;
-      bottom: 0.75rem;
-      width: 2px;
-      background: linear-gradient(to bottom, var(--accent), transparent);
-      border-radius: 2px;
-    }
-  }
+  gap: 1.5rem;
 }
 
 .exp-card {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   gap: 1.25rem;
   padding: 1.5rem;
-  border-radius: 0.875rem;
+  border-radius: 1rem;
   border: 1px solid var(--border);
+  border-top: 3px solid var(--accent);
   background: var(--bg-card);
-  position: relative;
-  transition: border-color 0.25s, box-shadow 0.25s;
+  box-shadow: 0 2px 12px var(--shadow);
+  transition: box-shadow 0.25s, transform 0.25s;
 
   &:hover {
-    border-color: var(--accent);
-    box-shadow: 0 4px 20px var(--shadow);
-  }
-
-  @include desktop-screen {
-    &::before {
-      content: '';
-      position: absolute;
-      left: -2.625rem;
-      top: 1.875rem;
-      width: 0.625rem;
-      height: 0.625rem;
-      border-radius: 50%;
-      background: var(--accent);
-      box-shadow: 0 0 0 3px var(--bg-primary);
-    }
+    box-shadow: 0 6px 24px var(--shadow);
+    transform: translateY(-2px);
   }
 }
 
 .exp-card__icon {
   flex-shrink: 0;
-  width: 2.75rem;
-  height: 2.75rem;
-  border-radius: 0.625rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
   border: 1px solid var(--border);
   background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  align-self: start;
 
   img {
-    width: 68%;
-    height: 68%;
+    width: 65%;
+    height: 65%;
     object-fit: contain;
   }
 }
 
 .exp-card__body {
-  flex: 1;
   min-width: 0;
 }
 
@@ -82,30 +54,32 @@
   align-items: flex-start;
   gap: 0.5rem;
   margin-bottom: 1rem;
+}
 
-  h3 {
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--text-primary);
-    margin-bottom: 0.2rem;
-  }
+.exp-card__header h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.2rem;
 }
 
 .exp-card__company {
-  font-size: 0.875rem;
+  font-size: 0.85rem;
   color: var(--accent);
   font-weight: 600;
 }
 
 .exp-card__date {
-  font-size: 0.775rem;
+  font-size: 0.75rem;
   color: var(--text-muted);
   font-weight: 500;
   white-space: nowrap;
-  padding: 0.2rem 0.7rem;
+  padding: 0.25rem 0.75rem;
   border-radius: 2rem;
   border: 1px solid var(--border);
   background: var(--bg-secondary);
+  flex-shrink: 0;
+  align-self: flex-start;
 }
 
 .exp-card__points {
@@ -115,6 +89,8 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  border-top: 1px solid var(--border);
+  padding-top: 0.875rem;
 
   li {
     font-size: 0.875rem;
@@ -129,7 +105,7 @@
       left: 0;
       color: var(--accent);
       font-size: 0.7rem;
-      top: 0.2em;
+      top: 0.25em;
     }
   }
 }
