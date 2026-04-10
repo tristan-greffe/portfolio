@@ -20,7 +20,7 @@ const SOCIAL_LINKS = [
   {
     icon: FiLinkedin,
     label: 'LinkedIn',
-    href: '#'
+    href: 'https://www.linkedin.com/in/tristan-greffe'
   },
 ]
 

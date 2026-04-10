@@ -25,7 +25,7 @@ const Footer = () => {
           <a href="https://github.com/tristan-greffe" target="_blank" rel="noreferrer" aria-label="GitHub">
             <FiGithub size={20} />
           </a>
-          <a href="#" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+          <a href="https://www.linkedin.com/in/tristan-greffe" target="_blank" rel="noreferrer" aria-label="LinkedIn">
             <FiLinkedin size={20} />
           </a>
           <a href="mailto:greffe.tristan.fr@gmail.com" aria-label="Email">
