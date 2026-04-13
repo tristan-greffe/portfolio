@@ -30,9 +30,8 @@ import liora from './education/liora.jpg'
 import feathersQuasarBoilerplate from './projects/feathers-quasar-boilerplate.png'
 import passwise from './projects/passwise.png'
 import teleray from './projects/teleray.png'
-import machineLearning from './projects/machine-learning.svg'
-import clusters from './projects/clusters.svg'
-import nodeXml2json from './projects/node-xml2json.svg'
+import kalisioKnowledge from './projects/kalisio-knowledge.svg'
+import kalisioprint from './projects/kalisio-print.svg'
 
 export {
   kalisio,
@@ -61,7 +60,6 @@ export {
   feathersQuasarBoilerplate,
   passwise,
   teleray,
-  machineLearning,
-  clusters,
-  nodeXml2json
+  kalisioKnowledge,
+  kalisioprint
 }

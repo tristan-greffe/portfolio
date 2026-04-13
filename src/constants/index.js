@@ -1,7 +1,7 @@
 import { kalisio, docker, git, javascript, passwise, k8s, helm, teleray, github, worldWideWeb,
   mongodb, nodejs, reactjs, redux, vuejs, feathersjs, feathersQuasarBoilerplate, artillery, terraform,
   pierrePaulRiquet, theHackingProject, threeWAcademy, liora,
-  machineLearning, clusters, nodeXml2json } from '../assets'
+  kalisioKnowledge, kalisioprint } from '../assets'
 
 export const navLinks = [
   { path: '/experience', title: 'Expériences' },
@@ -63,28 +63,12 @@ export const experiences = [
 
 export const education = [
   {
-    degree: 'Baccalauréat STI2D',
-    school: 'Lycée Pierre Paul Riquet',
-    location: 'St Orens de Gameville (31), France',
-    date: '2016',
-    icon: pierrePaulRiquet,
-    description: null
-  },
-  {
-    degree: 'Classe Préparatoire aux Grandes Écoles — TSI',
-    school: 'Lycée Pierre Paul Riquet',
-    location: 'St Orens de Gameville (31), France',
-    date: 'Septembre 2016 — Juin 2018',
-    icon: pierrePaulRiquet,
-    description: 'Filière Technologie et Sciences Industrielles (TSI)'
-  },
-  {
-    degree: 'Bootcamp Développeur Web Full Stack',
-    school: 'The Hacking Project',
-    location: 'Bordeaux (33), France',
-    date: 'Avril 2022 — Août 2022',
-    icon: theHackingProject,
-    description: null
+    degree: 'Master 1 — Administration Cloud',
+    school: 'Liora',
+    location: 'Toulouse (31), France',
+    date: 'Janvier 2024 — Juin 2025',
+    icon: liora,
+    description: 'Formation en alternance. Architecture et intégration de systèmes d\'information complexes, supervision, monitoring et cybersécurité. Mission TMA Carto SIRSE pour l\'ASNR — système national de surveillance de la radioactivité (Teleray).'
   },
   {
     degree: 'Titre RNCP Niveau 5 — Développeur Web Full Stack',
@@ -95,11 +79,27 @@ export const education = [
     description: 'Formation en alternance'
   },
   {
-    degree: 'Master 1 — Administration Cloud',
-    school: 'Liora',
-    location: 'Toulouse (31), France',
-    date: 'Janvier 2024 — Juin 2025',
-    icon: liora,
+    degree: 'Bootcamp Développeur Web Full Stack',
+    school: 'The Hacking Project',
+    location: 'Bordeaux (33), France',
+    date: 'Avril 2022 — Août 2022',
+    icon: theHackingProject,
+    description: null
+  },
+  {
+    degree: 'Classe Préparatoire aux Grandes Écoles — TSI',
+    school: 'Lycée Pierre Paul Riquet',
+    location: 'St Orens de Gameville (31), France',
+    date: 'Septembre 2016 — Juin 2018',
+    icon: pierrePaulRiquet,
+    description: null
+  },
+  {
+    degree: 'Baccalauréat STI2D',
+    school: 'Lycée Pierre Paul Riquet',
+    location: 'St Orens de Gameville (31), France',
+    date: '2016',
+    icon: pierrePaulRiquet,
     description: null
   }
 ]
@@ -161,8 +161,8 @@ export const technologies = [
 
 export const projects = [
   {
-    name: 'IRSN - Teleray',
-    description: 'National radioactivity monitoring and alert network.',
+    name: 'ASNR — Teleray (TMA Carto SIRSE)',
+    description: 'Réseau national de surveillance de la radioactivité pour l\'ASNR. Système temps-réel de monitoring, alertes et visualisation cartographique des données radiologiques sur l\'ensemble du territoire français.',
     tags: [
       { name: 'quasar', color: 'blue-text-gradient' },
       { name: 'feathers', color: 'green-text-gradient' },
@@ -195,38 +195,26 @@ export const projects = [
     source_code_link: { link: 'https://github.com/tristan-greffe/passwise', icon: github }
   },
   {
-    name: 'Machine Learning',
-    description: 'Ressource éducative sur les fondamentaux du machine learning : deep learning, RAG (Retrieval-Augmented Generation) et fine-tuning de modèles IA.',
-    tags: [
-      { name: 'python', color: 'blue-text-gradient' },
-      { name: 'deep-learning', color: 'green-text-gradient' },
-      { name: 'RAG', color: 'pink-text-gradient' },
-      { name: 'fine-tuning', color: 'yellow-text-gradient' }
-    ],
-    image: machineLearning,
-    source_code_link: { link: 'https://github.com/tristan-greffe/machine-learning', icon: github }
-  },
-  {
-    name: 'Clusters',
-    description: 'Guide d\'infrastructure DevOps couvrant Kubernetes, Helm, Docker et l\'orchestration de containers en production.',
-    tags: [
-      { name: 'kubernetes', color: 'blue-text-gradient' },
-      { name: 'helm', color: 'green-text-gradient' },
-      { name: 'docker', color: 'pink-text-gradient' },
-      { name: 'terraform', color: 'yellow-text-gradient' }
-    ],
-    image: clusters,
-    source_code_link: { link: 'https://github.com/tristan-greffe/clusters', icon: github }
-  },
-  {
-    name: 'node-xml2json',
-    description: 'Bibliothèque Node.js de conversion bidirectionnelle XML ↔ JSON, légère et performante.',
+    name: 'Kalisio Print',
+    description: 'Service d\'impression et génération PDF haute qualité pour les applications Kalisio, intégrant pdfme/PDFLib et le service Kapture pour la capture cartographique.',
     tags: [
       { name: 'nodejs', color: 'blue-text-gradient' },
-      { name: 'xml', color: 'green-text-gradient' },
-      { name: 'json', color: 'pink-text-gradient' }
+      { name: 'feathers', color: 'green-text-gradient' },
+      { name: 'pdfme', color: 'pink-text-gradient' },
+      { name: 'docker', color: 'yellow-text-gradient' }
     ],
-    image: nodeXml2json,
-    source_code_link: { link: 'https://github.com/tristan-greffe/node-xml2json', icon: github }
+    image: kalisioprint,
+    source_code_link: { link: 'https://github.com/kalisio/print', icon: github }
+  },
+  {
+    name: 'Kalisio Knowledge',
+    description: 'Base de connaissances collaborative de l\'écosystème Kalisio — documentation des composants, guides d\'architecture et bonnes pratiques de développement.',
+    tags: [
+      { name: 'vitepress', color: 'blue-text-gradient' },
+      { name: 'javascript', color: 'green-text-gradient' },
+      { name: 'kdk', color: 'pink-text-gradient' }
+    ],
+    image: kalisioKnowledge,
+    source_code_link: { link: 'https://github.com/kalisio/knowledge', icon: github }
   }
 ]
