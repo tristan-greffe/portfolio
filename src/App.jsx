@@ -5,7 +5,6 @@ import Experience from './pages/Experience'
 import Education from './pages/Education'
 import Portfolio from './pages/Portfolio'
 import ProjectDetail from './pages/ProjectDetail'
-import Skills from './pages/Skills'
 import Contact from './pages/Contact'
 
 const App = () => {
@@ -18,7 +17,6 @@ const App = () => {
           <Route path="/education" element={<Education />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/portfolio/:id" element={<ProjectDetail />} />
-          <Route path="/skills" element={<Skills />} />
           <Route path="/contact" element={<Contact />} />
         </Route>
       </Routes>

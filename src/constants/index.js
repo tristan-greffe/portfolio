@@ -7,7 +7,6 @@ export const navLinks = [
   { path: '/experience', title: 'Expériences' },
   { path: '/education', title: 'Formation' },
   { path: '/portfolio', title: 'Portfolio' },
-  { path: '/skills', title: 'Compétences' },
   { path: '/contact', title: 'Contact' },
 ]
 
