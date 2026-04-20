@@ -1,102 +1,48 @@
-
 <div align="center">
 
   ![Project Banner](./readme_assets/readme_banner.png)
 
-  <p>My awesome personal portfolio created with React.js</p>
+  <p>Personal portfolio - Web Developer & DevOps Engineer</p>
 
   <p>
-    <a href="https://github.com/tristan-greffe/portfolio">
-      <img src="https://awesome.re/badge.svg" alt="awesome" />
-    </a>
     <a href="https://github.com/tristan-greffe/portfolio/stargazers">
       <img src="https://img.shields.io/github/stars/tristan-greffe/portfolio" alt="stars" />
     </a>
     <a href="https://github.com/tristan-greffe/portfolio/blob/master/LICENSE">
       <img src="https://img.shields.io/github/license/tristan-greffe/portfolio.svg" alt="license" />
     </a>
+    <a href="https://tristan-greffe.github.io/portfolio">
+      <img src="https://img.shields.io/badge/deployed-GitHub%20Pages-059669" alt="deployed" />
+    </a>
   </p>
 
- <h4>
-    <a href="https://portfolio.tristan-greffe.xyz/">View Demo</a>
+  <h4>
+    <a href="https://tristan-greffe.github.io/portfolio">View Demo</a>
     <span> · </span>
     <a href="https://github.com/tristan-greffe/portfolio/issues/">Report Bug</a>
-    <span> · </span>
-    <a href="https://github.com/tristan-greffe/portfolio/issues/">Request Feature</a>
   </h4>
 
 </div>
 
-## About the Project
+---
 
-<div align="center">
-  <img src="./readme_assets/portfolio-project.png" height="auto" width="90%"/>
-</div>
+## Tech Stack
 
-### Folder Structure
-
-Here is the folder structure of Portfolio.
-```bash
-|- public/
-|- src/
-  |-- assets/
-  |-- components/
-  |-- constants/
-  |-- scss/
-  |-- App.jsx
-  |-- index.js
-|- package.json
-```
-
-### Tech Stack
-
-[![My Skills](https://skillicons.dev/icons?i=js,react,scss,yarn)](https://skillicons.dev)
+[![React](https://img.shields.io/badge/React-18-61DAFB?logo=react)](https://react.dev)
+[![React Router](https://img.shields.io/badge/React_Router-v6-CA4245?logo=react-router)](https://reactrouter.com)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-10-0055FF?logo=framer)](https://www.framer.com/motion)
+[![SCSS](https://img.shields.io/badge/SCSS-CC6699?logo=sass)](https://sass-lang.com)
+[![EmailJS](https://img.shields.io/badge/EmailJS-orange)](https://www.emailjs.com)
 
 ## Getting Started
 
-#### Step 1:
-
-At the main folder execute the following command in console to get the required dependencies:
-
 ```bash
-  npm install
+npm install
+npm start        # dev server → http://localhost:3000
+npm run build    # production build
+npm run deploy   # build + deploy to GitHub Pages
 ```
-or
-```bash
-  yarn install
-```
-
-#### Step 2:
-
-At the main folder execute the following command in console to run the development server:
-
-```bash
-  npm run dev
-```
-or
-```bash
-  yarn dev
-```
-
-## Contributing
-
-Contributions are always welcome!
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
-
-1. Fork it! 🤙
-
-2. Create your feature branch: `git checkout -b my-new-feature`
-
-3. Commit your changes: `git commit -m "Add some feature"`
-
-4. Push to the branch: `git push origin my-new-feature`
-
-5. Submit a pull request 👍
 
 ## License
 
-This project is licensed under the MIT License - see the [license file](./LICENSE) for details
+MIT - see [LICENSE](./LICENSE)
