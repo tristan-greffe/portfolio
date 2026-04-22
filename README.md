@@ -24,7 +24,9 @@
 
 </div>
 
----
+<div align="center">
+  <img src="./readme_assets/portfolio-project.png" height="auto" width="90%"/>
+</div>
 
 ## Tech Stack
 
