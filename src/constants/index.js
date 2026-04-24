@@ -1,7 +1,7 @@
-import { kalisio, docker, git, javascript, passwise, k8s, helm, teleray, github, worldWideWeb,
-  mongodb, nodejs, reactjs, redux, vuejs, feathersjs, feathersQuasarBoilerplate, artillery, terraform,
+import { kalisio, docker, git, javascript, k8s, helm, teleray, github, worldWideWeb,
+  mongodb, nodejs, reactjs, redux, vuejs, feathersjs, artillery, terraform,
   pierrePaulRiquet, theHackingProject, threeWAcademy, liora,
-  kalisioKnowledge, kalisioprint } from '../assets'
+  kalisioKnowledge } from '../assets'
 
 export const navLinks = [
   { path: '/experience', title: 'Expériences' },
@@ -12,70 +12,65 @@ export const navLinks = [
 
 export const experiences = [
   {
-    title: 'JavaScript Developer',
+    title: 'Ingénieur Full Stack & DevOps',
     company_name: 'Kalisio',
     icon: kalisio,
-    iconBg: '#fff',
-    date: 'March 2023 - December 2023',
+    contract: 'CDI',
+    date: 'Juillet 2025 — Présent',
+    skills: ['Python', 'Javascript', 'Bash', 'Node.js', 'Feathers.js', 'K8s', 'GIS', 'Vue.js', 'Quasar',],
     points: [
-      'Explore the Kalisio ecosystem using the QuasarJS and FeathersJS frameworks.',
-      'Conversion of Kalisio Web Applications into Progressive Web Apps (PWA)',
-      'Development of "feathers-webpush" library to facilitate the integration of the Web Push protocol in FeathersJS applications.',
-      'Implemented comprehensive updates to E2E testing protocols leveraging Puppeteer',
-      'Optimization of Account Verification Process by transitioning from long to short tokens'
+      'Conception et lead technique de Kalisio Knowledge - système RAG + Git Intelligence + Knowledge Graph indexant la totalité de la codebase, des commits et de la documentation Kalisio, exposé via MCP pour agents de code IA',
+      'Évolutions et suivi de TELERAY (ASNR) : nouvelles fonctionnalités, conformité réglementaire, ouverture de l\'API publique et maintien en condition opérationnelle.',
+      'Migration de l\'analyse qualité continue Code Climate → SonarQube : amélioration de la maintenabilité et intégration CI/CD.',
+      'Participation active aux produits internes Kalisio : R&D, contribution au développement, gestion de produit et réflexion sur les orientations techniques.',
+      'Maintien & amélioration des infrastructures cloud'
     ]
   },
   {
-    title: 'DevOps Engineer',
+    title: 'Ingénieur DevOps',
     company_name: 'Kalisio',
     icon: kalisio,
-    iconBg: '#fff',
-    date: 'January 2024 - December 2025',
+    contract: 'Alternance',
+    date: 'Janvier 2024 — Juin 2025',
+    featured: 'ASNR — Teleray',
+    skills: ['Kubernetes', 'Helm', 'Docker', 'Terraform', 'GitHub Actions', 'GitLab CI/CD', 'Bash', 'Artillery', 'GIS'],
     points: [
-      'Migrated Continuous Integration (CI) from Travis CI to GitHub Actions',
-      'E2E test automation: Configured a cronjob, on the staging cluster, to execute E2E tests.',
-      'Design and development of the TELERAY application (national radioactivity monitoring and alert network) for ASNR: business specification, data ingestion, deployment, load testing, development, and testing.'
+      'Dans le cadre de la TMA Carto SIRSE (ASNR) : développement, déploiement en production et livraison continue de TELERAY (application de surveillance nationale de la radioactivité)',
+      'Campagnes de tests de charge (Artillery) sur infrastructure k8s : identification et résolution de goulots d\'étranglement - tuning WiredTiger MongoDB, recalibration des probes K8s, gestion fine des ressources containers etc. Rapports d\'analyse et recommandations d\'architecture.',
+      'Conception, développement et déploiement de jobs ETL géospatiaux',
+      'Migration CI/CD : Travis CI → GitHub Actions, automatisation des tests E2E en cronjob k8s et déploiement d\'applications en production',
     ]
   },
   {
-    title: 'JavaScript Developer',
+    title: 'Développeur Web Full Stack',
     company_name: 'Kalisio',
     icon: kalisio,
-    iconBg: '#fff',
-    date: 'January 2025 - December 2025',
+    contract: 'Alternance',
+    date: 'Septembre 2022 — Décembre 2023',
+    skills: ['JavaScript', 'Vue.js', 'Quasar', 'Feathers.js', 'Node.js', 'MongoDB', 'PWA'],
     points: [
-      'Migrated code quality analysis from Code Climate to SonarQube, improving maintainability and CI/CD integration.',
-      'Enhanced the TELERAY application: implemented access control based on user profiles and developed a public API for data exposure geospatial data using OGC API Features standards via the KFS service (https://github.com/kalisio/kfs)',
-      'Integrated advanced PDF generation with pdfme / PDFLib and Kapture service (https://github.com/kalisio/kapture) for map printing',
-      'Development & deployment of the kalisio Print (https://github.com/kalisio/print)',
+      'Contribution aux applications cartographiques temps-réel de Kalisio',
+      'Création de feathers-webpush (librairie open source)',
+      'Tests E2E (Puppeteer)',
+      'Mise en place de l\'analyse de qualité continue (Code Climate)'
     ]
-  },
-  {
-    title: 'JavaScript Developer',
-    company_name: 'Kalisio',
-    icon: kalisio,
-    iconBg: '#fff',
-    date: 'January 2026 - December 2026',
-    points: []
   },
 ]
 
 export const education = [
   {
-    degree: 'Master 1 — Administration Cloud',
-    school: 'Liora',
+    degree: 'Master 1 - Administration Cloud',
+    school: 'Liora - alternance',
     location: 'Toulouse (31), France',
     date: 'Janvier 2024 — Juin 2025',
-    icon: liora,
-    description: 'Formation en alternance. Architecture et intégration de systèmes d\'information complexes, supervision, monitoring et cybersécurité. Mission TMA Carto SIRSE pour l\'ASNR — système national de surveillance de la radioactivité (Teleray).'
+    icon: liora
   },
   {
-    degree: 'Titre RNCP Niveau 5 — Développeur Web Full Stack',
-    school: '3W Academy',
+    degree: 'Titre RNCP Niveau 5 - Développeur Web Full Stack',
+    school: '3W Academy - alternance',
     location: 'Toulouse (31), France',
     date: 'Septembre 2022 — Décembre 2023',
-    icon: threeWAcademy,
-    description: 'Formation en alternance'
+    icon: threeWAcademy
   },
   {
     degree: 'Bootcamp Développeur Web Full Stack',
@@ -172,48 +167,15 @@ export const projects = [
     source_code_link: { link: 'https://teleray.irsn.fr/', icon: worldWideWeb }
   },
   {
-    name: 'Feathers Quasar Boilerplate',
-    description: 'Powerful fusion of Feathers.js and Quasar. It provides a solid foundation for developing full-featured web applications with real-time functionality & full authentication.',
-    tags: [
-      { name: 'quasar', color: 'blue-text-gradient' },
-      { name: 'feathers', color: 'green-text-gradient' },
-      { name: 'mongodb', color: 'pink-text-gradient' }
-    ],
-    image: feathersQuasarBoilerplate,
-    source_code_link: { link: 'https://github.com/tristan-greffe/feathers-quasar-boilerplate', icon: github }
-  },
-  {
-    name: 'Passwise',
-    description: 'An open-source password manager, designed as a progressive web application (PWA).',
-    tags: [
-      { name: 'react', color: 'blue-text-gradient' },
-      { name: 'feathers', color: 'green-text-gradient' },
-      { name: 'mongodb', color: 'pink-text-gradient' }
-    ],
-    image: passwise,
-    source_code_link: { link: 'https://github.com/tristan-greffe/passwise', icon: github }
-  },
-  {
-    name: 'Kalisio Print',
-    description: 'Service d\'impression et génération PDF haute qualité pour les applications Kalisio, intégrant pdfme/PDFLib et le service Kapture pour la capture cartographique.',
-    tags: [
-      { name: 'nodejs', color: 'blue-text-gradient' },
-      { name: 'feathers', color: 'green-text-gradient' },
-      { name: 'pdfme', color: 'pink-text-gradient' },
-      { name: 'docker', color: 'yellow-text-gradient' }
-    ],
-    image: kalisioprint,
-    source_code_link: { link: 'https://github.com/kalisio/print', icon: github }
-  },
-  {
     name: 'Kalisio Knowledge',
-    description: 'Base de connaissances collaborative de l\'écosystème Kalisio — documentation des composants, guides d\'architecture et bonnes pratiques de développement.',
+    description: 'Système RAG + Git Intelligence + Knowledge Graph exposant toute la codebase, commits et docs Kalisio via MCP pour agents de code IA. Architecture Python/LangChain, management produit et encadrement d\'un stagiaire.',
     tags: [
-      { name: 'vitepress', color: 'blue-text-gradient' },
-      { name: 'javascript', color: 'green-text-gradient' },
-      { name: 'kdk', color: 'pink-text-gradient' }
+      { name: 'python', color: 'blue-text-gradient' },
+      { name: 'RAG', color: 'green-text-gradient' },
+      { name: 'MCP', color: 'pink-text-gradient' },
+      { name: 'LangChain', color: 'yellow-text-gradient' }
     ],
     image: kalisioKnowledge,
     source_code_link: { link: 'https://github.com/kalisio/knowledge', icon: github }
-  }
+  },
 ]

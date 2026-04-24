@@ -27,11 +27,8 @@ import threeWAcademy from './education/3w-academy.jpeg'
 import liora from './education/liora.jpg'
 
 // Project images
-import feathersQuasarBoilerplate from './projects/feathers-quasar-boilerplate.png'
-import passwise from './projects/passwise.png'
 import teleray from './projects/teleray.png'
 import kalisioKnowledge from './projects/kalisio-knowledge.svg'
-import kalisioprint from './projects/kalisio-print.svg'
 
 export {
   kalisio,
@@ -57,9 +54,6 @@ export {
   theHackingProject,
   threeWAcademy,
   liora,
-  feathersQuasarBoilerplate,
-  passwise,
   teleray,
-  kalisioKnowledge,
-  kalisioprint
+  kalisioKnowledge
 }
