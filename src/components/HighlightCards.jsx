@@ -6,13 +6,13 @@ const cards = [
     Icon: FiGlobe,
     title: 'Développeur Web',
     description:
-      "Conception et développement d'applications web complètes, de la maquette UI jusqu'à la mise en production.",
+      "Conception & développement d'applications web jusqu'à la mise en production.",
   },
   {
     Icon: FiLayout,
     title: 'Frontend',
     description:
-      "Interfaces modernes et réactives avec Vue.js et React, centrées sur la performance et l'expérience utilisateur.",
+      "Interfaces modernes & réactives, centrées sur la performance et l'expérience utilisateur.",
   },
   {
     Icon: FiServer,

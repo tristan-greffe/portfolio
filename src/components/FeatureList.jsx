@@ -5,16 +5,15 @@ import {
 } from 'react-icons/fi'
 
 const items = [
-  { Icon: FiUsers,        label: 'Collaboration en équipe' },
-  { Icon: FiSearch,       label: 'Veille technologique permanente' },
-  { Icon: FiZap,          label: 'Autonomie et initiative' },
-  { Icon: FiCheckSquare,  label: 'Résolution de problèmes complexes' },
-  { Icon: FiRefreshCw,    label: 'Adaptabilité rapide' },
-  { Icon: FiCode,         label: 'Code propre et maintenable' },
-  { Icon: FiShield,       label: 'Qualité et couverture de tests' },
-  { Icon: FiBarChart2,    label: 'Analyse et vision technique' },
-  { Icon: FiMessageSquare, label: 'Communication cross-équipes' },
-  { Icon: FiCpu,          label: 'Développement assisté par l\'IA (Claude Code)', highlight: true },
+  { Icon: FiUsers,        label: 'Management' },
+  { Icon: FiSearch,       label: 'Rédaction de documents techniques' },
+  { Icon: FiZap,          label: 'autonomie & polyvalence' },
+  { Icon: FiCheckSquare,  label: 'Spécification de besoin' },
+  { Icon: FiRefreshCw,    label: 'Rapport d’activité' },
+  { Icon: FiCode,         label: 'Méthodologies de développement.' },
+  { Icon: FiShield,       label: 'Compréhension globale des problèmes' },
+  { Icon: FiBarChart2,    label: 'Conception & architecture de système' },
+  { Icon: FiMessageSquare, label: 'Maîtrise de l’expression orale' }
 ]
 
 const container = {
@@ -41,7 +40,7 @@ const FeatureList = () => {
           <p className="feature-list__label">COMPÉTENCES APPRÉCIABLES</p>
           <h2>Ce qui fait la <span>différence</span></h2>
           <p className="feature-list__sub">
-            Mon vécu m'a permis de développer des capacités qui vont au-delà de la technique.
+            Mon expérience m'a permis de développer des capacités qui vont au-delà de la technique.
           </p>
         </motion.div>
 

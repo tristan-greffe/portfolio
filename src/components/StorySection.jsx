@@ -36,7 +36,7 @@ const TechStackVisual = () => (
 const StatsVisual = () => (
   <div className="story-visual story-visual--stats">
     {[
-      { value: '3+', label: "ans d'expérience" },
+      { value: '4+', label: "ans d'expérience" },
       { value: '5+', label: 'projets déployés' },
       { value: '10+', label: 'technologies' },
     ].map((s) => (
@@ -54,9 +54,9 @@ const blocks = [
     title: 'Technologies web de',
     highlight: 'nouvelle génération',
     description:
-      'Single-page applications avec Vue.js et React, bases de données NoSQL hautes-performances comme MongoDB, infrastructures temps-réel reposant sur Docker et Kubernetes, et back-end Node.js et Express dans le cloud.',
-    linkTo: '/skills',
-    linkText: 'Voir mes compétences',
+      'Single-page applications (SPA) des frameworks front-end tels que Vue.js ou React, bases de données NoSQL hautes-performances comme MongoDB, infrastructures temps-réel reposant sur Docker et Kubernetes, et des technologies back-end comme Node.js et Express.',
+    linkTo: '/portfolio',
+    linkText: 'Voir mes projets',
     Icon: FiCode,
     Visual: TechStackVisual,
     reversed: false,
@@ -66,7 +66,7 @@ const blocks = [
     title: 'Former et',
     highlight: 'innover en permanence',
     description:
-      "Ma formation universitaire, mon expérience des projets informatiques, ainsi qu'une veille technologique et une formation personnelle permanente me permettent de répondre de façon efficace et innovante aux besoins de chaque projet.",
+      "Ma formation, mon expérience des projets informatiques, ainsi qu'une veille technologique et une formation personnelle permanente me permettent de répondre de façon efficace et innovante aux besoins de chaque projet.",
     linkTo: '/experience',
     linkText: 'Mon parcours',
     Icon: FiZap,

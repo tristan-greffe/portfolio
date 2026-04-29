@@ -13,7 +13,6 @@ const HomeCTA = () => {
         transition={{ duration: 0.6 }}
       >
         <h2>Travaillons ensemble ?</h2>
-        <p>Un projet, une idée, ou simplement envie d'échanger — je suis disponible.</p>
         <Link to="/contact" className="btn home-cta__btn">
           Prendre contact <FiArrowRight size={16} />
         </Link>

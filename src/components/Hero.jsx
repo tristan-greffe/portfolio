@@ -19,7 +19,7 @@ const floatAnim = (delay = 0) => ({
 
 const PIPELINE = [
   {
-    label: 'Développement',
+    label: 'Development',
     color: '#dcfce7',
     icons: [{ src: vuejs, alt: 'Vue.js' }, { src: reactjs, alt: 'React' }, { src: nodejs, alt: 'Node.js' }, { src: feathersjs, alt: 'Feathers' }],
   },
@@ -105,7 +105,7 @@ const Hero = () => {
             animate="visible"
             custom={3}
           >
-            Je conçois et déploie des applications web modernes, du frontend interactif
+            Je conçois et déploie des applications web, de la maquette
             jusqu'à l'infrastructure cloud.
           </motion.p>
 
