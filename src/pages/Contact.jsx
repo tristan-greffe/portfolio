@@ -5,6 +5,7 @@ import { toast, ToastContainer } from 'react-toastify'
 import { FiMail, FiSend, FiGithub, FiLinkedin } from 'react-icons/fi'
 import 'react-toastify/dist/ReactToastify.css'
 import PageHero from '../components/PageHero'
+import ValueProps from '../components/ValueProps'
 
 const SOCIAL_LINKS = [
   {
@@ -19,7 +20,7 @@ const SOCIAL_LINKS = [
   },
   {
     icon: FiLinkedin,
-    label: 'LinkedIn',
+    label: 'in/tristan-greffe',
     href: 'https://www.linkedin.com/in/tristan-greffe'
   },
 ]
@@ -59,7 +60,6 @@ const Contact = () => {
         badge="Travaillons ensemble"
         title="Prenons"
         highlight="contact"
-        description="Un projet, une question ou simplement envie d'échanger ? Je suis disponible."
       />
       <section id="contact">
         <div className="contact-layout">
@@ -71,8 +71,7 @@ const Contact = () => {
             transition={{ duration: 0.5 }}
           >
             <p className="contact-info__text">
-              Je suis disponible pour des opportunités freelance, des collaborations
-              ou simplement pour échanger autour d'un projet.
+              Un projet, une question ou simplement envie d'échanger ? Je suis disponible.
             </p>
             <div className="contact-info__links">
               {SOCIAL_LINKS.map((s) => (
@@ -111,6 +110,7 @@ const Contact = () => {
           </motion.form>
         </div>
       </section>
+      <ValueProps />
       <ToastContainer position="bottom-center" theme="colored" autoClose={5000} />
     </>
   )

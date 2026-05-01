@@ -37,7 +37,7 @@ const Education = () => {
         badge="Ma formation"
         title="Parcours"
         highlight="académique"
-        description="De la classe prépa aux bootcamps jusqu'au master, un parcours pluridisciplinaire entre développement web et cloud."
+        description="De la classe prépa aux bootcamps, un parcours pluridisciplinaire entre développement web & cloud."
       />
       <section id="education">
         <div className="edu-timeline">
