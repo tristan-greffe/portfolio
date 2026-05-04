@@ -6,25 +6,25 @@ const props = [
     Icon: FiMonitor,
     title: 'Applications Web Modernes',
     description:
-      'SPA, PWA, interfaces réactives avec Vue.js et React. De la maquette à la mise en production.',
+      'SPA, PWA, interfaces réactives. De la maquette à la mise en production.',
   },
   {
     Icon: FiServer,
     title: 'Architecture Backend',
     description:
-      'APIs RESTful et temps-réel avec Node.js et Feathers.js. Données NoSQL, authentification, WebSocket.',
+      'APIs RESTful & temps-réel. Données NoSQL, authentification, WebSocket.',
   },
   {
     Icon: FiCloud,
     title: 'Infrastructure DevOps',
     description:
-      'Docker, Kubernetes, CI/CD GitHub Actions et infrastructure as code avec Terraform.',
+      'Docker, Kubernetes, CI/CD.',
   },
   {
     Icon: FiCpu,
     title: 'Intelligence Artificielle',
     description:
-      'Machine learning, RAG et fine-tuning de modèles LLM. Intégration de l\'IA dans les workflows de développement.',
+      'Intégration de l\'IA dans les workflows de développement.',
   },
 ]
 
@@ -53,7 +53,7 @@ const ValueProps = () => {
             <span className="value-props__pill">Une</span>
             {' '}expertise{' '}
             <span className="value-props__arrow">→</span>
-            {' '}des solutions complètes
+            {' '}des solutions
             <br />
             <span>pour chaque besoin</span>
           </h2>
