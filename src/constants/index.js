@@ -10,6 +10,16 @@ export const navLinks = [
   { path: '/contact', title: 'Contact' },
 ]
 
+export const companies = [
+  {
+    name: 'Kalisio',
+    icon: kalisio,
+    location: 'Toulouse (31), France',
+    period: 'Sept. 2022 — Présent',
+    description: "ESN spécialisée dans les solutions géospatiales open source pour la sécurité civile, l'environnement et l'aéronautique — cartes interactives, visualisation de données GIS et big data géospatial.",
+  }
+]
+
 export const experiences = [
   {
     title: 'Ingénieur Full Stack & DevOps',

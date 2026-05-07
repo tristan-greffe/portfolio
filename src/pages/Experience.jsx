@@ -1,28 +1,25 @@
 import { motion } from 'framer-motion'
-import { experiences } from '../constants'
-import { kalisio } from '../assets'
+import { experiences, companies } from '../constants'
 import PageHero from '../components/PageHero'
 
-const KalisioOverview = () => (
+const CompanyOverview = ({ company }) => (
   <motion.div
     className="exp-company"
     initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
     transition={{ duration: 0.5 }}
   >
     <div className="exp-company__icon">
-      <img src={kalisio} alt="Kalisio" />
+      <img src={company.icon} alt={company.name} />
     </div>
     <div className="exp-company__info">
       <div className="exp-company__header">
-        <h2>Kalisio</h2>
-        <span className="exp-company__duration">Sept. 2022 — Présent</span>
+        <h2>{company.name}</h2>
+        <span className="exp-company__duration">{company.period}</span>
       </div>
-      <p>
-        ESN spécialisée dans les solutions géospatiales open source pour la sécurité civile, l'environnement
-        et l'aéronautique - cartes interactives, visualisation de données GIS et big data géospatial.
-      </p>
-      <span className="exp-company__location">Toulouse (31), France</span>
+      <p>{company.description}</p>
+      <span className="exp-company__location">{company.location}</span>
     </div>
   </motion.div>
 )
@@ -67,21 +64,30 @@ const ExperienceCard = ({ experience, index }) => (
 )
 
 const Experience = () => {
+  const grouped = companies.map((company) => ({
+    company,
+    exps: experiences.filter((e) => e.company_name === company.name),
+  }))
+
   return (
     <>
       <PageHero
         badge="Mon parcours professionnel"
         title="Expériences"
         highlight="& missions"
-        description="Développeur & ingénieur chez Kalisio depuis 2022 - alternance fullstack, alternance DevOps, puis CDI sur des projets géospatiaux à fort impact."
+        description="Développeur & ingénieur chez Kalisio depuis 2022 — alternance fullstack, alternance DevOps, puis CDI sur des projets géospatiaux à fort impact."
       />
       <section id="experience">
-        <KalisioOverview />
-        <div className="exp-timeline">
-          {experiences.map((exp, index) => (
-            <ExperienceCard key={index} experience={exp} index={index} />
-          ))}
-        </div>
+        {grouped.map(({ company, exps }) => (
+          <div key={company.name} className="exp-group">
+            <CompanyOverview company={company} />
+            <div className="exp-timeline">
+              {exps.map((exp, index) => (
+                <ExperienceCard key={index} experience={exp} index={index} />
+              ))}
+            </div>
+          </div>
+        ))}
       </section>
     </>
   )
