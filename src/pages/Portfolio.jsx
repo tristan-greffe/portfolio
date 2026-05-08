@@ -36,10 +36,10 @@ const Portfolio = () => {
   return (
     <>
       <PageHero
-        badge="Mes réalisations"
-        title="Projets"
-        highlight="open source"
-        description="Applications web, outils DevOps, ressources éducatives — des projets concrets reflétant mon évolution."
+        badge="Sélection de projets"
+        title="Réalisations"
+        highlight="à fort impact"
+        description="Une sélection de projets représentatifs de mon périmètre technique."
       />
       <section id="portfolio">
         <div className="pf-grid">
