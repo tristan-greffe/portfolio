@@ -1,32 +1,5 @@
 import { motion } from 'framer-motion'
-import { FiGlobe, FiLayout, FiServer, FiCloud } from 'react-icons/fi'
-
-const cards = [
-  {
-    Icon: FiGlobe,
-    title: 'Développeur Web',
-    description:
-      "Conception & développement d'applications web jusqu'à la mise en production.",
-  },
-  {
-    Icon: FiLayout,
-    title: 'Frontend',
-    description:
-      "Interfaces modernes & réactives, centrées sur la performance et l'expérience utilisateur.",
-  },
-  {
-    Icon: FiServer,
-    title: 'Backend',
-    description:
-      'APIs RESTful et services temps-réel avec Node.js et Feathers.js, connectés à des bases de données NoSQL.',
-  },
-  {
-    Icon: FiCloud,
-    title: 'DevOps',
-    description:
-      'Pipelines CI/CD, containerisation Docker, orchestration Kubernetes et infrastructure cloud avec Terraform.',
-  },
-]
+import { highlightCards } from '../constants'
 
 const container = {
   hidden: {},
@@ -60,7 +33,7 @@ const HighlightCards = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          {cards.map((card) => {
+          {highlightCards.map((card) => {
             const { Icon } = card
             return (
               <motion.div key={card.title} className="highlight-cards__card" variants={cardVariant}>

@@ -1,20 +1,5 @@
 import { motion } from 'framer-motion'
-import {
-  FiUsers, FiSearch, FiZap, FiCheckSquare,
-  FiRefreshCw, FiCode, FiShield, FiBarChart2, FiMessageSquare, FiCpu
-} from 'react-icons/fi'
-
-const items = [
-  { Icon: FiUsers,        label: 'Management' },
-  { Icon: FiSearch,       label: 'Rédaction de documents techniques' },
-  { Icon: FiZap,          label: 'autonomie & polyvalence' },
-  { Icon: FiCheckSquare,  label: 'Spécification de besoin' },
-  { Icon: FiRefreshCw,    label: 'Rapport d’activité' },
-  { Icon: FiCode,         label: 'Méthodologies de développement.' },
-  { Icon: FiShield,       label: 'Compréhension globale des problèmes' },
-  { Icon: FiBarChart2,    label: 'Conception & architecture de système' },
-  { Icon: FiMessageSquare, label: 'Maîtrise de l’expression orale' }
-]
+import { featureItems } from '../constants'
 
 const container = {
   hidden: {},
@@ -51,7 +36,7 @@ const FeatureList = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          {items.map((item) => {
+          {featureItems.map((item) => {
             const { Icon } = item
             return (
               <motion.div

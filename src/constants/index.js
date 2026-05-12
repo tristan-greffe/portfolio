@@ -1,3 +1,8 @@
+import {
+  FiUsers, FiSearch, FiZap, FiCheckSquare, FiRefreshCw, FiCode,
+  FiShield, FiBarChart2, FiMessageSquare, FiCpu,
+  FiGlobe, FiLayout, FiServer, FiCloud, FiMonitor
+} from 'react-icons/fi'
 import { kalisio, docker, git, javascript, k8s, helm, teleray, github, worldWideWeb,
   mongodb, nodejs, reactjs, redux, vuejs, feathersjs, artillery, terraform,
   pierrePaulRiquet, theHackingProject, threeWAcademy, liora,
@@ -61,6 +66,7 @@ export const experiences = [
     points: [
       'Contribution aux applications cartographiques temps-réel de Kalisio',
       'Création de feathers-webpush (librairie open source)',
+      'Conversion des applications web de Kalisio en Progressive Web App (SPA → PWA)',
       'Tests E2E (Puppeteer)',
       'Mise en place de l\'analyse de qualité continue (Code Climate)'
     ]
@@ -187,5 +193,91 @@ export const projects = [
     ],
     image: kalisioKnowledge,
     source_code_link: { link: 'https://github.com/kalisio/knowledge', icon: github }
+  },
+]
+
+export const featureItems = [
+  { Icon: FiUsers,         label: 'Management' },
+  { Icon: FiSearch,        label: 'Rédaction de documents techniques' },
+  { Icon: FiZap,           label: 'Autonomie & polyvalence' },
+  { Icon: FiCheckSquare,   label: 'Spécification de besoin' },
+  { Icon: FiRefreshCw,     label: "Rapport d'activité" },
+  { Icon: FiCode,          label: 'Méthodologies de développement' },
+  { Icon: FiShield,        label: 'Compréhension globale des problèmes' },
+  { Icon: FiBarChart2,     label: 'Conception & architecture de système' },
+  { Icon: FiMessageSquare, label: "Maîtrise de l'expression orale" },
+  { Icon: FiCpu,           label: "Développement assisté par l'IA (Claude Code)", highlight: true },
+]
+
+export const highlightCards = [
+  {
+    Icon: FiGlobe,
+    title: 'Développeur Web',
+    description: "Conception & développement d'applications web jusqu'à la mise en production.",
+  },
+  {
+    Icon: FiLayout,
+    title: 'Frontend',
+    description: "Interfaces modernes & réactives, centrées sur la performance et l'expérience utilisateur.",
+  },
+  {
+    Icon: FiServer,
+    title: 'Backend',
+    description: 'APIs RESTful et services temps-réel avec Node.js et Feathers.js, connectés à des bases de données NoSQL.',
+  },
+  {
+    Icon: FiCloud,
+    title: 'DevOps',
+    description: 'Pipelines CI/CD, containerisation Docker, orchestration Kubernetes et infrastructure cloud avec Terraform.',
+  },
+]
+
+export const valueProps = [
+  {
+    Icon: FiMonitor,
+    title: 'Applications Web Modernes',
+    description: 'SPA, PWA, interfaces réactives. De la maquette à la mise en production.',
+  },
+  {
+    Icon: FiServer,
+    title: 'Architecture Backend',
+    description: 'APIs RESTful & temps-réel. Données NoSQL, authentification, WebSocket.',
+  },
+  {
+    Icon: FiCloud,
+    title: 'Infrastructure DevOps',
+    description: 'Docker, Kubernetes, CI/CD.',
+  },
+  {
+    Icon: FiCpu,
+    title: 'Intelligence Artificielle',
+    description: "Intégration de l'IA dans les workflows de développement.",
+  },
+]
+
+export const storyBlocks = [
+  {
+    label: 'CLOUD & WEB MODERNE',
+    title: 'Technologies web de',
+    highlight: 'nouvelle génération',
+    description:
+      'Single-page applications avec Vue.js ou React, bases de données NoSQL comme MongoDB, infrastructures temps-réel reposant sur Docker et Kubernetes, et technologies back-end Node.js et Express.',
+    linkTo: '/portfolio',
+    linkText: 'Voir mes projets',
+    Icon: FiCode,
+    visualType: 'techStack',
+    reversed: false,
+  },
+  {
+    label: 'FORMATION & EXPÉRIENCE',
+    title: 'Former et',
+    highlight: 'innover en permanence',
+    description:
+      "Ma formation, mon expérience des projets informatiques, ainsi qu'une veille technologique permanente me permettent de répondre de façon efficace et innovante aux besoins de chaque projet.",
+    linkTo: '/experience',
+    linkText: 'Mon parcours',
+    Icon: FiZap,
+    visualType: 'stats',
+    reversed: true,
   },
 ]

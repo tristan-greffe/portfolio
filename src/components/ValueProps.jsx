@@ -1,32 +1,5 @@
 import { motion } from 'framer-motion'
-import { FiMonitor, FiServer, FiCloud, FiCpu } from 'react-icons/fi'
-
-const props = [
-  {
-    Icon: FiMonitor,
-    title: 'Applications Web Modernes',
-    description:
-      'SPA, PWA, interfaces réactives. De la maquette à la mise en production.',
-  },
-  {
-    Icon: FiServer,
-    title: 'Architecture Backend',
-    description:
-      'APIs RESTful & temps-réel. Données NoSQL, authentification, WebSocket.',
-  },
-  {
-    Icon: FiCloud,
-    title: 'Infrastructure DevOps',
-    description:
-      'Docker, Kubernetes, CI/CD.',
-  },
-  {
-    Icon: FiCpu,
-    title: 'Intelligence Artificielle',
-    description:
-      'Intégration de l\'IA dans les workflows de développement.',
-  },
-]
+import { valueProps } from '../constants'
 
 const container = {
   hidden: {},
@@ -66,7 +39,7 @@ const ValueProps = () => {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
-          {props.map((prop) => {
+          {valueProps.map((prop) => {
             const { Icon } = prop
             return (
               <motion.div key={prop.title} className="value-props__item" variants={itemVariant}>
