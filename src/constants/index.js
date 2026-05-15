@@ -204,9 +204,8 @@ export const featureItems = [
   { Icon: FiRefreshCw,     label: "Rapport d'activité" },
   { Icon: FiCode,          label: 'Méthodologies de développement' },
   { Icon: FiShield,        label: 'Compréhension globale des problèmes' },
-  { Icon: FiBarChart2,     label: 'Conception & architecture de système' },
-  { Icon: FiMessageSquare, label: "Maîtrise de l'expression orale" },
-  { Icon: FiCpu,           label: "Développement assisté par l'IA (Claude Code)", highlight: true },
+  { Icon: FiBarChart2,     label: 'Conception & architecture de système', highlight: true},
+  { Icon: FiMessageSquare, label: "Maîtrise de l'expression orale" }
 ]
 
 export const highlightCards = [
