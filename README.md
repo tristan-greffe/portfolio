@@ -40,7 +40,7 @@
 
 ```bash
 npm install
-npm start        # dev server → http://localhost:3000
+npm run dev      # dev server → http://localhost:3000
 npm run build    # production build
 npm run deploy   # build + deploy to GitHub Pages
 ```
