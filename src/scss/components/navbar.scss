@@ -91,6 +91,41 @@
   }
 }
 
+.navbar__lang {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 2rem;
+  background: var(--bg-card);
+  padding: 2px;
+}
+
+.navbar__lang-btn {
+  border: none;
+  background: transparent;
+  padding: 0.25rem 0.625rem;
+  border-radius: 2rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+
+  &:hover {
+    color: var(--text-primary);
+  }
+
+  &--active {
+    background: var(--accent);
+    color: #fff;
+  }
+}
+
+.navbar__lang--mobile {
+  align-self: flex-start;
+  margin-bottom: 0.25rem;
+}
+
 .navbar__theme-btn {
   width: 2.25rem;
   height: 2.25rem;

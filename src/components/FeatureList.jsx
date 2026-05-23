@@ -1,5 +1,7 @@
 import { motion } from 'framer-motion'
 import { featureItems } from '../constants'
+import { useLanguage, pickLang } from '../context/LanguageContext'
+import { useT } from '../i18n/ui'
 
 const container = {
   hidden: {},
@@ -12,42 +14,44 @@ const itemVariant = {
 }
 
 const FeatureList = () => {
+  const { locale } = useLanguage()
+  const t = useT()
+
   return (
-    <div className="feature-list">
-      <div className="feature-list__inner">
+    <div className='feature-list'>
+      <div className='feature-list__inner'>
         <motion.div
-          className="feature-list__header"
+          className='feature-list__header'
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <p className="feature-list__label">COMPÉTENCES APPRÉCIABLES</p>
-          <h2>Ce qui fait la <span>différence</span></h2>
-          <p className="feature-list__sub">
-            Mon expérience m'a permis de développer des capacités qui vont au-delà de la technique.
-          </p>
+          <p className='feature-list__label'>{t('feature.label')}</p>
+          <h2>{t('feature.title.before')} <span>{t('feature.title.accent')}</span></h2>
+          <p className='feature-list__sub'>{t('feature.sub')}</p>
         </motion.div>
 
         <motion.div
-          className="feature-list__grid"
+          className='feature-list__grid'
           variants={container}
-          initial="hidden"
-          whileInView="visible"
+          initial='hidden'
+          whileInView='visible'
           viewport={{ once: true, amount: 0.2 }}
         >
           {featureItems.map((item) => {
             const { Icon } = item
+            const label = pickLang(item.label, locale)
             return (
               <motion.div
-                key={item.label}
+                key={label}
                 className={`feature-list__item${item.highlight ? ' feature-list__item--highlight' : ''}`}
                 variants={itemVariant}
               >
-                <div className="feature-list__item-icon">
+                <div className='feature-list__item-icon'>
                   <Icon size={18} />
                 </div>
-                <span>{item.label}</span>
+                <span>{label}</span>
               </motion.div>
             )
           })}

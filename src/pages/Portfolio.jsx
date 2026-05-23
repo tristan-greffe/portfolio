@@ -2,9 +2,11 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { FiArrowRight } from 'react-icons/fi'
 import { projects } from '../constants'
+import { useLanguage, pickLang } from '../context/LanguageContext'
+import { useT } from '../i18n/ui'
 import PageHero from '../components/PageHero'
 
-const ProjectCard = ({ project, index }) => {
+const ProjectCard = ({ project, index, locale, t }) => {
   const cardTags = project.technologies.slice(0, 4)
   return (
     <motion.div
@@ -20,14 +22,14 @@ const ProjectCard = ({ project, index }) => {
         </div>
         <div className='pf-card__content'>
           <div className='pf-card__tags'>
-            {cardTags.map((t) => (
-              <span key={t.name} className='pf-tag'>{t.name}</span>
+            {cardTags.map((tech) => (
+              <span key={tech.name} className='pf-tag'>{tech.name}</span>
             ))}
           </div>
           <h3>{project.name}</h3>
-          <p>{project.shortDescription}</p>
+          <p>{pickLang(project.shortDescription, locale)}</p>
           <span className='pf-card__cta'>
-            Voir le projet <FiArrowRight size={14} />
+            {t('project.viewCta')} <FiArrowRight size={14} />
           </span>
         </div>
       </Link>
@@ -36,18 +38,21 @@ const ProjectCard = ({ project, index }) => {
 }
 
 const Portfolio = () => {
+  const { locale } = useLanguage()
+  const t = useT()
+
   return (
     <>
       <PageHero
-        badge='Sélection de projets'
-        title='Réalisations'
-        highlight='à fort impact'
-        description='Une sélection de projets représentatifs de mon périmètre technique.'
+        badge={t('page.portfolio.badge')}
+        title={t('page.portfolio.title')}
+        highlight={t('page.portfolio.highlight')}
+        description={t('page.portfolio.desc')}
       />
       <section id='portfolio'>
         <div className='pf-grid'>
           {projects.map((project, index) => (
-            <ProjectCard key={index} project={project} index={index} />
+            <ProjectCard key={index} project={project} index={index} locale={locale} t={t} />
           ))}
         </div>
       </section>

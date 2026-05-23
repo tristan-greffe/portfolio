@@ -6,6 +6,7 @@ import { FiMail, FiSend, FiGithub, FiLinkedin } from 'react-icons/fi'
 import 'react-toastify/dist/ReactToastify.css'
 import PageHero from '../components/PageHero'
 import ValueProps from '../components/ValueProps'
+import { useT } from '../i18n/ui'
 
 const SOCIAL_LINKS = [
   {
@@ -27,6 +28,7 @@ const SOCIAL_LINKS = [
 
 const Contact = () => {
   const formRef = useRef()
+  const t = useT()
   const [form, setForm] = useState({ name: '', email: '', message: '' })
   const [loading, setLoading] = useState(false)
 
@@ -46,36 +48,34 @@ const Contact = () => {
         'AH5MnZz2MQzRzTaZk'
       )
       setLoading(false)
-      toast.success('Message envoyé ! Je vous répondrai rapidement.')
+      toast.success(t('contact.toast.success'))
       setForm({ name: '', email: '', message: '' })
     } catch {
       setLoading(false)
-      toast.error('Une erreur est survenue. Réessayez plus tard.')
+      toast.error(t('contact.toast.error'))
     }
   }
 
   return (
     <>
       <PageHero
-        badge="Travaillons ensemble"
-        title="Prenons"
-        highlight="contact"
+        badge={t('page.contact.badge')}
+        title={t('page.contact.title')}
+        highlight={t('page.contact.highlight')}
       />
-      <section id="contact">
-        <div className="contact-layout">
+      <section id='contact'>
+        <div className='contact-layout'>
           <motion.div
-            className="contact-info"
+            className='contact-info'
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <p className="contact-info__text">
-              Un projet, une question ou simplement envie d'échanger ? Je suis disponible.
-            </p>
-            <div className="contact-info__links">
+            <p className='contact-info__text'>{t('page.contact.desc')}</p>
+            <div className='contact-info__links'>
               {SOCIAL_LINKS.map((s) => (
-                <a key={s.label} href={s.href} target="_blank" rel="noreferrer" className="contact-info__link">
+                <a key={s.label} href={s.href} target='_blank' rel='noreferrer' className='contact-info__link'>
                   <s.icon size={18} />
                   <span>{s.label}</span>
                 </a>
@@ -85,33 +85,33 @@ const Contact = () => {
 
           <motion.form
             ref={formRef}
-            className="contact-form"
+            className='contact-form'
             onSubmit={handleSubmit}
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <div className="contact-form__field">
-              <label htmlFor="cf-name">Nom</label>
-              <input id="cf-name" type="text" name="name" value={form.name} onChange={handleChange} placeholder="Votre nom" required />
+            <div className='contact-form__field'>
+              <label htmlFor='cf-name'>{t('contact.form.name')}</label>
+              <input id='cf-name' type='text' name='name' value={form.name} onChange={handleChange} placeholder={t('contact.form.namePlaceholder')} required />
             </div>
-            <div className="contact-form__field">
-              <label htmlFor="cf-email">Email</label>
-              <input id="cf-email" type="email" name="email" value={form.email} onChange={handleChange} placeholder="votre@email.com" required />
+            <div className='contact-form__field'>
+              <label htmlFor='cf-email'>{t('contact.form.email')}</label>
+              <input id='cf-email' type='email' name='email' value={form.email} onChange={handleChange} placeholder={t('contact.form.emailPlaceholder')} required />
             </div>
-            <div className="contact-form__field">
-              <label htmlFor="cf-message">Message</label>
-              <textarea id="cf-message" name="message" rows={6} value={form.message} onChange={handleChange} placeholder="Votre message..." required />
+            <div className='contact-form__field'>
+              <label htmlFor='cf-message'>{t('contact.form.message')}</label>
+              <textarea id='cf-message' name='message' rows={6} value={form.message} onChange={handleChange} placeholder={t('contact.form.messagePlaceholder')} required />
             </div>
-            <button type="submit" className="btn btn--primary" disabled={loading}>
-              {loading ? 'Envoi en cours…' : <><FiSend size={15} /> Envoyer</>}
+            <button type='submit' className='btn btn--primary' disabled={loading}>
+              {loading ? t('contact.form.sending') : <><FiSend size={15} /> {t('contact.form.send')}</>}
             </button>
           </motion.form>
         </div>
       </section>
       <ValueProps />
-      <ToastContainer position="bottom-center" theme="colored" autoClose={5000} />
+      <ToastContainer position='bottom-center' theme='colored' autoClose={5000} />
     </>
   )
 }
