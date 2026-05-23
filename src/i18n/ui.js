@@ -53,8 +53,9 @@ export const ui = {
     // Page heroes
     'page.experience.badge': 'Mon parcours professionnel',
     'page.experience.title': 'Expériences',
-    'page.experience.highlight': '& missions',
-    'page.experience.desc': 'Développeur & ingénieur chez Kalisio depuis 2022 - alternance fullstack, alternance DevOps, puis CDI sur des projets géospatiaux à fort impact.',
+    'page.experience.highlight': '& Compétences',
+    'page.experience.desc': 'Développeur & ingénieur chez Kalisio depuis 2022 - alternance fullstack, alternance DevOps, puis CDI sur des projets géospatiaux.',
+    'competences.title': 'Compétences',
 
     'page.education.badge': 'Ma formation',
     'page.education.title': 'Parcours',
@@ -146,6 +147,7 @@ export const ui = {
     'page.experience.title': 'Experience',
     'page.experience.highlight': '& missions',
     'page.experience.desc': 'Developer & engineer at Kalisio since 2022 - fullstack apprenticeship, DevOps apprenticeship, then permanent role on high-impact geospatial projects.',
+    'competences.title': 'Skills',
 
     'page.education.badge': 'My education',
     'page.education.title': 'Academic',

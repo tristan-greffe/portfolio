@@ -38,8 +38,8 @@ export const experiences = [
     skills: ['Python', 'Javascript', 'Bash', 'Node.js', 'Feathers.js', 'K8s', 'GIS', 'Vue.js', 'Quasar'],
     points: [
       {
-        fr: 'Conception et lead technique de Kalisio Knowledge - système RAG + Git Intelligence + Knowledge Graph indexant la totalité de la codebase, des commits et de la documentation Kalisio, exposé via MCP pour agents de code IA',
-        en: 'Design and technical lead of Kalisio Knowledge - RAG + Git Intelligence + Knowledge Graph system indexing the entire Kalisio codebase, commits and documentation, exposed via MCP for AI coding agents'
+        fr: 'Conception et lead technique de Kalisio Knowledge',
+        en: 'Design and technical lead of Kalisio Knowledge'
       },
       {
         fr: 'Évolutions et suivi de TELERAY (ASNR) : nouvelles fonctionnalités, conformité réglementaire, ouverture de l\'API publique et maintien en condition opérationnelle.',
@@ -135,6 +135,74 @@ export const education = [
     date: '2016',
     icon: pierrePaulRiquet,
     description: null
+  }
+]
+
+export const competences = [
+  {
+    category: { fr: 'Compétences Techniques', en: 'Technical Skills' },
+    items: [
+      {
+        title: { fr: 'Développement d\'applications', en: 'Application Development' },
+        description: { fr: 'JavaScript, Vue.js, React, Quasar, Feathers.js, Node.js', en: 'JavaScript, Vue.js, React, Quasar, Feathers.js, Node.js' },
+        level: 4
+      },
+      {
+        title: { fr: 'Infrastructure & Cloud', en: 'Infrastructure & Cloud' },
+        description: { fr: 'Kubernetes, Docker, Terraform, OVH, S3, CI/CD', en: 'Kubernetes, Docker, Terraform, OVH, S3, CI/CD' },
+        level: 4
+      },
+      {
+        title: { fr: 'Bases de données', en: 'Databases' },
+        description: { fr: 'MongoDB, PostgreSQL', en: 'MongoDB, PostgreSQL' },
+        level: 4
+      },
+      {
+        title: { fr: 'Architecture système', en: 'System Architecture' },
+        description: { fr: 'Microservices, N-tier', en: 'Microservices, N-tier' },
+        level: 4
+      },
+      {
+        title: { fr: 'Données géospatiales', en: 'Geospatial Data' },
+        description: { fr: 'GIS, ETL géospatiaux', en: 'GIS, geospatial ETL' },
+        level: 2
+      },
+      {
+        title: { fr: 'IA', en: 'AI' },
+        description: { fr: 'RAG, MCP, agents de code, Python', en: 'RAG, MCP, coding agents, Python' },
+        level: 2
+      },
+      {
+        title: { fr: 'Tests & qualité', en: 'Testing & Quality' },
+        description: { fr: 'Artillery (tests de charge), Puppeteer (E2E), SonarQube', en: 'Artillery (load testing), Puppeteer (E2E), SonarQube' },
+        level: 4
+      }
+    ]
+  },
+  {
+    category: { fr: 'Compétences Fonctionnelles', en: 'Functional Skills' },
+    items: [
+      {
+        title: { fr: 'Politique produit', en: 'Product Strategy' },
+        description: { fr: 'Spécification, roadmap, choix techniques, R&D', en: 'Specification, roadmap, technical decisions, R&D' },
+        level: 1
+      },
+      {
+        title: { fr: 'Gestion de projet', en: 'Project Management' },
+        description: { fr: 'Suivi technique, livraison continue, support client', en: 'Technical follow-up, continuous delivery, customer support' },
+        level: 1
+      },
+      {
+        title: { fr: 'Encadrement technique', en: 'Technical Leadership' },
+        description: { fr: 'Management, mentorat', en: 'Management, mentoring' },
+        level: 1
+      },
+      {
+        title: { fr: 'Analyse & conception', en: 'Analysis & Design' },
+        description: { fr: 'Spécification de besoin, architecture, documentation technique', en: 'Requirements specification, architecture, technical documentation' },
+        level: 2
+      }
+    ]
   }
 ]
 

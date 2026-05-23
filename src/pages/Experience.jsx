@@ -3,6 +3,7 @@ import { experiences, companies } from '../constants'
 import { useLanguage, pickLang } from '../context/LanguageContext'
 import { useT } from '../i18n/ui'
 import PageHero from '../components/PageHero'
+import CompetencesSidebar from '../components/CompetencesSidebar'
 
 const CompanyOverview = ({ company, locale }) => (
   <motion.div
@@ -86,16 +87,21 @@ const Experience = () => {
         description={t('page.experience.desc')}
       />
       <section id='experience'>
-        {grouped.map(({ company, exps }) => (
-          <div key={company.name} className='exp-group'>
-            <CompanyOverview company={company} locale={locale} />
-            <div className='exp-timeline'>
-              {exps.map((exp, index) => (
-                <ExperienceCard key={index} experience={exp} index={index} locale={locale} />
-              ))}
-            </div>
+        <div className='exp-layout'>
+          <div className='exp-main'>
+            {grouped.map(({ company, exps }) => (
+              <div key={company.name} className='exp-group'>
+                <CompanyOverview company={company} locale={locale} />
+                <div className='exp-timeline'>
+                  {exps.map((exp, index) => (
+                    <ExperienceCard key={index} experience={exp} index={index} locale={locale} />
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
-        ))}
+          <CompetencesSidebar />
+        </div>
       </section>
     </>
   )

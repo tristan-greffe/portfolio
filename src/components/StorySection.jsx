@@ -43,7 +43,7 @@ const StatsVisual = ({ locale }) => {
       { value: '10+', label: 'technologies' }
     ]
     : [
-      { value: '4+', label: 'years of experience' },
+      { value: '5+', label: 'years of experience' },
       { value: '5+', label: 'projects shipped' },
       { value: '10+', label: 'technologies' }
     ]
