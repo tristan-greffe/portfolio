@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { FiArrowLeft, FiExternalLink } from 'react-icons/fi'
+import { FiArrowLeft, FiExternalLink, FiCheckSquare } from 'react-icons/fi'
 import { projects } from '../constants'
 
 const ProjectDetail = () => {
@@ -9,8 +9,8 @@ const ProjectDetail = () => {
 
   if (!project) {
     return (
-      <section id="project-detail">
-        <Link to="/portfolio" className="btn btn--outline">
+      <section id='project-detail'>
+        <Link to='/portfolio' className='btn btn--outline'>
           <FiArrowLeft size={16} /> Retour aux projets
         </Link>
         <p style={{ marginTop: '2rem', color: 'var(--text-muted)' }}>Projet introuvable.</p>
@@ -19,40 +19,71 @@ const ProjectDetail = () => {
   }
 
   return (
-    <section id="project-detail">
+    <section id='project-detail'>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4 }}
       >
-        <Link to="/portfolio" className="btn btn--outline pf-detail__back">
+        <Link to='/portfolio' className='btn btn--outline pf-detail__back'>
           <FiArrowLeft size={16} /> Retour aux projets
         </Link>
 
-        <div className="pf-detail">
-          <div className="pf-detail__image">
-            <img src={project.image} alt={project.name} />
+        <div className='pf-detail'>
+          <div className='pf-detail__left'>
+            <div className='pf-detail__image'>
+              <img src={project.image} alt={project.name} />
+            </div>
+
+            {project.links && (
+              <div className='pf-detail__links'>
+                <h4>Liens</h4>
+                <div className='pf-detail__links-list'>
+                  {project.links.map((l) => (
+                    <a key={l.url} href={l.url} target='_blank' rel='noreferrer' className='pf-detail__link'>
+                      <FiExternalLink size={14} />
+                      {l.label}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
           </div>
 
-          <div className="pf-detail__content">
-            <div className="pf-card__tags" style={{ marginBottom: '1rem' }}>
-              {project.tags.map((tag) => (
-                <span key={tag.name} className="pf-tag">{tag.name}</span>
+          <div className='pf-detail__content'>
+            <h1>{project.name}</h1>
+            <div className='pf-detail__desc'>
+              {project.description.split('\n\n').map((para, i) => (
+                <p key={i}>{para}</p>
               ))}
             </div>
 
-            <h1>{project.name}</h1>
-            <p className="pf-detail__desc">{project.description}</p>
+            {project.technologies && (
+              <div className='pf-detail__section'>
+                <h4>Technologies principales</h4>
+                <div className='pf-detail__techs'>
+                  {project.technologies.map((t) => (
+                    <a key={t.name} href={t.url} target='_blank' rel='noreferrer' className='pf-detail__tech'>
+                      {t.name}
+                    </a>
+                  ))}
+                </div>
+              </div>
+            )}
 
-            <a
-              href={project.source_code_link.link}
-              target="_blank"
-              rel="noreferrer"
-              className="btn btn--primary"
-            >
-              <FiExternalLink size={16} />
-              Voir le projet
-            </a>
+            {project.tasks && (
+              <div className='pf-detail__section'>
+                <h4>Tâches réalisées personnellement</h4>
+                <ul className='pf-detail__tasks'>
+                  {project.tasks.map((task, i) => (
+                    <li key={i}>
+                      <FiCheckSquare size={15} />
+                      <span>{task}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
         </div>
       </motion.div>

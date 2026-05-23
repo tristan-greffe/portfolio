@@ -3,10 +3,10 @@ import {
   FiShield, FiBarChart2, FiMessageSquare, FiCpu,
   FiGlobe, FiLayout, FiServer, FiCloud, FiMonitor
 } from 'react-icons/fi'
-import { kalisio, docker, git, javascript, k8s, helm, teleray, github, worldWideWeb,
+import { kalisio, docker, git, javascript, k8s, helm, teleray,
   mongodb, nodejs, reactjs, redux, vuejs, feathersjs, artillery, terraform,
   pierrePaulRiquet, theHackingProject, threeWAcademy, liora,
-  kalisioKnowledge } from '../assets'
+  kalisioKnowledge, python } from '../assets'
 
 export const navLinks = [
   { path: '/experience', title: 'Expériences' },
@@ -20,8 +20,8 @@ export const companies = [
     name: 'Kalisio',
     icon: kalisio,
     location: 'Toulouse (31), France',
-    period: 'Sept. 2022 — Présent',
-    description: "ESN spécialisée dans les solutions géospatiales open source pour la sécurité civile, l'environnement et l'aéronautique — cartes interactives, visualisation de données GIS et big data géospatial.",
+    period: 'Sept. 2022 - Présent',
+    description: "ESN spécialisée dans les solutions géospatiales open source pour la sécurité civile, l'environnement et l'aéronautique - cartes interactives, visualisation de données GIS et big data géospatial.",
   }
 ]
 
@@ -31,7 +31,7 @@ export const experiences = [
     company_name: 'Kalisio',
     icon: kalisio,
     contract: 'CDI',
-    date: 'Juillet 2025 — Présent',
+    date: 'Juillet 2025 - Présent',
     skills: ['Python', 'Javascript', 'Bash', 'Node.js', 'Feathers.js', 'K8s', 'GIS', 'Vue.js', 'Quasar',],
     points: [
       'Conception et lead technique de Kalisio Knowledge - système RAG + Git Intelligence + Knowledge Graph indexant la totalité de la codebase, des commits et de la documentation Kalisio, exposé via MCP pour agents de code IA',
@@ -46,8 +46,8 @@ export const experiences = [
     company_name: 'Kalisio',
     icon: kalisio,
     contract: 'Alternance',
-    date: 'Janvier 2024 — Juin 2025',
-    featured: 'ASNR — Teleray',
+    date: 'Janvier 2024 - Juin 2025',
+    featured: 'ASNR - Teleray',
     skills: ['Kubernetes', 'Helm', 'Docker', 'Terraform', 'GitHub Actions', 'GitLab CI/CD', 'Bash', 'Artillery', 'GIS'],
     points: [
       'Dans le cadre de la TMA Carto SIRSE (ASNR) : développement, déploiement en production et livraison continue de TELERAY (application de surveillance nationale de la radioactivité)',
@@ -61,7 +61,7 @@ export const experiences = [
     company_name: 'Kalisio',
     icon: kalisio,
     contract: 'Alternance',
-    date: 'Septembre 2022 — Décembre 2023',
+    date: 'Septembre 2022 - Décembre 2023',
     skills: ['JavaScript', 'Vue.js', 'Quasar', 'Feathers.js', 'Node.js', 'MongoDB', 'PWA'],
     points: [
       'Contribution aux applications cartographiques temps-réel de Kalisio',
@@ -78,29 +78,29 @@ export const education = [
     degree: 'Master 1 - Administration Cloud',
     school: 'Liora - alternance',
     location: 'Toulouse (31), France',
-    date: 'Janvier 2024 — Juin 2025',
+    date: 'Janvier 2024 - Juin 2025',
     icon: liora
   },
   {
     degree: 'Titre RNCP Niveau 5 - Développeur Web Full Stack',
     school: '3W Academy - alternance',
     location: 'Toulouse (31), France',
-    date: 'Septembre 2022 — Décembre 2023',
+    date: 'Septembre 2022 - Décembre 2023',
     icon: threeWAcademy
   },
   {
     degree: 'Bootcamp Développeur Web Full Stack',
     school: 'The Hacking Project',
     location: 'Bordeaux (33), France',
-    date: 'Avril 2022 — Août 2022',
+    date: 'Avril 2022 - Août 2022',
     icon: theHackingProject,
     description: null
   },
   {
-    degree: 'Classe Préparatoire aux Grandes Écoles — TSI',
+    degree: 'Classe Préparatoire aux Grandes Écoles - TSI',
     school: 'Lycée Pierre Paul Riquet',
     location: 'St Orens de Gameville (31), France',
-    date: 'Septembre 2016 — Juin 2018',
+    date: 'Septembre 2016 - Juin 2018',
     icon: pierrePaulRiquet,
     description: null
   },
@@ -159,7 +159,7 @@ export const technologies = [
   { name: 'Redux Toolkit', icon: redux },
   { name: 'Feathers JS', icon: feathersjs },
   { name: 'Node JS', icon: nodejs },
-  // { name: 'Python', icon: python },
+  { name: 'Python', icon: python },
   { name: 'MongoDB', icon: mongodb },
   { name: 'Git', icon: git },
   { name: 'Docker', icon: docker },
@@ -171,29 +171,53 @@ export const technologies = [
 
 export const projects = [
   {
-    name: 'ASNR — Teleray (TMA Carto SIRSE)',
-    description: 'Réseau national de surveillance de la radioactivité pour l\'ASNR. Système temps-réel de monitoring, alertes et visualisation cartographique des données radiologiques sur l\'ensemble du territoire français.',
-    tags: [
-      { name: 'quasar', color: 'blue-text-gradient' },
-      { name: 'feathers', color: 'green-text-gradient' },
-      { name: 'mongodb', color: 'pink-text-gradient' },
-      { name: 'kubernetes', color: 'yellow-text-gradient' }
+    name: 'ASNR - Teleray',
+    shortDescription: 'L\’application Teleray permet de diffuser au grand public, en temps réel, les données mesurées par plus de 400 balises réparties sur l\’ensemble du territoire national et en outre-mer.',
+    description: 'Dans le cadre de la TMA CARTO SIRSE remportée par Kalisio en 2024, TELERAY est l\'application publique de l\'ASNR diffusant en temps-réel les mesures du réseau national de surveillance de la radioactivité - plus de 400 balises en métropole et outre-mer, mesurant le débit de dose gamma toutes les 10 minutes (nSv/h), centralisé dans la base Sparte de l\'ASNR.\n\nL\'application offre au grand public une carte interactive avec la dernière mesure de chaque balise, un historique sur un mois et un système de favoris. Elle intègre également un accès restreint pour les partenaires (données non publiques) et les administrateurs ASNR (gestion des balises et des droits d\'accès).',
+    technologies: [
+      { name: 'Quasar', url: 'https://quasar.dev/' },
+      { name: 'Feathers.js', url: 'https://feathersjs.com/' },
+      { name: 'MongoDB', url: 'https://www.mongodb.com/fr-fr' },
+      { name: 'Kubernetes', url: 'https://kubernetes.io/' },
+      { name: 'Helm', url: 'https://helm.sh/fr/' },
+      { name: 'Helmfile', url: 'https://github.com/helmfile/helmfile' },
+      { name: 'OVH Cloud', url: 'https://www.ovhcloud.com/fr/' }
     ],
-    image: teleray,
-    source_code_link: { link: 'https://teleray.irsn.fr/', icon: worldWideWeb }
+    links: [
+      { label: 'Application Téléray', url: 'https://teleray.asnr.fr/' },
+      { label: 'Réseau de télésurveillance', url: 'https://recherche-expertise.asnr.fr/savoir-comprendre/environnement/reseaux-telesurveillance' }
+    ],
+    tasks: [
+      'Gestion de projet et support client',
+      'Analyse du besoin',
+      'Conception & développement applicatif',
+      'Déploiement cloud (OVH, Kubernetes)',
+      'Tests de charge et recommandations d\'infrastructure',
+      'Tests unitaires, validation & maintenance'
+    ],
+    image: teleray
   },
   {
     name: 'Kalisio Knowledge',
-    description: 'Système RAG + Git Intelligence + Knowledge Graph exposant toute la codebase, commits et docs Kalisio via MCP pour agents de code IA. Architecture Python/LangChain, management produit et encadrement d\'un stagiaire.',
-    tags: [
-      { name: 'python', color: 'blue-text-gradient' },
-      { name: 'RAG', color: 'green-text-gradient' },
-      { name: 'MCP', color: 'pink-text-gradient' },
-      { name: 'LangChain', color: 'yellow-text-gradient' }
+    shortDescription: 'AI developer assistant pour l\'écosystème Kalisio : pipeline RAG, Git Intelligence et graphe de dépendances exposés via MCP aux agents de code IA.',
+    description: 'Knowledge est un assistant IA dédié aux développeurs de l\'écosystème Kalisio. Il indexe l\'ensemble du code source open-source Kalisio dans une base vectorielle, et expose le résultat via un serveur MCP accessible à tout agent de coding IA.\n\nL\'objectif est de fournir à chaque développeur Kalisio, un assistant qui comprend la codebase de façon sémantique, structurelle et historique, tout en réduisant au maximum la consommation de tokens.',
+    technologies: [
+      { name: 'Python', url: 'https://www.python.org/' },
+      { name: 'FastAPI', url: 'https://fastapi.tiangolo.com/' },
+      { name: 'MCP', url: 'https://modelcontextprotocol.io/' },
+      { name: 'Qdrant', url: 'https://qdrant.tech/' },
+      { name: 'Kubernetes', url: 'https://kubernetes.io/' }
     ],
-    image: kalisioKnowledge,
-    source_code_link: { link: 'https://github.com/kalisio/knowledge', icon: github }
-  },
+    links: [
+      { label: 'GitHub - kalisio/knowledge', url: 'https://github.com/kalisio/knowledge' }
+    ],
+    tasks: [
+      'Spécifications & conception de l\'architecture du système',
+      'R&D autour des agents de code IA',
+      'Encadrement technique'
+    ],
+    image: kalisioKnowledge
+  }
 ]
 
 export const featureItems = [

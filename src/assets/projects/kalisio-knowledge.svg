@@ -1,26 +1,76 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="600" height="340">
-  <rect width="600" height="340" fill="#f0fdf4"/>
-  <rect x="20" y="20" width="560" height="300" rx="16" fill="#dcfce7" opacity="0.5"/>
-  <!-- Book stack -->
-  <rect x="140" y="180" width="200" height="20" rx="4" fill="#047857" opacity="0.9"/>
-  <rect x="150" y="155" width="180" height="28" rx="4" fill="#059669" opacity="0.9"/>
-  <rect x="145" y="125" width="190" height="32" rx="4" fill="#064e3b" opacity="0.9"/>
-  <!-- Book spine lines -->
-  <rect x="160" y="130" width="2" height="22" rx="1" fill="#6ee7b7" opacity="0.5"/>
-  <rect x="155" y="160" width="2" height="18" rx="1" fill="#6ee7b7" opacity="0.4"/>
-  <rect x="155" y="185" width="2" height="12" rx="1" fill="#6ee7b7" opacity="0.3"/>
-  <!-- Knowledge nodes -->
-  <circle cx="400" cy="120" r="30" fill="#064e3b" opacity="0.9"/>
-  <text x="400" y="116" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="700" fill="#6ee7b7">KALISIO</text>
-  <text x="400" y="130" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="600" fill="#fff">DOCS</text>
-  <circle cx="460" cy="170" r="18" fill="#059669" opacity="0.8"/>
-  <text x="460" y="175" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#fff">KDK</text>
-  <circle cx="340" cy="180" r="18" fill="#047857" opacity="0.8"/>
-  <text x="340" y="185" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#fff">API</text>
-  <circle cx="420" cy="210" r="18" fill="#059669" opacity="0.8"/>
-  <text x="420" y="215" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#fff">Guide</text>
-  <line x1="428" y1="146" x2="444" y2="154" stroke="#059669" stroke-width="1.5" opacity="0.5"/>
-  <line x1="372" y1="146" x2="356" y2="164" stroke="#047857" stroke-width="1.5" opacity="0.5"/>
-  <line x1="400" y1="150" x2="400" y2="192" stroke="#059669" stroke-width="1.5" opacity="0.4"/>
-  <text x="300" y="318" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#064e3b">Kalisio Knowledge · Documentation · VitePress</text>
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 340' width='600' height='340'>
+  <rect width='600' height='340' fill='#f0fdf4'/>
+  <rect x='20' y='20' width='560' height='300' rx='16' fill='#dcfce7' opacity='0.4'/>
+
+  <!-- Left: codebase -->
+  <g>
+    <rect x='60' y='80' width='100' height='180' rx='10' fill='#fff' stroke='#059669' stroke-width='1.5'/>
+    <text x='110' y='105' text-anchor='middle' font-family='system-ui, sans-serif' font-size='10' font-weight='700' fill='#064e3b'>CODEBASE</text>
+    <!-- file lines -->
+    <rect x='72' y='120' width='76' height='6' rx='2' fill='#059669' opacity='0.5'/>
+    <rect x='72' y='132' width='60' height='4' rx='2' fill='#6b7280' opacity='0.3'/>
+    <rect x='72' y='142' width='70' height='4' rx='2' fill='#6b7280' opacity='0.3'/>
+    <rect x='72' y='152' width='52' height='4' rx='2' fill='#6b7280' opacity='0.3'/>
+    <rect x='72' y='168' width='76' height='6' rx='2' fill='#047857' opacity='0.5'/>
+    <rect x='72' y='180' width='64' height='4' rx='2' fill='#6b7280' opacity='0.3'/>
+    <rect x='72' y='190' width='70' height='4' rx='2' fill='#6b7280' opacity='0.3'/>
+    <rect x='72' y='206' width='76' height='6' rx='2' fill='#059669' opacity='0.5'/>
+    <rect x='72' y='218' width='58' height='4' rx='2' fill='#6b7280' opacity='0.3'/>
+    <rect x='72' y='228' width='66' height='4' rx='2' fill='#6b7280' opacity='0.3'/>
+    <rect x='72' y='238' width='70' height='4' rx='2' fill='#6b7280' opacity='0.3'/>
+    <!-- git node -->
+    <circle cx='110' cy='270' r='6' fill='#047857'/>
+    <text x='110' y='287' text-anchor='middle' font-family='monospace' font-size='8' fill='#064e3b'>git history</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <g>
+    <line x1='168' y1='170' x2='208' y2='170' stroke='#059669' stroke-width='2' stroke-dasharray='3,3'/>
+    <polygon points='208,170 200,165 200,175' fill='#059669'/>
+  </g>
+
+  <!-- Center: RAG + Git Intel + Graph -->
+  <g>
+    <rect x='216' y='90' width='168' height='160' rx='12' fill='#064e3b'/>
+    <text x='300' y='112' text-anchor='middle' font-family='system-ui, sans-serif' font-size='10' font-weight='700' fill='#6ee7b7'>KNOWLEDGE</text>
+
+    <!-- RAG row -->
+    <rect x='230' y='125' width='140' height='28' rx='6' fill='#047857'/>
+    <text x='300' y='143' text-anchor='middle' font-family='system-ui, sans-serif' font-size='10' font-weight='600' fill='#fff'>RAG · Qdrant</text>
+
+    <!-- Git intel row -->
+    <rect x='230' y='160' width='140' height='28' rx='6' fill='#059669'/>
+    <text x='300' y='178' text-anchor='middle' font-family='system-ui, sans-serif' font-size='10' font-weight='600' fill='#fff'>Git Intelligence</text>
+
+    <!-- Graph row -->
+    <rect x='230' y='195' width='140' height='28' rx='6' fill='#047857'/>
+    <text x='300' y='213' text-anchor='middle' font-family='system-ui, sans-serif' font-size='10' font-weight='600' fill='#fff'>Dependency Graph</text>
+
+    <text x='300' y='240' text-anchor='middle' font-family='system-ui, sans-serif' font-size='9' fill='#6ee7b7' opacity='0.8'>FastAPI · tree-sitter</text>
+  </g>
+
+  <!-- Arrow 2 with MCP label -->
+  <g>
+    <line x1='392' y1='170' x2='432' y2='170' stroke='#059669' stroke-width='2' stroke-dasharray='3,3'/>
+    <polygon points='432,170 424,165 424,175' fill='#059669'/>
+    <text x='412' y='160' text-anchor='middle' font-family='system-ui, sans-serif' font-size='9' font-weight='700' fill='#064e3b'>MCP</text>
+  </g>
+
+  <!-- Right: agents -->
+  <g>
+    <rect x='440' y='100' width='100' height='140' rx='10' fill='#fff' stroke='#059669' stroke-width='1.5'/>
+    <text x='490' y='122' text-anchor='middle' font-family='system-ui, sans-serif' font-size='10' font-weight='700' fill='#064e3b'>AI AGENTS</text>
+
+    <rect x='452' y='138' width='76' height='22' rx='5' fill='#dcfce7' stroke='#059669' stroke-width='1'/>
+    <text x='490' y='152' text-anchor='middle' font-family='system-ui, sans-serif' font-size='9' font-weight='600' fill='#064e3b'>Claude Code</text>
+
+    <rect x='452' y='166' width='76' height='22' rx='5' fill='#dcfce7' stroke='#059669' stroke-width='1'/>
+    <text x='490' y='180' text-anchor='middle' font-family='system-ui, sans-serif' font-size='9' font-weight='600' fill='#064e3b'>Cursor</text>
+
+    <rect x='452' y='194' width='76' height='22' rx='5' fill='#dcfce7' stroke='#059669' stroke-width='1'/>
+    <text x='490' y='208' text-anchor='middle' font-family='system-ui, sans-serif' font-size='9' font-weight='600' fill='#064e3b'>...</text>
+  </g>
+
+  <!-- Label -->
+  <text x='300' y='305' text-anchor='middle' font-family='system-ui, sans-serif' font-size='12' font-weight='600' fill='#064e3b'>AI developer assistant · Kalisio</text>
 </svg>
