@@ -42,7 +42,7 @@ const Navbar = () => {
           <button className="navbar__theme-btn" onClick={toggleTheme} aria-label="Changer le thème">
             {theme === 'dark' ? <FiSun size={18} /> : <FiMoon size={18} />}
           </button>
-          <a href="/cv.pdf" download className="navbar__cv-btn">
+          <a href="/portfolio/cv.pdf" download className="navbar__cv-btn">
             <FiDownload size={15} />
             <span>CV</span>
           </a>
@@ -73,7 +73,7 @@ const Navbar = () => {
               {theme === 'dark' ? <FiSun size={16} /> : <FiMoon size={16} />}
               <span>{theme === 'dark' ? 'Mode clair' : 'Mode sombre'}</span>
             </button>
-            <a href="/cv.pdf" download onClick={() => setMobileOpen(false)}>
+            <a href="/portfolio/cv.pdf" download onClick={() => setMobileOpen(false)}>
               <FiDownload size={16} />
               <span>Télécharger le CV</span>
             </a>
