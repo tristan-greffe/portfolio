@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.bf4a2306.css",
-    "main.js": "/portfolio/static/js/main.4e4a7747.js",
-    "static/media/teleray.png": "/portfolio/static/media/teleray.ea0f1dc686ae2401b518.png",
+    "main.css": "/portfolio/static/css/main.9052892e.css",
+    "main.js": "/portfolio/static/js/main.e5b73ed7.js",
+    "static/media/teleray.png": "/portfolio/static/media/teleray.865ad09e371ab634e127.png",
     "static/media/terraform.png": "/portfolio/static/media/terraform.18765d98ac4d6e1f8851.png",
     "static/media/k8s.png": "/portfolio/static/media/k8s.4404d544d1e4218abfc5.png",
     "static/media/feathersjs.png": "/portfolio/static/media/feathersjs.4ba9e2d7822cc232c0de.png",
@@ -13,14 +13,14 @@
     "static/media/pierre-paul-riquet.svg": "/portfolio/static/media/pierre-paul-riquet.4030559cea97bea22e3e324bd3e2ef0a.svg",
     "static/media/liora.jpg": "/portfolio/static/media/liora.c0c2e81e67b5573c3b12.jpg",
     "static/media/3w-academy.jpeg": "/portfolio/static/media/3w-academy.9d29554168f479fd850b.jpeg",
-    "static/media/kalisio-knowledge.svg": "/portfolio/static/media/kalisio-knowledge.fc14ddc7482fa96cbefe6dd9848efb2d.svg",
+    "static/media/kalisio-knowledge.svg": "/portfolio/static/media/kalisio-knowledge.b995dc607866e129171c1699f1d3cebb.svg",
     "static/media/world-wide-web.svg": "/portfolio/static/media/world-wide-web.3f00cabdab540de325ae0a9107f54efc.svg",
     "index.html": "/portfolio/index.html",
-    "main.bf4a2306.css.map": "/portfolio/static/css/main.bf4a2306.css.map",
-    "main.4e4a7747.js.map": "/portfolio/static/js/main.4e4a7747.js.map"
+    "main.9052892e.css.map": "/portfolio/static/css/main.9052892e.css.map",
+    "main.e5b73ed7.js.map": "/portfolio/static/js/main.e5b73ed7.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf4a2306.css",
-    "static/js/main.4e4a7747.js"
+    "static/css/main.9052892e.css",
+    "static/js/main.e5b73ed7.js"
   ]
 }
