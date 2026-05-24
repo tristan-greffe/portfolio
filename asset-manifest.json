@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b4c4c8e8.css",
-    "main.js": "/portfolio/static/js/main.8dba4fdf.js",
+    "main.css": "/portfolio/static/css/main.06db3c62.css",
+    "main.js": "/portfolio/static/js/main.897a71fc.js",
     "static/media/teleray.png": "/portfolio/static/media/teleray.865ad09e371ab634e127.png",
     "static/media/terraform.png": "/portfolio/static/media/terraform.18765d98ac4d6e1f8851.png",
     "static/media/k8s.png": "/portfolio/static/media/k8s.4404d544d1e4218abfc5.png",
@@ -16,11 +16,11 @@
     "static/media/kalisio-knowledge.svg": "/portfolio/static/media/kalisio-knowledge.b995dc607866e129171c1699f1d3cebb.svg",
     "static/media/world-wide-web.svg": "/portfolio/static/media/world-wide-web.3f00cabdab540de325ae0a9107f54efc.svg",
     "index.html": "/portfolio/index.html",
-    "main.b4c4c8e8.css.map": "/portfolio/static/css/main.b4c4c8e8.css.map",
-    "main.8dba4fdf.js.map": "/portfolio/static/js/main.8dba4fdf.js.map"
+    "main.06db3c62.css.map": "/portfolio/static/css/main.06db3c62.css.map",
+    "main.897a71fc.js.map": "/portfolio/static/js/main.897a71fc.js.map"
   },
   "entrypoints": [
-    "static/css/main.b4c4c8e8.css",
-    "static/js/main.8dba4fdf.js"
+    "static/css/main.06db3c62.css",
+    "static/js/main.897a71fc.js"
   ]
 }
