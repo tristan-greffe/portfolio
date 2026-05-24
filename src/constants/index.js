@@ -162,7 +162,7 @@ export const competences = [
       },
       {
         title: { fr: 'Bases de données', en: 'Databases' },
-        description: { fr: 'MongoDB, PostgreSQL', en: 'MongoDB, PostgreSQL' },
+        description: { fr: 'MongoDB, PostgreSQL, Redis', en: 'MongoDB, PostgreSQL, Redis' },
         level: 4
       },
       {
