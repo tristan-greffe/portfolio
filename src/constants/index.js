@@ -100,41 +100,45 @@ export const experiences = [
 export const education = [
   {
     degree: { fr: 'Master 1 - Administration Cloud', en: 'Master 1 - Cloud Administration' },
-    school: { fr: 'Liora - alternance', en: 'Liora - apprenticeship' },
+    school: 'Liora',
     location: 'Toulouse (31), France',
     date: { fr: 'Janvier 2024 - Juin 2025', en: 'January 2024 - June 2025' },
-    icon: liora
+    year: '2024',
+    icon: liora,
+    apprenticeshipAt: { name: 'Kalisio', icon: kalisio }
   },
   {
     degree: { fr: 'Titre RNCP Niveau 5 - Développeur Web Full Stack', en: 'RNCP Level 5 - Full Stack Web Developer' },
-    school: { fr: '3W Academy - alternance', en: '3W Academy - apprenticeship' },
+    school: '3W Academy',
     location: 'Toulouse (31), France',
     date: { fr: 'Septembre 2022 - Décembre 2023', en: 'September 2022 - December 2023' },
-    icon: threeWAcademy
+    year: '2022',
+    icon: threeWAcademy,
+    apprenticeshipAt: { name: 'Kalisio', icon: kalisio }
   },
   {
     degree: { fr: 'Bootcamp Développeur Web Full Stack', en: 'Full Stack Web Developer Bootcamp' },
     school: 'The Hacking Project',
     location: 'Bordeaux (33), France',
     date: { fr: 'Avril 2022 - Août 2022', en: 'April 2022 - August 2022' },
-    icon: theHackingProject,
-    description: null
+    year: '2022',
+    icon: theHackingProject
   },
   {
     degree: { fr: 'Classe Préparatoire aux Grandes Écoles - TSI', en: 'Preparatory Class (CPGE) - TSI' },
     school: 'Lycée Pierre Paul Riquet',
     location: 'St Orens de Gameville (31), France',
     date: { fr: 'Septembre 2016 - Juin 2018', en: 'September 2016 - June 2018' },
-    icon: pierrePaulRiquet,
-    description: null
+    year: '2016',
+    icon: pierrePaulRiquet
   },
   {
     degree: { fr: 'Baccalauréat STI2D', en: 'STI2D High School Diploma' },
     school: 'Lycée Pierre Paul Riquet',
     location: 'St Orens de Gameville (31), France',
     date: '2016',
-    icon: pierrePaulRiquet,
-    description: null
+    year: '2016',
+    icon: pierrePaulRiquet
   }
 ]
 

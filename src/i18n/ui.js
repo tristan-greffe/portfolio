@@ -61,6 +61,7 @@ export const ui = {
     'page.education.title': 'Parcours',
     'page.education.highlight': 'académique',
     'page.education.desc': 'De la classe prépa aux bootcamps, un parcours pluridisciplinaire entre développement web & cloud.',
+    'education.apprenticeship': 'En alternance chez',
 
     'page.portfolio.badge': 'Sélection de projets',
     'page.portfolio.title': 'Réalisations',
@@ -153,6 +154,7 @@ export const ui = {
     'page.education.title': 'Academic',
     'page.education.highlight': 'background',
     'page.education.desc': 'From prep school to bootcamps, a multidisciplinary path between web development and cloud.',
+    'education.apprenticeship': 'Apprenticeship at',
 
     'page.portfolio.badge': 'Selected work',
     'page.portfolio.title': 'High-impact',

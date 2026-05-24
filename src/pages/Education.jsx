@@ -4,31 +4,40 @@ import { useLanguage, pickLang } from '../context/LanguageContext'
 import { useT } from '../i18n/ui'
 import PageHero from '../components/PageHero'
 
-const EducationCard = ({ item, index, locale }) => {
-  const school = pickLang(item.school, locale)
+const EducationItem = ({ item, index, locale, t }) => {
+  const school = typeof item.school === 'string' ? item.school : pickLang(item.school, locale)
+  const side = index % 2 === 0 ? 'left' : 'right'
+
   return (
     <motion.div
-      className='edu-card'
-      initial={{ opacity: 0, x: -30 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      viewport={{ once: true, amount: 0.15 }}
-      transition={{ duration: 0.5, delay: index * 0.08 }}
+      className={`edu-item edu-item--${side}`}
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.5, delay: index * 0.06 }}
     >
-      <div className='edu-card__icon'>
-        <img src={item.icon} alt={school} />
+      <div className='edu-item__marker'>
+        <div className='edu-item__marker-icon'>
+          <img src={item.icon} alt={school} />
+        </div>
       </div>
 
-      <div className='edu-card__body'>
-        <div className='edu-card__header'>
-          <div>
-            <h3>{pickLang(item.degree, locale)}</h3>
-            <p className='edu-card__school'>{school}</p>
-            <p className='edu-card__location'>{item.location}</p>
+      <div className='edu-item__content'>
+        <span className='edu-item__date'>{pickLang(item.date, locale)}</span>
+        <h3 className='edu-item__degree'>{pickLang(item.degree, locale)}</h3>
+        <p className='edu-item__school'>{school}</p>
+        <p className='edu-item__location'>{item.location}</p>
+
+        {item.apprenticeshipAt && (
+          <div className='edu-item__apprenticeship'>
+            <span className='edu-item__apprenticeship-label'>{t('education.apprenticeship')}</span>
+            <div className='edu-item__apprenticeship-company'>
+              <div className='edu-item__apprenticeship-logo'>
+                <img src={item.apprenticeshipAt.icon} alt={item.apprenticeshipAt.name} />
+              </div>
+              <span>{item.apprenticeshipAt.name}</span>
+            </div>
           </div>
-          <span className='edu-card__date'>{pickLang(item.date, locale)}</span>
-        </div>
-        {item.description && (
-          <p className='edu-card__desc'>{pickLang(item.description, locale)}</p>
         )}
       </div>
     </motion.div>
@@ -49,8 +58,9 @@ const Education = () => {
       />
       <section id='education'>
         <div className='edu-timeline'>
+          <div className='edu-timeline__line' />
           {education.map((item, index) => (
-            <EducationCard key={index} item={item} index={index} locale={locale} />
+            <EducationItem key={index} item={item} index={index} locale={locale} t={t} />
           ))}
         </div>
       </section>

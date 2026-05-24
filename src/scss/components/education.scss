@@ -1,98 +1,202 @@
 .edu-timeline {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+  position: relative;
+  margin-top: 3rem;
+  padding: 1rem 0 2rem;
 }
 
-.edu-card {
+.edu-timeline__line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 1.25rem;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--accent) 0%, var(--accent) 80%, transparent 100%);
+  opacity: 0.4;
+
+  @include desktop-screen {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.edu-item {
+  position: relative;
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1.25rem;
-  padding: 1.5rem;
+  grid-template-columns: 2.5rem 1fr;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include desktop-screen {
+    grid-template-columns: 1fr 4rem 1fr;
+    gap: 0;
+    align-items: center;
+
+    &--left .edu-item__content {
+      grid-column: 1;
+      text-align: right;
+      padding-right: 1.75rem;
+
+      .edu-item__date {
+        margin-left: auto;
+      }
+
+      .edu-item__apprenticeship {
+        justify-content: flex-end;
+      }
+    }
+
+    &--right .edu-item__content {
+      grid-column: 3;
+      padding-left: 1.75rem;
+    }
+  }
+}
+
+.edu-item__marker {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 1;
+
+  @include desktop-screen {
+    grid-column: 2;
+    align-items: center;
+  }
+}
+
+.edu-item__marker-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+  background: var(--bg-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 0 0 4px var(--bg-primary), 0 2px 8px var(--shadow);
+  transition: transform 0.25s;
+
+  img {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+  }
+
+  .edu-item:hover & {
+    transform: scale(1.08);
+  }
+
+  @include desktop-screen {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.edu-item__content {
+  padding: 1.25rem 1.5rem;
   border-radius: 1rem;
   border: 1px solid var(--border);
-  border-top: 3px solid var(--accent);
   background: var(--bg-card);
   box-shadow: 0 2px 12px var(--shadow);
-  transition: box-shadow 0.25s, transform 0.25s;
+  transition: box-shadow 0.25s, transform 0.25s, border-color 0.25s;
 
   &:hover {
+    border-color: var(--accent);
     box-shadow: 0 6px 24px var(--shadow);
     transform: translateY(-2px);
   }
 }
 
-.edu-card__icon {
-  flex-shrink: 0;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 0.75rem;
-  border: 1px solid var(--border);
+.edu-item__date {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+  background: var(--accent-muted);
+  margin-bottom: 0.75rem;
+}
+
+.edu-item__degree {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.4;
+  margin-bottom: 0.35rem;
+
+  @include desktop-screen {
+    font-size: 1.05rem;
+  }
+}
+
+.edu-item__school {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 0.2rem;
+}
+
+.edu-item__location {
+  font-size: 0.775rem;
+  color: var(--text-muted);
+}
+
+.edu-item__apprenticeship {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.875rem;
+  padding-top: 0.875rem;
+  border-top: 1px dashed var(--border);
+}
+
+.edu-item__apprenticeship-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.edu-item__apprenticeship-company {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.2rem 0.6rem 0.2rem 0.25rem;
+  border-radius: 2rem;
+  border: 1px solid var(--accent);
+  background: var(--accent-muted);
+
+  span {
+    font-size: 0.775rem;
+    font-weight: 700;
+    color: var(--accent);
+  }
+}
+
+.edu-item__apprenticeship-logo {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
   background: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  align-self: start;
+  flex-shrink: 0;
 
   img {
-    width: 65%;
-    height: 65%;
+    width: 75%;
+    height: 75%;
     object-fit: contain;
   }
-}
-
-.edu-card__body {
-  min-width: 0;
-}
-
-.edu-card__header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 0.5rem;
-  margin-bottom: 0.5rem;
-
-  h3 {
-    font-size: 1.05rem;
-    font-weight: 700;
-    color: var(--text-primary);
-    margin-bottom: 0.2rem;
-  }
-}
-
-.edu-card__school {
-  font-size: 0.85rem;
-  color: var(--accent);
-  font-weight: 600;
-  margin-bottom: 0.15rem;
-}
-
-.edu-card__location {
-  font-size: 0.775rem;
-  color: var(--text-muted);
-}
-
-.edu-card__date {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  font-weight: 500;
-  white-space: nowrap;
-  padding: 0.25rem 0.75rem;
-  border-radius: 2rem;
-  border: 1px solid var(--border);
-  background: var(--bg-secondary);
-  flex-shrink: 0;
-  align-self: flex-start;
-}
-
-.edu-card__desc {
-  margin-top: 0.75rem;
-  font-size: 0.875rem;
-  line-height: 1.6;
-  color: var(--text-muted);
-  padding-left: 1rem;
-  border-left: 2px solid var(--accent-muted);
 }
