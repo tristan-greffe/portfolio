@@ -1,30 +1,55 @@
 import { motion } from 'framer-motion'
-import { experiences, companies } from '../constants'
+import { Link } from 'react-router-dom'
+import { FiExternalLink, FiMapPin, FiCalendar, FiArrowUpRight } from 'react-icons/fi'
+import { experiences, companies, projects } from '../constants'
 import { useLanguage, pickLang } from '../context/LanguageContext'
 import { useT } from '../i18n/ui'
 import PageHero from '../components/PageHero'
 import CompetencesSidebar from '../components/CompetencesSidebar'
 
 const CompanyOverview = ({ company, locale }) => (
-  <motion.div
+  <motion.header
     className='exp-company'
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
     transition={{ duration: 0.5 }}
   >
-    <div className='exp-company__icon'>
-      <img src={company.icon} alt={company.name} />
-    </div>
-    <div className='exp-company__info'>
-      <div className='exp-company__header'>
-        <h2>{company.name}</h2>
-        <span className='exp-company__duration'>{pickLang(company.period, locale)}</span>
+    <div className='exp-company__top'>
+      <div className='exp-company__icon'>
+        <img src={company.icon} alt={company.name} />
       </div>
-      <p>{pickLang(company.description, locale)}</p>
-      <span className='exp-company__location'>{company.location}</span>
+      <div className='exp-company__title-block'>
+        {company.website ? (
+          <a
+            href={company.website}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='exp-company__name exp-company__name--link'
+          >
+            <h2>{company.name}</h2>
+            <FiExternalLink className='exp-company__name-icon' aria-hidden='true' />
+          </a>
+        ) : (
+          <div className='exp-company__name'>
+            <h2>{company.name}</h2>
+          </div>
+        )}
+        <div className='exp-company__meta'>
+          <span className='exp-company__meta-item'>
+            <FiCalendar aria-hidden='true' />
+            {pickLang(company.period, locale)}
+          </span>
+          <span className='exp-company__meta-item'>
+            <FiMapPin aria-hidden='true' />
+            {company.location}
+          </span>
+        </div>
+      </div>
     </div>
-  </motion.div>
+    <p className='exp-company__description'>{pickLang(company.description, locale)}</p>
+    <div className='exp-company__divider' />
+  </motion.header>
 )
 
 const ExperienceCard = ({ experience, index, locale }) => {
@@ -53,9 +78,23 @@ const ExperienceCard = ({ experience, index, locale }) => {
         </div>
 
         <ul className='exp-card__points'>
-          {experience.points.map((point, i) => (
-            <li key={i}>{pickLang(point, locale)}</li>
-          ))}
+          {experience.points.map((point, i) => {
+            const hasProject = point.projectId !== undefined && projects[point.projectId]
+            return (
+              <li key={i}>
+                {pickLang(point, locale)}
+                {hasProject && (
+                  <Link
+                    to={`/portfolio/${point.projectId}`}
+                    className='exp-card__project-link'
+                  >
+                    {projects[point.projectId].name}
+                    <FiArrowUpRight aria-hidden='true' />
+                  </Link>
+                )}
+              </li>
+            )
+          })}
         </ul>
 
         {experience.skills && (

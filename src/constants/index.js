@@ -21,6 +21,7 @@ export const companies = [
     icon: kalisio,
     location: 'Toulouse (31), France',
     period: { fr: 'Sept. 2022 - Présent', en: 'Sept. 2022 - Present' },
+    website: 'https://kalisio.com/',
     description: {
       fr: 'ESN spécialisée dans les solutions géospatiales open source pour la sécurité civile, l\'environnement et l\'aéronautique - cartes interactives, visualisation de données GIS et big data géospatial.',
       en: 'IT services company specialized in open-source geospatial solutions for civil security, environment and aerospace - interactive maps, GIS data visualization and geospatial big data.'
@@ -39,11 +40,13 @@ export const experiences = [
     points: [
       {
         fr: 'Conception et lead technique de Kalisio Knowledge',
-        en: 'Design and technical lead of Kalisio Knowledge'
+        en: 'Design and technical lead of Kalisio Knowledge',
+        projectId: 1
       },
       {
         fr: 'Évolutions et suivi de TELERAY (ASNR) : nouvelles fonctionnalités, conformité réglementaire, ouverture de l\'API publique et maintien en condition opérationnelle.',
-        en: 'Evolution and monitoring of TELERAY (ASNR): new features, regulatory compliance, public API rollout and operational maintenance.'
+        en: 'Evolution and monitoring of TELERAY (ASNR): new features, regulatory compliance, public API rollout and operational maintenance.',
+        projectId: 0
       },
       {
         fr: 'Migration de l\'analyse qualité continue Code Climate → SonarQube : amélioration de la maintenabilité et intégration CI/CD.',
@@ -67,7 +70,8 @@ export const experiences = [
     points: [
       {
         fr: 'Dans le cadre de la TMA Carto SIRSE (ASNR) : développement, déploiement en production et livraison continue de TELERAY (application de surveillance nationale de la radioactivité)',
-        en: 'As part of the TMA Carto SIRSE (ASNR): development, production deployment and continuous delivery of TELERAY (national radioactivity monitoring application)'
+        en: 'As part of the TMA Carto SIRSE (ASNR): development, production deployment and continuous delivery of TELERAY (national radioactivity monitoring application)',
+        projectId: 0
       },
       {
         fr: 'Campagnes de tests de charge (Artillery) sur infrastructure k8s : identification et résolution de goulots d\'étranglement - tuning WiredTiger MongoDB, recalibration des probes K8s, gestion fine des ressources containers etc. Rapports d\'analyse et recommandations d\'architecture.',
