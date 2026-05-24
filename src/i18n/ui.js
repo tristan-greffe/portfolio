@@ -54,7 +54,7 @@ export const ui = {
     'page.experience.badge': 'Mon parcours professionnel',
     'page.experience.title': 'Expériences',
     'page.experience.highlight': '& Compétences',
-    'page.experience.desc': 'Développeur & ingénieur chez Kalisio depuis 2022 - alternance fullstack, alternance DevOps, puis CDI sur des projets géospatiaux.',
+    'page.experience.desc': 'Développeur & ingénieur chez Kalisio depuis 2023 - alternance fullstack, alternance DevOps, puis CDI sur des projets géospatiaux.',
     'competences.title': 'Compétences',
 
     'page.education.badge': 'Ma formation',

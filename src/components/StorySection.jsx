@@ -38,7 +38,7 @@ const TechStackVisual = () => (
 const StatsVisual = ({ locale }) => {
   const stats = locale === 'fr'
     ? [
-      { value: '4+', label: 'ans d\'expérience' },
+      { value: '5+', label: 'ans d\'expérience' },
       { value: '5+', label: 'projets déployés' },
       { value: '10+', label: 'technologies' }
     ]

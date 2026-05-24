@@ -20,7 +20,7 @@ export const companies = [
     name: 'Kalisio',
     icon: kalisio,
     location: 'Toulouse (31), France',
-    period: { fr: 'Sept. 2022 - Présent', en: 'Sept. 2022 - Present' },
+    period: { fr: 'Janvier 2023 - Présent', en: 'January 2023 - Present' },
     website: 'https://kalisio.com/',
     description: {
       fr: 'ESN spécialisée dans les solutions géospatiales open source pour la sécurité civile, l\'environnement et l\'aéronautique - cartes interactives, visualisation de données GIS et big data géospatial.',
