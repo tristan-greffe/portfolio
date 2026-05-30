@@ -2,7 +2,7 @@
 
   ![Project Banner](./readme_assets/readme_banner.png)
 
-  <h1>Personal portfolio - Web Developer & DevOps Engineer</h1>
+  <h1>Personal portfolio <br> Web Developer & DevOps Engineer</h1>
 
   <p>
     <a href="https://github.com/tristan-greffe/portfolio/stargazers">
