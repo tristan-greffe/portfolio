@@ -42,6 +42,18 @@ export const ui = {
     'feature.title.accent': 'différence',
     'feature.sub': 'Mon expérience m\'a permis de développer des capacités qui vont au-delà de la technique.',
 
+    // GitHub activity
+    'github.label': 'ACTIVITÉ GITHUB',
+    'github.title.before': 'Je code ',
+    'github.title.accent': 'au quotidien',
+    'github.metric.contributions': 'Contributions sur un an',
+    'github.metric.activeDays': 'Jours actifs',
+    'github.metric.bestStreak': 'Meilleure série (jours)',
+    'github.metric.issues': 'Issues ouvertes',
+    'github.calendar.unit': 'contributions',
+    'github.calendar.less': 'Moins',
+    'github.calendar.more': 'Plus',
+
     // HomeCTA
     'cta.title': 'Travaillons ensemble ?',
     'cta.button': 'Prendre contact',
@@ -134,6 +146,18 @@ export const ui = {
     'feature.title.before': 'What makes the',
     'feature.title.accent': 'difference',
     'feature.sub': 'My experience let me build skills that go beyond the purely technical.',
+
+    // GitHub activity
+    'github.label': 'GITHUB ACTIVITY',
+    'github.title.before': 'I ship ',
+    'github.title.accent': 'every day',
+    'github.metric.contributions': 'Contributions this year',
+    'github.metric.activeDays': 'Active days',
+    'github.metric.bestStreak': 'Longest streak (days)',
+    'github.metric.issues': 'Issues opened',
+    'github.calendar.unit': 'contributions',
+    'github.calendar.less': 'Less',
+    'github.calendar.more': 'More',
 
     // HomeCTA
     'cta.title': 'Let\'s work together?',
